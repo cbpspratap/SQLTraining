@@ -3,7 +3,7 @@
 
 Everyone knows that data is the new oil and on daily basis currently we create roughly 2.5 quintillion bytes of data. Just imagine the scale on which the data is being processed, stored and used. In current marked condition no business can run without data, first they need data to get their website running and then the website/business will start generating data which they again need to store somewhere. And once the data is stored in a database you need SQL to extract meaningful information out of the data.
 
-Without SQL, almost no meaningful online service could exist - from bank to grocerry delivery, everything runs on data. Despite the passage of years, SQL is still the primary computer language when you talk about data. In current data job market SQL almost every job opening requires SQL.
+Without SQL, almost no meaningful online service could exist - from bank to grocerry delivery, everything runs on data. Despite the passage of years, SQL is still the primary computer language when you talk about data. In current job market for data, almost every job requires SQL skills.
 
 
 - What is SQL?
