@@ -12,10 +12,15 @@ SQL stand for Structured Query Language. As per Britanica SQL is a computer lang
 
 In the 1970s computer scientists began developing a standardized way to manipulate databases, and out of that research came SQL. SQL gained popularity when the American National Standards Institute (ANSI) adopted the first SQL standard in 1986. Some large software companies, such as Microsoft Corporation and Oracle Corporation, produced their own versions of SQL, and an open-source version, MySQL, became extremely popular.
 
+- What is a Database and DBMS?
 
+A database is an organized collection of data stored and accessed electronically. If you are storing some of your data in Excel that can also be called a database, but in real life scenario the data is really huge and there are specific electronic systems built to store this data. These databases are designed specifically for the purpose of how it will be used. In some cases the data is stored in logical tables(row & column format) and they are called relation database while in some cases it is stored in non-tabular format(key value pair) which is called No SQL Database.
 
-- What is a Database?
+A database management system (or DBMS) is essentially nothing more than a computerized system or software which help manage the database. You can call a DBMS as the interface betwwen human and data, the primary goal of a DBMS is to provide an environment that is both convenient and efficient to use in retrieving and storing data base information and same time maintaining the security of the data.
+
 - What is RDBMS?
+
+
 - Flavours of RDBMS
 - MySQL
 - Setting-Up MySQL in your Local environment
