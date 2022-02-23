@@ -48,9 +48,21 @@ The MySQL development project has made its source code available under the terms
   - The MySQL Database Server is very fast, reliable, scalable, and easy to use.
   - MySQL Server works in client/server or embedded systems.
 
-
+Now that we know some basics about SQL, its time we setup MySQL environment in our local machine/laptop.
 
 # Set-Up MySQL in your Local environment
+Please refer to the below link which will download a PPt with detailed instruction on how to setup MySQL in your personal computer.
+
+[Click here to download the PPT with detailed instruction](https://github.com/cbpspratap/SQLTraining/blob/main/Lecture%201/MySQL%20Download%26Installation%20Guide.pptx)
 ### Downloading MySQL
+- Go to [mysql.com](https://www.mysql.com/)
+- Click on [downloads](https://www.mysql.com/downloads/)
+- Go to the bottom of the page and click on [MySQL Community (GPL) Downloads »](https://dev.mysql.com/downloads/)
+- If you are using windown system then click on [MySQL Installer for Windows](https://dev.mysql.com/downloads/installer/)
+- You will see two download options on this page one is online installer and another with offline installer
+- Download whichever you like, I prefer the offline installer.
+![image](https://user-images.githubusercontent.com/67796162/155339623-1bbdad1e-0d41-4d1f-8f40-60df579e31b8.png)
+
+
 ### Installing MySQL
 ### Starting MySQL Workbench
