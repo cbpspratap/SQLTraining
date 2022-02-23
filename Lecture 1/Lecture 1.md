@@ -34,8 +34,11 @@ There are multiple RDBMS available in market, which you can choose based on your
 #### Open Source
   - MySQL
   - PostgreSQL
+  - SQLite
+  - Maria DB
 
-- MySQL
+
+## MySQL
 - Setting-Up MySQL in your Local environment
 - Downloading MySQL
 - Installing MySQL
