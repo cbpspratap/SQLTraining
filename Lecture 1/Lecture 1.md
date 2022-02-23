@@ -24,7 +24,7 @@ RDBMS stand for Relational Database Management System, these are DBMS which are 
 
 ## Flavours of RDBMS
 
-There are multiple RDBMS available in market, which you can choose based on your organizations use-case, some of them are commercial products and will require license cost while some are open source.
+There are multiple RDBMS available in market, which you can choose based on your organizations use-case, some of them are commercial products and will require license cost while some are open source. All these RDBMS basically works on SQL but it may differ from product to product in terms of usages and functionalities. 
 #### Commercial
   - Oracle 
   - SQL Server
@@ -37,8 +37,8 @@ There are multiple RDBMS available in market, which you can choose based on your
   - SQLite
   - Maria DB
 
-
 ## MySQL
+
 - Setting-Up MySQL in your Local environment
 - Downloading MySQL
 - Installing MySQL
