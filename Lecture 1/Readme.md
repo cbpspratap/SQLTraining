@@ -99,5 +99,13 @@ Please refer to the below link which will download a PPt with detailed instructi
 ***And here you go, your system is now ready to do some data munching!!***
 
 
-
 ### Starting MySQL Workbench
+
+Now that we have already setup MySQL in our machine, lets get started with running it and how to use it.
+
+- Go to Start Menu and search for MySQL Workbench, you will see something like below. Click and open it
+
+    ![image](https://user-images.githubusercontent.com/67796162/155347890-2a9680fe-725e-45da-ba1a-7918f578e842.png)
+
+
+
