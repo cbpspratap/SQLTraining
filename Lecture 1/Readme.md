@@ -120,4 +120,28 @@ Now that we have already setup MySQL in our machine, lets get started with runni
 
 **WoohoO!** Now that you have you have everything setup its time we start running few queries.
 
+Lets run below query to see the output(*copy the SQL code and paste in your MySQL Workbench query window and run using ctlr + enter or click on the flash window*)
 
+```sql
+SELECT * FROM sakila.actor
+limit 10;
+```
+![image](https://user-images.githubusercontent.com/67796162/155360407-6af6de54-6e77-462d-89af-759477ce05f6.png)
+
+
+<br>
+
+| actor_id | first_name | last_name    | last_update         |
+|----------|------------|--------------|---------------------|
+|        1 | PENELOPE   | GUINESS      | 2006-02-15 04:34:33 |
+|        2 | NICK       | WAHLBERG     | 2006-02-15 04:34:33 |
+|        3 | ED         | CHASE        | 2006-02-15 04:34:33 |
+|        4 | JENNIFER   | DAVIS        | 2006-02-15 04:34:33 |
+|        5 | JOHNNY     | LOLLOBRIGIDA | 2006-02-15 04:34:33 |
+|        6 | BETTE      | NICHOLSON    | 2006-02-15 04:34:33 |
+|        7 | GRACE      | MOSTEL       | 2006-02-15 04:34:33 |
+|        8 | MATTHEW    | JOHANSSON    | 2006-02-15 04:34:33 |
+|        9 | JOE        | SWANK        | 2006-02-15 04:34:33 |
+|       10 | CHRISTIAN  | GABLE        | 2006-02-15 04:34:33 |		
+
+<br>
