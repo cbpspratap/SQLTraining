@@ -48,9 +48,15 @@ The MySQL development project has made its source code available under the terms
   - The MySQL Database Server is very fast, reliable, scalable, and easy to use.
   - MySQL Server works in client/server or embedded systems.
 
-Now that we know some basics about SQL, its time we setup MySQL environment in our local machine/laptop/personal computer.
+Now that we know some basics about SQL, its time we go to SQL environment and start running few queries. Ohh! wait but we dont have any SQL environment where we can do this.
 
-# Set-Up MySQL in your Local environment
+Don't worry we have multiple option to have access to a SQL environment for our practice. There are multiple online SQL coding platforms available which you can use, below are few:
+- [db-fiddle](https://db-fiddle.com/) *(preferred)*
+- [sqlfiddle](http://sqlfiddle.com/)
+
+Alternatively, the best option is to setup MySQL environment in our local machine/laptop/personal computer,so that we don't lose our progress.
+
+# Set-Up MySQL in Local Environment
 Please refer to the below link which will download a PPt with detailed instruction on how to setup MySQL in your personal computer.
 
 [Click here to download the PPT with detailed instruction](https://github.com/cbpspratap/SQLTraining/blob/main/Lecture%201/MySQL%20Download%26Installation%20Guide.pptx)
