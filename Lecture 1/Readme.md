@@ -65,4 +65,30 @@ Please refer to the below link which will download a PPt with detailed instructi
 
 
 ### Installing MySQL
+- Once MySQL installer has downloaded, double click to begin instalation
+- Allow the windows permission to continue installation
+- Select "Developer Default" when asked for Choosing a Setup Type
+
+    ![image](https://user-images.githubusercontent.com/67796162/155340949-950a25af-d8a3-4907-80d9-387834171783.png)
+    
+- Continue installation by pressing Execute or Next whenever prompted
+- When you reach to below screen, leave everything to default and click next
+
+    ![image](https://user-images.githubusercontent.com/67796162/155341695-611ddcc7-3b38-4775-87f1-049a859d4356.png)
+
+- On Authentication Method page select "Use Strong Password Encryption for Authentication (Recomended)" option and click Next
+- Create a password under Accounts and Roles for Root User(This is the password you will be using when connecting to MySQL DB) and leave the add user option under MySQL User Accounts as it is unless you want some other user to be created.
+
+    ![image](https://user-images.githubusercontent.com/67796162/155342776-d7a0ba21-41d2-4dac-bf9d-1fc0ace12969.png)
+
+- Under Windows Service leave everything to default and click next and continue with installtion
+
+- After multiple Next, Execute and Next you will reach at below screen, just enter the password you created in previous step and check if Connection succeeded then click next to continue installtion.
+- Once you reach below screen, finally the installtion is complete and you can click Finish.
+
+    ![image](https://user-images.githubusercontent.com/67796162/155344000-a461342d-9a94-4d39-adf5-5040629e3fb3.png)
+
+
+
+
 ### Starting MySQL Workbench
