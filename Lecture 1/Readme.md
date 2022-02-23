@@ -108,4 +108,16 @@ Now that we have already setup MySQL in our machine, lets get started with runni
     ![image](https://user-images.githubusercontent.com/67796162/155347890-2a9680fe-725e-45da-ba1a-7918f578e842.png)
 
 
+- Once you open it you will see something like below, this is the homescreen of MySQL Workbench which you will be using to connect to you local MySQL Instance. Double click on the Local Instance under MySQL connections. It will ask you to the password you created earlier, input your password and click OK
+
+    ![image](https://user-images.githubusercontent.com/67796162/155350915-212024ac-5e3e-4cc8-8f6e-37e587437809.png)
+
+- Now you have connected to your Local MySQl Instance, click on Schemas to see the existing Schemas/Databases which have been provided as sample DB along with installation.
+
+    ![image](https://user-images.githubusercontent.com/67796162/155351685-e2e1c8d3-8cbf-4742-8248-231114a5240b.png)
+
+- You can see the Query window(the white canvas), this is where you can write your SQL queries to fetch data from DBs.
+
+**WooOHoO!** Now that you have you have everything setup its time we start running few queries.
+
 
