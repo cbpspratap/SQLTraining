@@ -29,6 +29,7 @@ There are multiple RDBMS available in market, which you can choose based on your
   - Oracle 
   - SQL Server
   - DB2
+  - Teradata 
   - MS Access
 
 #### Open Source
@@ -38,6 +39,16 @@ There are multiple RDBMS available in market, which you can choose based on your
   - Maria DB
 
 ## MySQL
+MySQL is world’s most popular RDBMS that is open source and free.
+The MySQL development project has made its source code available under the terms of the GNU General Public License. MySQL was owned and sponsored by a single for-profit firm, the Swedish company MySQL AB, later it was was acquired by Oracle as a part of Sun Microsystems acquisition in 2009. For proprietary use, several paid editions are available, and offer additional functionality.
+#### Key properties of MySQL: 
+  - MySQL is a database management system.
+  - MySQL databases are relational.
+  - MySQL software is Open Source.
+  - The MySQL Database Server is very fast, reliable, scalable, and easy to use.
+  - MySQL Server works in client/server or embedded systems.
+
+
 
 - Setting-Up MySQL in your Local environment
 - Downloading MySQL
