@@ -118,6 +118,6 @@ Now that we have already setup MySQL in our machine, lets get started with runni
 
 - You can see the Query window(*the white canvas*), this is where you can write your SQL queries to fetch data from DBs.
 
-**WooOHoO!** Now that you have you have everything setup its time we start running few queries.
+**WoohoO!** Now that you have you have everything setup its time we start running few queries.
 
 
