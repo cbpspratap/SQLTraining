@@ -155,6 +155,6 @@ Wasn't that easy, just in few clicks you have extracted data in front of you.
 ![image](https://user-images.githubusercontent.com/67796162/155520037-1f82ea25-8fb7-44ee-a6a1-91172f97bd21.png)
 
 
-**Congratulations! You have completed 1st chapter of your SQL Learning journey.**
+#### Congratulations! You have completed 1st chapter of your SQL Learning journey.
 
 
