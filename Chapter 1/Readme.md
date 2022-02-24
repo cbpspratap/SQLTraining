@@ -132,9 +132,7 @@ limit 10;
 ```
 ![image](https://user-images.githubusercontent.com/67796162/155360407-6af6de54-6e77-462d-89af-759477ce05f6.png)
 
-
 <br>
-
 | actor_id | first_name | last_name    | last_update         |
 |----------|------------|--------------|---------------------|
 |        1 | PENELOPE   | GUINESS      | 2006-02-15 04:34:33 |
@@ -147,8 +145,8 @@ limit 10;
 |        8 | MATTHEW    | JOHANSSON    | 2006-02-15 04:34:33 |
 |        9 | JOE        | SWANK        | 2006-02-15 04:34:33 |
 |       10 | CHRISTIAN  | GABLE        | 2006-02-15 04:34:33 |		
-
 <br>
+Wasn't that easy, just in few clicks you have extracted data in front of you.
 
 ### Great Job
 
