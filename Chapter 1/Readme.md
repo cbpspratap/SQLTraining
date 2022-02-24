@@ -149,3 +149,9 @@ limit 10;
 |       10 | CHRISTIAN  | GABLE        | 2006-02-15 04:34:33 |		
 
 <br>
+
+### Great Job
+
+**Congratulations! You have completed 1st chapter of your SQL Learning journey.
+
+
