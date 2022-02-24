@@ -5,7 +5,7 @@ During the training I will follow MySQL syntax and you can follow along by using
 
 This course is divided into 10 chapters, each chapter will cover a major subject area/topic on SQL.
 
-## Chapter 1
+## Chapter 1: The Beginning
 - Why Learn SQL?
 - What is SQL?
 - Database and DBMS
@@ -14,7 +14,17 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - Setup MySQL on your local machine/computer
 - Run a sample SQL query
 
-## Chapter 2
+## Chapter 2: SQL Commands
+- SQL Commands Languages
+  - Data Definition Language (DDL)
+  - Data Query Language (DQL)
+  - Data Manipulation Language (DML)
+  - Data Control Language (DCL)
+  - Transaction Control Language (TCL)
+- Create a Databse/Schema
+- Create a Table
+- Query a Table
+
 
 
 
