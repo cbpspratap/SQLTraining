@@ -21,8 +21,8 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Data Manipulation Language (DML)
   - Data Control Language (DCL)
   - Transaction Control Language (TCL)
-- Create a Databse/Schema
-- Create a Table
+- Create/Drop a Databse
+- Create/Drop a Table
 - Query a Table
 
 
