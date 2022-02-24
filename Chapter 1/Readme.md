@@ -1,5 +1,9 @@
 # SQL: The Beginning
-### Why SQL?
+Welcome to the first chapter of this SQL Training course, in this chapter we will undertsand the why and what of SQL and then we will setup the SQL environemnt in our personal computer to start our SQL learning journey.
+### Why Learn SQL?
+- Getting into Data Field
+- Job Opportunities for Data Analyst & Scientist Role  
+- competitive Salary
 
 Everyone knows that data is the new oil and on daily basis currently we create roughly 2.5 quintillion bytes of data [*(source)*](https://seedscientific.com/how-much-data-is-created-every-day/#:~:text=Every%20day%2C%20we%20create%20roughly%202.5%20quintillion%20bytes%20of%20data.). Just imagine the scale on which the data is being processed, stored and used. In current marked condition no business can run without data, first they need data to get their website running and then the website/business will start generating data which they again need to store somewhere. And once the data is stored in a database you need SQL to extract meaningful information out of the data.
 
