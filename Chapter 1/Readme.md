@@ -152,7 +152,8 @@ limit 10;
 Wasn't that easy, just in few clicks you have extracted data in front of you.
 
 ### Great Job
-![image](https://user-images.githubusercontent.com/67796162/155520037-1f82ea25-8fb7-44ee-a6a1-91172f97bd21.png)
+
+<img src="https://c.tenor.com/yhn_wHD5FPEAAAAd/great-job-clapping.gif" width="400" height="400" />
 
 
 #### Congratulations! You have completed 1st chapter of your SQL Learning journey.
