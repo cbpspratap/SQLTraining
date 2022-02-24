@@ -59,7 +59,7 @@ Alternatively, the best option is to setup MySQL environment in our local machin
 # Set-Up MySQL in Local Environment
 Please refer to the below link which will download a PPt with detailed instruction on how to setup MySQL in your personal computer.
 
-[Click here to download the PPT with detailed instruction](https://github.com/cbpspratap/SQLTraining/blob/main/Lecture%201/MySQL%20Download%26Installation%20Guide.pptx)
+[Click here to download the PPT with detailed instruction](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%201/MySQL%20Download%26Installation%20Guide.pptx)
 ### Downloading MySQL
 - Go to [mysql.com](https://www.mysql.com/)
 - Click on [downloads](https://www.mysql.com/downloads/)
