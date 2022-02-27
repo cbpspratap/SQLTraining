@@ -17,7 +17,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - Setup MySQL on your local machine/computer
 - Run a sample SQL query
 
-## Chapter 2: SQL Commands
+## [Chapter 2: SQL Commands](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%202/Readme.md)
 - SQL Commands Languages
   - Data Definition Language (DDL)
   - Data Query Language (DQL)
