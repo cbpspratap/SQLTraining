@@ -27,6 +27,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - Create/Drop a Databse
 - Create/Drop a Table
 - Query a Table
+- Select Statement
 
 
 
