@@ -21,6 +21,23 @@ DDL statements are used to build and modify the structure of your tables and oth
  
 <br>
 
+**Example:** Create a Student table with following columns:
+- StudentID
+- LastName
+- FirstName
+- Address
+- Mark
+
+```sql
+CREATE TABLE Student (
+    StudendId int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    Mark int
+);
+```
+
 ### DQL - Data Query Language:
 
 DQL statement is used to fetch the data from the database.  With the help of DQL query we can get the data from the database to perform actions or operations like analysing the data. 
