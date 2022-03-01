@@ -21,6 +21,16 @@ DDL statements are used to build and modify the structure of your tables and oth
  
 <br>
 
+### DQL - Data Query Language:
+
+DQL statement is used to fetch the data from the database.  With the help of DQL query we can get the data from the database to perform actions or operations like analysing the data. 
+
+
+| Command | Description                                 |
+|---------|---------------------------------------------|
+| SELECT  | Retrives data from one or more tables       |
+
+
 
 Command Description
 CREATE Creates a new table, a view of a table, or other object in database
