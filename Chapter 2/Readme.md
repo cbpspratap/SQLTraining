@@ -49,6 +49,15 @@ DML Statements are used to work on the data within the tables or in simple words
 | DELETE   | Delete the data records from a table |
 
 
+```sql
+INSERT INTO Student (StudendId, FirstName, LastName, Address, Mark)
+VALUES (001, "Ankit", "Mittal", "Pune", 78),
+       (002, "Hitesh", "Mishra", "Bangalore", 83),
+       (003, "Deepak", "Singh", "Mumbai", 84),
+       (004, "Ashok", "Surendran", "Pune", 77)
+       (005, "Abhishek", "Jain", "Mumbai", 65);
+```
+
 
 ### DQL - Data Query Language:
 
