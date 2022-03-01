@@ -38,6 +38,18 @@ CREATE TABLE Student (
 );
 ```
 
+### DML - Data Manipulation Language:
+
+DML Statements are used to work on the data within the tables or in simple words it helps manipulate data inside table/database. With the help of DML commands, we can insert, delete, change the data inside a table.
+
+| Command  | Description                          |
+|----------|--------------------------------------|
+| INSERT   | Inserts the data into a table        |
+| UPDATE   | Update the existing data in a table  |   
+| DELETE   | Delete the data records from a table |
+
+
+
 ### DQL - Data Query Language:
 
 DQL statement is used to fetch the data from the database.  With the help of DQL query we can get the data from the database to perform actions or operations like analysing the data. 
