@@ -21,7 +21,7 @@ DDL statements are used to build and modify the structure of your tables and oth
  
 <br>
 
-**Syntax:** CREATE TABLE
+**Syntax:** ***CREATE TABLE***
 
 ```sql
 CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]); 
@@ -44,6 +44,20 @@ CREATE TABLE Student (
 );
 ```
 
+**Syntax:** ***DROP TABLE***
+
+```sql
+DROP TABLE table_name;
+```
+
+**Example:** Drop the Student table you just created.
+
+```sql
+DROP TABLE Student;
+```
+
+
+
 ### DML - Data Manipulation Language:
 
 DML Statements are used to work on the data within the tables or in simple words it helps manipulate data inside table/database. With the help of DML commands, we can insert, delete, change the data inside a table.
@@ -54,7 +68,7 @@ DML Statements are used to work on the data within the tables or in simple words
 | UPDATE   | Update the existing data in a table  |   
 | DELETE   | Delete the data records from a table |
 
-**Syntax:** INSERT
+**Syntax:** ***INSERT***
 
 Option 1: Provide the column names in INSERT INTO statement
 
@@ -91,7 +105,7 @@ DQL statement is used to fetch the data from the database.  With the help of DQL
 |---------|---------------------------------------------|
 | SELECT  | Retrives data from one or more tables       |
 
-**Syntax:** 
+**Syntax:** ***SELECT***
 
 ```sql
 SELECT column1, column2....columnN
