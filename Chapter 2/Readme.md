@@ -21,7 +21,13 @@ DDL statements are used to build and modify the structure of your tables and oth
  
 <br>
 
-**Example:** Create a Student table with following columns:
+**Syntax:** CREATE TABLE
+
+```sql
+CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]); 
+```
+
+**Example:** Create a Student table with following columns
 - StudentID
 - LastName
 - FirstName
@@ -48,6 +54,23 @@ DML Statements are used to work on the data within the tables or in simple words
 | UPDATE   | Update the existing data in a table  |   
 | DELETE   | Delete the data records from a table |
 
+**Syntax:** INSERT
+
+Option 1: Provide the column names in INSERT INTO statement
+
+```sql
+INSERT INTO TABLE_NAME  (col1, col2, col3,.... col N)  
+VALUES (value1, value2, value3, .... valueN);  
+```
+
+Option 2: No need to provide column names and the values will be inserted into columns as per the order they appear in table.
+
+```sql
+INSERT INTO TABLE_NAME    
+VALUES (value1, value2, value3, .... valueN);
+```
+
+**Example:** Insert data into students table
 
 ```sql
 INSERT INTO Student (StudendId, FirstName, LastName, Address, Mark)
@@ -68,6 +91,19 @@ DQL statement is used to fetch the data from the database.  With the help of DQL
 |---------|---------------------------------------------|
 | SELECT  | Retrives data from one or more tables       |
 
+**Syntax:** 
+
+```sql
+SELECT column1, column2....columnN
+FROM table_name;
+```
+
+**Example:** Select FirstName, LastName and Address of all the students from Student Table
+
+```sql
+SELECT FirstName, LastName, Address
+FROM Student;
+```
 
 
 Command Description
