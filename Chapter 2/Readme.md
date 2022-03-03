@@ -119,20 +119,27 @@ SELECT FirstName, LastName, Address
 FROM Student;
 ```
 
+### DCL - Data Control Language:
 
-Command Description
-CREATE Creates a new table, a view of a table, or other object in database
-ALTER Modifies an existing database object, such as a table.
-DROP Deletes an entire table, a view of a table or other object in the database.
-DML - Data Manipulation Language:
-Command Description
-INSERT Creates a record
-UPDATE Modifies records
-DELETE Deletes records
-DCL - Data Control Language:
-Command Description
-GRANT Gives a privilege to user
-REVOKE Takes back privileges granted from user
-DQL - Data Query Language:
-Command Description
-SELECT Retrieves certain records from one or more tables
+DCL commands are used to give rights and permissions on database system.
+
+| Command | Description                                                                |
+|---------|----------------------------------------------------------------------------|
+| GRANT   | To give user access privileges to a database.                              |
+| REVOKE  | To withdraw the user’s access privileges given by using the GRANT command. |
+
+
+
+### TCL - Transaction Control Language:
+
+TCL commands are used to control the transaction performed using DML commands to maintain database consistency.
+
+| Command   | Description                                                                                                          |
+|-----------|----------------------------------------------------------------------------------------------------------------------|
+| COMMIT    | To save the data permanently after a DML command is used                                                             |
+| ROLLBACK  | To get the data or restore the data to the last savepoint or last committed state                                    |
+| SAVEPOINT | To save the data at a particular point temporarily, so that whenever needed can be rollback to that particular point |
+
+
+
+
