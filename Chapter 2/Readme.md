@@ -56,6 +56,7 @@ DROP TABLE table_name;
 DROP TABLE Student;
 ```
 
+*Note- Please Create the Student table again to make sure next examples work correctly*
 
 
 ### DML - Data Manipulation Language:
