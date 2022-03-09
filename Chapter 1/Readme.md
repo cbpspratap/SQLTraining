@@ -55,7 +55,7 @@ The MySQL development project has made its source code available under the terms
 Now that we know some basics about SQL, it's time we go to SQL environment and start running few queries. Ohh! wait but we don't have any SQL environment where we can do this.
 
 Don't worry we have multiple option to have access to a SQL environment for our practice. There are multiple online SQL coding platforms available which you can use, below are few:
-- [db-fiddle](https://db-fiddle.com/) *(preferred)*
+- [db-fiddle](https://www.db-fiddle.com/) *(preferred)*
 - [sqlfiddle](http://sqlfiddle.com/)
 
 Alternatively, the best option is to setup MySQL environment in our local machine/laptop/personal computer, so that we don't lose our progress.
