@@ -24,10 +24,17 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Data Manipulation Language (DML)
   - Data Control Language (DCL)
   - Transaction Control Language (TCL)
+
+## [Chapter 3: Run SQL Statements](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%202/Readme.md)
 - Create/Drop a Databse
 - Create/Drop a Table
 - Query a Table
 - Select Statement
+- Where Clause
+- Group BY Clause
+- Having Clause
+- Order By Clause
+- Limit Clause
 
 
 
