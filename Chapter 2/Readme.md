@@ -141,8 +141,11 @@ TCL commands are used to control the transaction performed using DML commands to
 | ROLLBACK  | To get the data or restore the data to the last savepoint or last committed state                                    |
 | SAVEPOINT | To save the data at a particular point temporarily, so that whenever needed can be rollback to that particular point |
 
+<br>
 
-By this time you already know major SQL Commands and when to use which one, just that we need some practice.
+#### WooHoo!!
 
-Lets go to Next chapter>>
+**By this time you already know major SQL Commands and when to use which one, just that we need some practice.**
+
+Let's go to Next chapter>>
 
