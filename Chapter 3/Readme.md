@@ -115,3 +115,52 @@ CREATE TABLE dpu_college.faculty(
   );
 ```
 
+
+***Good Job, you have already created the required tables.***
+
+Let's go ahead and check the database and tables we have created:
+
+```sql
+SHOW DATABASES;
+```
+You can see it shows all the databases available in your SQL environment.
+
+|Database|
+|--------|
+|dpu_college		|
+|information_schema |
+|mysql              |
+|performance_schema |
+|sakila             |
+|sys                |
+|trading            |
+|world              |
+
+You can see dpu_college is one of the database in the list. Let's go ahead and check the tables within dpu_college database.
+
+```sql
+SHOW TABLES FROM dpu_college;
+```
+
+Here we have all the tables which we have created few mins back.
+
+|Tables_in_dpu_college|
+|---------------------|
+|dept	 |	
+|faculty |
+|student |
+
+Let's go and check few of the tables we have created.
+
+```sql
+SELECT * FROM dpu_college.student;
+```
+
+```sql
+SELECT * FROM dpu_college.dept;
+```
+
+```sql
+SELECT * FROM dpu_college.faculty;
+```
+
