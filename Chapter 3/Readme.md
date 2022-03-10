@@ -164,3 +164,20 @@ SELECT * FROM dpu_college.dept;
 SELECT * FROM dpu_college.faculty;
 ```
 
+After running each queries above you can see there is no data available in tables, its just the table structure has been created.
+
+If you want to check the structure of the table specifically columns in the table, data types and key attributes, you can use DESC/DESCRIBE command followed by table name to get the details.
+
+```sql
+DESC dpu_college.student;
+```
+| Field | Type | Null | Key | Default | Extra |
+|-------|------|------|-----|---------|-------|
+|ID			| int			| YES | | | |	
+|NAME		| varchar(50)	| YES | | |	|	
+|DEPT_ID	| char(1)		| YES | | |	|	
+|MARKS		| int			| YES | | |	|	
+
+
+
+
