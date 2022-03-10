@@ -7,7 +7,55 @@ We will take a use case where we will create a dpu_college database and within t
   ***DB:*** *dpu_college*
 
   ***Table:*** *student, dept, faculty*
+ 
+ **1. student**
+ <br>
+| ID |	NAME | DEPT_ID | MARKS |
+|----|-------|---------|-------|
+| 1	 | Hitesh Mishra	| F	| 68 |
+| 2	 | Pari Sharma	 	| H	| 96 |
+| 3	 | Ankit Gupta	 	| M	| 74 |
+| 4	 | Sanket Kumar	 	| F	| 54 |
+| 5	 | Priti Singh	 	| M	| 93 |
+| 6	 | Ganesh Murthy	| I	| 93 |
+| 7	 | Hari Prasad	 	| H	| 68 |
+| 8	 | Alka Desai	 	| F	| 56 |
+| 9	 | Shashwat Jain	| H	| 76 |
+| 10 | Nagma Khan	 	| F	| 71 |
+| 11 | Salma Siddqui	| M	| 51 |
+| 12 | Eric Brown	 	| H	| 61 |
+| 13 | Jagan Mohan	 	| H	| 78 |
+| 14 | Sardar Khan	 	| M	| 76 |
+| 15 | Deepak Singh	 	| I	| 66 |
+| 16 | Ashok Kumar	 	| B	| 89 |
+| 17 | Mayuri Shetty	| M	| 97 |
+| 18 | Vijay Garg	 	| M	| 54 |
+| 19 | Priyanka Aahuja 	| F	| 82 |
+| 20 | Anakhdeep Kaur	| B	| 62 |
 
+
+**2. dept**
+
+| ID |	NAME |
+|----|-------|
+| F	| Finance   |
+| H	| HR        |
+| M	| Marketing |
+| I	| IB        |
+| B	| BA        |
+
+**3. faculty**
+
+| ID |	NAME | DEPT_ID |
+|----|-------|---------|
+| f1 |	Vishnu Kissara	 		| M	|
+| f2 |	Manoj Muguvali	 		| F	|
+| f3 |	Sachin Dutta	 		| H	|
+| f4 |	Suhas Prabhu	 		| M	|
+| f5 |	Parikshit Khandivali	| I	|
+| f6 |	John Jacobs	 			| M	|
+| f7 |	Peter Macclister		| F	|
+| f8 |	Vibhu Tandon	 		| B	|
 
 ### Create  Database
 
