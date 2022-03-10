@@ -2,13 +2,13 @@
 
 In this chapter we will get into a bit of hands-on SQL coding, we will write basic SQL statements and will observe the output or the result and then will try to understand the working of a SQL statement.
 
-We will take a use case where we will create a dpu_college database and within this database we will create 3 tables student, dept and faculty.
+We will take a use case where we will create a dpu_college database and within this database we will create 3 tables student, dept and faculty. Then we will try to analyze the data using SQL.
 
   ***DB:*** *dpu_college*
 
   ***Table:*** *student, dept, faculty*
  
- **1. student**
+  **1. student**
  <br>
 | ID |	NAME | DEPT_ID | MARKS |
 |----|-------|---------|-------|
@@ -34,7 +34,7 @@ We will take a use case where we will create a dpu_college database and within t
 | 20 | Anakhdeep Kaur	| B	| 62 |
 
 
-**2. dept**
+ **2. dept**
 
 | ID |	NAME |
 |----|-------|
@@ -44,7 +44,7 @@ We will take a use case where we will create a dpu_college database and within t
 | I	| IB        |
 | B	| BA        |
 
-**3. faculty**
+ **3. faculty**
 
 | ID |	NAME | DEPT_ID |
 |----|-------|---------|
@@ -57,7 +57,9 @@ We will take a use case where we will create a dpu_college database and within t
 | f7 |	Peter Macclister		| F	|
 | f8 |	Vibhu Tandon	 		| B	|
 
-### Create  Database
+## Time to do some hands-on
+
+ ### Create  Database
 
 To create *dpu_college* database(db) we will use CREATE command which is basically a DDL command. Remember that in case of MySQL database is same as schema and it can be used interchangeably.
 
@@ -67,9 +69,49 @@ To create *dpu_college* database(db) we will use CREATE command which is basical
 CREATE DATABASE database_name;
 ```
 
-**Example:**
+**Create 'dpu_college' database:**
 
 ```sql
 CREATE DATABASE dpu_college;
+```
+
+ ### Create  Tables
+ 
+Here we need to create 3 tables under dpu_college database. For this we will use CREATE TABLE command and you can see in below syntax, database_name followed by dot followed by table name is written. This syntax signifies that the table will be created within the database mentioned.
+ 
+ **Syntax:**
+
+```sql
+CREATE TABLE database_name.table_name;
+```
+
+**Create 'student' table under dpu_college database:**
+
+```sql
+CREATE TABLE dpu_college.student(
+  ID int,
+  NAME varchar(50),
+  DEPT_ID char(1),
+  MARKS int
+  );
+```
+
+**Create 'dept' table under dpu_college database:**
+
+```sql
+CREATE TABLE dpu_college.dept(
+  ID char(1),
+  NAME varchar(50)
+  );
+```
+
+**Create 'faculty' table under dpu_college database:**
+
+```sql
+CREATE TABLE dpu_college.faculty(
+  ID char(2),
+  NAME varchar(50),
+  DEPT_ID char(1)
+  );
 ```
 
