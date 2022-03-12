@@ -136,7 +136,7 @@ You can see it shows all the databases available in your SQL environment.
 |trading            |
 |world              |
 
-You can see dpu_college is one of the database in the list. Let's go ahead and check the tables within dpu_college database.
+You can see dpu_college is one of the databases in the list. Let's go ahead and check the tables within dpu_college database.
 
 ```sql
 SHOW TABLES FROM dpu_college;
@@ -164,7 +164,7 @@ SELECT * FROM dpu_college.dept;
 SELECT * FROM dpu_college.faculty;
 ```
 
-After running each queries above you can see there is no data available in tables, its just the table structure has been created.
+After running each query above you can see there is no data available in tables, it's just the table structure has been created.
 
 If you want to check the structure of the table specifically columns in the table, data types and key attributes, you can use DESC/DESCRIBE command followed by table name to get the details.
 
@@ -244,7 +244,7 @@ VALUES('f1','Vishnu Kissara','M'),
 ('f8','Vibhu Tandon','B');
 ```
 
-We have inserted data into each of the three tables, now let's go ahead and check data in each of the tables. Run below queries to check data within each tables.
+We have inserted data into each of the three tables, now let's go ahead and check data in each of the table. Run below queries to check data within each tables.
 
 **Check data within 'student' table:**
 
