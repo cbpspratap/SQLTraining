@@ -31,7 +31,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - Insert Data into the Tables
 - Check the Data
 
-## [Chapter 4: Query Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%203)
+## [Chapter 4: Query Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%204)
 - Query a Table
 - Select Statement
 - Where Clause
