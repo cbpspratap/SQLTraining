@@ -1,4 +1,4 @@
-# Run SQL Statements
+# Create Table & Load Data
 
 In this chapter we will get into a bit of hands-on SQL coding, we will write basic SQL statements and will observe the output or the result and then will try to understand the working of a SQL statement.
 
