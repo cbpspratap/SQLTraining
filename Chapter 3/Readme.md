@@ -264,7 +264,7 @@ SELECT * FROM dpu_college.dept;
 SELECT * FROM dpu_college.faculty;
 ```
 
-_Awesome!_ you can see all the data we have loaded into the table can be seen here.
+_Awesome!_ you can see all the data we have loaded into the tables are available here.
 
 
 
