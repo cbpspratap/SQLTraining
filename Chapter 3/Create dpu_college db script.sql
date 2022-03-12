@@ -3,8 +3,8 @@
 Script to create dpu_college database and tables within it.
 DB Name: dpu_college
 Tables:	1. student
-		2. dept
-		3. faculty
+	2. dept
+	3. faculty
 */
 
 --Creates 'dpu_college' database in your sql instance
