@@ -92,4 +92,81 @@ SELECT * FROM dpu_college.faculty;
 SELECT * FROM dpu_college.dept;
 ```
 </details>
+<br>
+
+### Query Limited No of Records
+
+**Example:** Show top 10 records from student table
+> To limit the number of records use LIMIT at the end of SELECT statement
+
+```sql
+SELECT * FROM dpu_college.student
+LIMIT 10;
+```
+
+**Question 3:** Show top 5 records from faculty table
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT * FROM dpu_college.faculty
+  LIMIT 5;
+```
+</details>
+<br>
+
+**Question 4:** Show top 2 records from dept table
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT * FROM dpu_college.dept
+  LIMIT 2;
+```
+</details>
+
+
+### Query Only Required Columns
+
+**Example:** Show Name and Marks of all the students from student table
+> To limit the number of records use LIMIT at the end of SELECT statement
+
+```sql
+SELECT NAME, MARKS 
+FROM dpu_college.student;
+```
+
+**Question 5:** Show Name and DEPT_ID of all the faculties from faculty table and limit the number of records to 5
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT NAME, DEPT_ID
+  FROM dpu_college.faculty
+  LIMIT 5;
+```
+</details>
+<br>
+
+**Question 6:** Show Name of 2 departments from dept table
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT NAME
+  FROM dpu_college.dept
+  LIMIT 2;
+```
+</details>
+
+
+
+
+
+
+
 
