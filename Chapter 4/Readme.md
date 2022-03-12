@@ -35,7 +35,24 @@ Here we will see some basic data types which required for our function knowledge
   |DOUBLE(size, d) |A floating point number. The total number of digits is specified in size. The number of digits after the decimal point is specified in the d parameter, The difference between float and double is that DOUBLE is used when you want to achieve high accuracy because double has 64 bit (8 bytes) with 16 places accuracy.|
   |BIT(size) |IT is used to store bit values i.e a number containing 0’s and 1’s only. The number of bits per value is specified using the size parameter. The size parameter can hold a value from 1 to 64.|
 
+<br>
+
 **Date & Time Data Types**
+
+
+Date and Time data types are used to store temporal data, there are 5 data types to store date & time in MySQL.
+
+| Data type |	Description |
+|-----------|-------------|
+|DATE |A date. Format: YYYY-MM-DD. The supported range is from '1000-01-01' to '9999-12-31'|
+|DATETIME |A date and time combination. Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. Adding DEFAULT and ON UPDATE in the column definition to get automatic initialization and updating to the current date and time|
+|TIMESTAMP |A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch ('1970-01-01 00:00:00' UTC). Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1970-01-01 00:00:01' UTC to '2038-01-09 03:14:07' UTC. Automatic initialization and updating to the current date and time can be specified using DEFAULT CURRENT_TIMESTAMP and ON UPDATE CURRENT_TIMESTAMP in the column definition|
+|TIME |A time. Format: hh:mm:ss. The supported range is from '-838:59:59' to '838:59:59'|
+|YEAR |A year in four-digit format. Values allowed in four-digit format: 1901 to 2155, and 0000|
+
+
+
+
 
 
 
