@@ -8,7 +8,7 @@ Tables:	1. student
 */
 
 ##Drop any existing database with name dpu_college
-DROP DATABASE dpu_college;
+DROP DATABASE IF EXISTS dpu_college;
 
 ##Creates 'dpu_college' database in your sql instance
 CREATE DATABASE dpu_college;
@@ -56,8 +56,10 @@ VALUES(1,'Hitesh Mishra','F',68),
 (17,'Mayuri Shetty','M',85),
 (18,'Vijay Garg','M',50),
 (19,'Priyanka Aahuja','F',69),
-(20,'Anakhdeep Kaur','B',89)
-(21,'Geeta Kumari','B')
+(20,'Anakhdeep Kaur','B',89),
+(21,'Geeta Kumari','B',null),
+(22,'Anupma Sinha','H',null),
+(23,'Anjali Singh',null,null)
 ;
 
 ##Insert data into 'dept' table under dpu_college database
@@ -77,4 +79,6 @@ VALUES('f1','Vishnu Kissara','M'),
 ('f5','Parikshit Khandivali','I'),
 ('f6','John Jacobs','M'),
 ('f7','Peter Macclister','F'),
-('f8','Vibhu Tandon','B');
+('f8','Vibhu Tandon','B'),
+('f8','Manish Ratna',null)
+;
