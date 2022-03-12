@@ -62,6 +62,8 @@ To query a table means extracting data from the table and SQL has a specific DQL
 
 To start querying the data, lets use our dpu_college database([click here](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%204/Create%20dpu_college%20db%20script.sql) to get the sql script to create dpu_college db). You can use [db-fiddle](https://www.db-fiddle.com/) or MySQL Workbench in your local machine to run the queries
 
+<br>
+
 ### Query Entire Table
 
 **Example:** Show all the data in student table within dpu_college database
@@ -92,6 +94,7 @@ SELECT * FROM dpu_college.faculty;
 SELECT * FROM dpu_college.dept;
 ```
 </details>
+
 <br>
 
 ### Query Limited No of Records
@@ -127,6 +130,7 @@ LIMIT 2;
 ```
 </details>
 
+<br>
 
 ### Query Only Required Columns
 
@@ -163,6 +167,7 @@ LIMIT 2;
 ```
 </details>
 
+<br>
 
 ### Filter Data Based on Where Condition
 
