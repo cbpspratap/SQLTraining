@@ -266,5 +266,6 @@ SELECT * FROM dpu_college.faculty;
 
 _Awesome!_ you can see all the data we have loaded into the tables are available here.
 
+** _You can access the script used to create tables and insert data [here_](url)
 
 
