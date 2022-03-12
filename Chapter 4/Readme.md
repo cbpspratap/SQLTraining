@@ -50,10 +50,9 @@ Date and Time data types are used to store temporal data, there are 5 data types
 |TIME |A time. Format: hh:mm:ss. The supported range is from '-838:59:59' to '838:59:59'|
 |YEAR |A year in four-digit format. Values allowed in four-digit format: 1901 to 2155, and 0000|
 
+<br>
 
-
-
-
+## Querying Table
 
 
 
