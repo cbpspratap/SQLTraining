@@ -111,7 +111,7 @@ LIMIT 10;
 
 ```sql
 SELECT * FROM dpu_college.faculty
-  LIMIT 5;
+LIMIT 5;
 ```
 </details>
 <br>
@@ -123,7 +123,7 @@ SELECT * FROM dpu_college.faculty
 
 ```sql
 SELECT * FROM dpu_college.dept
-  LIMIT 2;
+LIMIT 2;
 ```
 </details>
 
@@ -145,8 +145,8 @@ FROM dpu_college.student;
 
 ```sql
 SELECT NAME, DEPT_ID
-  FROM dpu_college.faculty
-  LIMIT 5;
+FROM dpu_college.faculty
+LIMIT 5;
 ```
 </details>
 <br>
@@ -158,13 +158,35 @@ SELECT NAME, DEPT_ID
 
 ```sql
 SELECT NAME
-  FROM dpu_college.dept
-  LIMIT 2;
+FROM dpu_college.dept
+LIMIT 2;
 ```
 </details>
 
 
+### Filter Data Based on Where Condition
 
+**Example:** Show Name and Marks of all the students for whom DEPT_ID is 'H' from student table
+> To filter out data based on certain condition use WHERE clause after the table name in SELECT statement
+
+```sql
+SELECT NAME, MARKS 
+FROM dpu_college.student
+WHERE DEPT_ID ='H';
+```
+
+**Question 7:** Show data from faculty table where DEPT_ID is 'M'
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT NAME, DEPT_ID
+FROM dpu_college.faculty
+WHERE DEPT_ID ='M';
+```
+</details>
+<br>
 
 
 
