@@ -70,7 +70,7 @@ SELECT * FROM dpu_college.student;
 ```
 
 
-**Question 1: Show all the data in faculty table within dpu_college database**
+**Question 1:** Show all the data in faculty table within dpu_college database
 
 <details>
   <summary>Click here to reveal the solution!</summary>
@@ -79,8 +79,8 @@ SELECT * FROM dpu_college.student;
 SELECT * FROM dpu_college.faculty;
 ```
 </details>
-
-**Question 2: Show all the data in dept table within dpu_college database**
+<br>
+**Question 2:** Show all the data in dept table within dpu_college database
 
 <details>
   <summary>Click here to reveal the solution!</summary>
