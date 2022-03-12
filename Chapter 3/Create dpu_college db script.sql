@@ -7,6 +7,9 @@ Tables:	1. student
 	3. faculty
 */
 
+--Drop any existing database with name dpu_college
+DROP DATABASE dpu_college;
+
 --Creates 'dpu_college' database in your sql instance
 CREATE DATABASE dpu_college;
 
