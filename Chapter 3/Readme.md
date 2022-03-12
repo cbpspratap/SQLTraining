@@ -266,6 +266,6 @@ SELECT * FROM dpu_college.faculty;
 
 _Awesome!_ you can see all the data we have loaded into the tables are available here.
 
-** _You can access the script used to create tables and insert data [here_](url)
+** _You can access the script used to create tables and insert data [here](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%203/Create%20dpu_college%20db%20script.sql) or go to Chapter 3 folder to access the sql script_
 
 
