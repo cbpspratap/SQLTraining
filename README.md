@@ -25,9 +25,13 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Data Control Language (DCL)
   - Transaction Control Language (TCL)
 
-## [Chapter 3: Run SQL Statements](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%203)
-- Create/Drop a Databse
-- Create/Drop a Table
+## [Chapter 3: Create Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%203)
+- Create a Databse
+- Create Tables
+- Insert Data into the Tables
+- Check the Data
+
+## [Chapter 4: Query Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%203)
 - Query a Table
 - Select Statement
 - Where Clause
