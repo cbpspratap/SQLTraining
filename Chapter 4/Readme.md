@@ -186,13 +186,37 @@ WHERE DEPT_ID ='H';
   <summary>Click here to reveal the solution!</summary>
 
 ```sql
-SELECT NAME, DEPT_ID
+SELECT *
 FROM dpu_college.faculty
 WHERE DEPT_ID ='M';
 ```
 </details>
 <br>
 
+### Order the Data
+
+**Example:** Show data of all the students in descending order by marks from student table
+> To order data using a particular column use ORDER BY caluse followed by ASC|DESC(Ascending/Descending) after WHERE clause in SELECT statement
+
+```sql
+SELECT *
+FROM dpu_college.student
+ORDER BY MARKS DESC;
+```
+
+**Question 7:** Show data from student table where DEPT_ID is 'M' and order it by Name in ascending order
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT *
+FROM dpu_college.student
+WHERE DEPT_ID ='M'
+ORDER BY NAME ASC;
+```
+</details>
+<br>
 
 
 
