@@ -60,7 +60,7 @@ To query a table means extracting data from the table and SQL has a specific DQL
  
 <img src="https://user-images.githubusercontent.com/67796162/158032526-4ee208a0-f962-4730-a27d-0617ad0b3e67.png" width="669" height="350" />
 
-To start querying the data, lets use our dpu_college database(click [here](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%204/Create%20dpu_college%20db%20script.sql) to get the sql script to create the db). You can use [db-fiddle](https://www.db-fiddle.com/) or MySQL Workbench in your local machine to run the queries
+To start querying the data, lets use our dpu_college database([click here](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%204/Create%20dpu_college%20db%20script.sql) to get the sql script to create dpu_college db). You can use [db-fiddle](https://www.db-fiddle.com/) or MySQL Workbench in your local machine to run the queries
 
 ### Query Entire Table
 
