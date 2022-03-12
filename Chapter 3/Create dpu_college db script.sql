@@ -1,5 +1,5 @@
 /*
---For training Purpose--
+##For training Purpose##
 Script to create dpu_college database and tables within it.
 DB Name: dpu_college
 Tables:	1. student
@@ -7,13 +7,13 @@ Tables:	1. student
 	3. faculty
 */
 
---Drop any existing database with name dpu_college
+##Drop any existing database with name dpu_college
 DROP DATABASE dpu_college;
 
---Creates 'dpu_college' database in your sql instance
+##Creates 'dpu_college' database in your sql instance
 CREATE DATABASE dpu_college;
 
---Creates 'student' table under dpu_college database
+##Creates 'student' table under dpu_college database
 CREATE TABLE dpu_college.student(
   ID int,
   NAME varchar(50),
@@ -21,13 +21,13 @@ CREATE TABLE dpu_college.student(
   MARKS int
   );
   
---Creates 'dept' table under dpu_college database
+##Creates 'dept' table under dpu_college database
 CREATE TABLE dpu_college.dept(
   ID char(1),
   NAME varchar(50)
   );
   
---Creates 'faculty' table under dpu_college database
+##Creates 'faculty' table under dpu_college database
 CREATE TABLE dpu_college.faculty(
   ID char(2),
   NAME varchar(50),
@@ -35,7 +35,7 @@ CREATE TABLE dpu_college.faculty(
   );
   
  
---Inserts data into 'student' table under dpu_college database
+##Inserts data into 'student' table under dpu_college database
 INSERT INTO dpu_college.student (ID, NAME, DEPT_ID, MARKS)
 VALUES(1,'Hitesh Mishra','F',68),
 (2,'Pari Sharma','H',96),
@@ -56,9 +56,11 @@ VALUES(1,'Hitesh Mishra','F',68),
 (17,'Mayuri Shetty','M',85),
 (18,'Vijay Garg','M',50),
 (19,'Priyanka Aahuja','F',69),
-(20,'Anakhdeep Kaur','B',89);
+(20,'Anakhdeep Kaur','B',89)
+(21,'Geeta Kumari','B')
+;
 
---Insert data into 'dept' table under dpu_college database
+##Insert data into 'dept' table under dpu_college database
 INSERT INTO dpu_college.dept (ID, NAME)
 VALUES('F','Finance'),
 ('H','HR'),
@@ -66,7 +68,7 @@ VALUES('F','Finance'),
 ('I','IB'),
 ('B','BA');
 
---Insert data into 'faculty' table under dpu_college database:**
+##Insert data into 'faculty' table under dpu_college database
 INSERT INTO dpu_college.faculty (ID, NAME, DEPT_ID)
 VALUES('f1','Vishnu Kissara','M'),
 ('f2','Manoj Muguvali','F'),
