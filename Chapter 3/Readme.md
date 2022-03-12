@@ -179,7 +179,7 @@ DESC dpu_college.student;
 |MARKS		| int			| YES | | |	|	
 
 
- ### Insert Data to Tables
+ ### Insert Data Into The Tables
  
  Since we don't have any data in tables yet, it's time to insert some data into tables.
  
@@ -243,5 +243,28 @@ VALUES('f1','Vishnu Kissara','M'),
 ('f7','Peter Macclister','F'),
 ('f8','Vibhu Tandon','B');
 ```
+
+We have inserted data into each of the three tables, now let's go ahead and check data in each of the tables. Run below queries to check data within each tables.
+
+**Check data within 'student' table:**
+
+```sql
+SELECT * FROM dpu_college.student;
+```
+
+**Check data within 'dept' table:**
+
+```sql
+SELECT * FROM dpu_college.dept;
+```
+
+**Check data within 'faculty' table:**
+
+```sql
+SELECT * FROM dpu_college.faculty;
+```
+
+_Awesome!_ you can see all the data we have loaded into the table can be seen here.
+
 
 
