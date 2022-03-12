@@ -54,5 +54,17 @@ Date and Time data types are used to store temporal data, there are 5 data types
 
 ## Querying Table
 
+As of now you have already ran several sql statements and queried multiple tables. So let's get straight into understanding and running SELECT statement along with when and how to use it.
 
+To query a table means extracting data from the table and SQL has a specific DQL command for this task and that's SELECT statement. Select Statement consist of at least 4 parts.
+ 
+<img src="https://user-images.githubusercontent.com/67796162/158032526-4ee208a0-f962-4730-a27d-0617ad0b3e67.png" width="669" height="350" />
+
+To start with our data query journey, lets use our dpu_college database(click [here](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%204/Create%20dpu_college%20db%20script.sql) to get the sql script to create the db). You can use [db-fiddle](https://www.db-fiddle.com/) or MySQL Workbench in your local machine to run the queries
+
+> To get the entire data from all the comuns of a table you need to use asterisk(\*) in the SELECT statement
+
+```sql
+SELECT * FROM table;
+```
 
