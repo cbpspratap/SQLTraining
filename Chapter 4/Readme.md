@@ -69,3 +69,24 @@ To start querying the data, lets use our dpu_college database(click [here](https
 SELECT * FROM dpu_college.student;
 ```
 
+
+**Question 1: Show all the data in faculty table within dpu_college database**
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT * FROM dpu_college.faculty;
+```
+</details>
+
+**Question 2: Show all the data in dept table within dpu_college database**
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT * FROM dpu_college.dept;
+```
+</details>
+
