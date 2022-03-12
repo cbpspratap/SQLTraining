@@ -62,7 +62,9 @@ To query a table means extracting data from the table and SQL has a specific DQL
 
 To start querying the data, lets use our dpu_college database(click [here](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%204/Create%20dpu_college%20db%20script.sql) to get the sql script to create the db). You can use [db-fiddle](https://www.db-fiddle.com/) or MySQL Workbench in your local machine to run the queries
 
-**Show all the data in student table within dpu_college database**
+### Query Entire Table
+
+**Example:** Show all the data in student table within dpu_college database
 > To get the entire data from all the comuns of a table you need to use asterisk(\*) in the SELECT statement
 
 ```sql
@@ -80,6 +82,7 @@ SELECT * FROM dpu_college.faculty;
 ```
 </details>
 <br>
+
 **Question 2:** Show all the data in dept table within dpu_college database
 
 <details>
