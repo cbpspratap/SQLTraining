@@ -35,11 +35,9 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - Data Types
 - Querying table 
   - Select Statement
-  - Where Clause
-  - Group BY Clause
-  - Having Clause
-  - Order By Clause
   - Limit Clause
+  - Where Clause
+  - Order By Clause
 
 
 
