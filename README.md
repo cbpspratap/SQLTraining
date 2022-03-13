@@ -39,7 +39,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Filtering Data using a condition
   - Sorting Data
 
-## [Chapter 5: SQL Operators & Clauses](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%204)
+## [Chapter 5: SQL Operators & Clauses](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%205)
 - Operators in SQL
   - Arithmetic Operators
   - Comparison Operators
