@@ -193,7 +193,7 @@ WHERE DEPT_ID ='M';
 </details>
 <br>
 
-### Order the Data
+### Sort the Data
 
 **Example:** Show data of all the students in descending order by marks from student table
 > To order data using a particular column use ORDER BY caluse followed by ASC|DESC(Ascending/Descending) after WHERE clause in SELECT statement
