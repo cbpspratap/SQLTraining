@@ -34,11 +34,21 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 ## [Chapter 4: Data Type & Querying Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%204)
 - Data Types
 - Querying table 
-  - Select Statement
-  - Limit Clause
-  - Where Clause
-  - Order By Clause
+  - Selecting Data
+  - Limiting the number of Records
+  - Filtering Data using a condition
+  - Sorting Data
 
+## [Chapter 5: SQL Operators & Clauses](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%204)
+- Operators in SQL
+  - Arithmetic Operators
+  - Comparison Operators
+  - Logical Operators
+- Clause in SQL 
+  - Where Clause
+  - Group By Clause
+  - Order By Clause
+  - Distinct Clause
 
 
 
