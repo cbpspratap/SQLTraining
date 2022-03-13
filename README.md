@@ -43,6 +43,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - Clause in SQL 
   - Where Clause
   - Group By Clause
+  - Having Clause
   - Order By Clause
   - Distinct Clause
 - Operators in SQL
