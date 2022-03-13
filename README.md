@@ -47,6 +47,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Having Clause
   - Order By Clause
   - Distinct Clause
+  - Limit Clause
 - Operators in SQL
   - Arithmetic Operators
   - Comparison Operators
