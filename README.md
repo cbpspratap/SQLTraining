@@ -42,6 +42,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 ## [Chapter 5: SQL Clauses & Operators](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%205)
 - Clause in SQL 
   - Where Clause
+  - Like Clause
   - Group By Clause
   - Having Clause
   - Order By Clause
