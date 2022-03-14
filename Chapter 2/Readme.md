@@ -5,6 +5,7 @@ DELETE, DROP and few more. These commands can be classified into groups based on
 
 ![image](https://user-images.githubusercontent.com/67796162/155881340-f5765cfd-7c47-4a2c-a55d-5551d570afca.png)
 
+<br>
 
 ### DDL - Data Definition Language:
 
@@ -44,6 +45,41 @@ CREATE TABLE Student (
 );
 ```
 
+<br>
+
+**Syntax:** ***ALTER TABLE***
+
+> ALTER TABLE: Add Column
+
+```sql
+ALTER TABLE table_name
+ADD column_name datatype;
+```
+
+
+> ALTER TABLE: Drop Column
+
+```sql
+ALTER TABLE table_name
+DROP column_name datatype;
+```
+
+> ALTER TABLE: Modify Column
+
+```sql
+ALTER TABLE table_name
+MODIFY column_name datatype;
+```
+
+**Example:** Add Department column to the existing Student table you just created.
+
+```sql
+ALTER TABLE Student
+ADD Department varchar(25);
+```
+
+<br>
+
 **Syntax:** ***DROP TABLE***
 
 ```sql
@@ -58,6 +94,7 @@ DROP TABLE Student;
 
 *Note- Please Create the Student table again to make sure next examples work correctly*
 
+<br>
 
 ### DML - Data Manipulation Language:
 
@@ -68,6 +105,8 @@ DML Statements are used to work on the data within the tables or in simple words
 | INSERT   | Inserts the data into a table        |
 | UPDATE   | Update the existing data in a table  |   
 | DELETE   | Delete the data records from a table |
+
+<br>
 
 **Syntax:** ***INSERT***
 
@@ -96,6 +135,7 @@ VALUES (001, "Ankit", "Mittal", "Pune", 78),
        (005, "Abhishek", "Jain", "Mumbai", 65);
 ```
 
+<br>
 
 ### DQL - Data Query Language:
 
@@ -105,6 +145,8 @@ DQL statement is used to fetch the data from the database.  With the help of DQL
 | Command | Description                                 |
 |---------|---------------------------------------------|
 | SELECT  | Retrives data from one or more tables       |
+
+<br>
 
 **Syntax:** ***SELECT***
 
@@ -120,6 +162,8 @@ SELECT FirstName, LastName, Address
 FROM Student;
 ```
 
+<br>
+
 ### DCL - Data Control Language:
 
 DCL commands are used to give rights and permissions on database system.
@@ -129,7 +173,7 @@ DCL commands are used to give rights and permissions on database system.
 | GRANT   | To give user access privileges to a database.                              |
 | REVOKE  | To withdraw the user’s access privileges given by using the GRANT command. |
 
-
+<br>
 
 ### TCL - Transaction Control Language:
 
