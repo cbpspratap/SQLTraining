@@ -137,6 +137,40 @@ VALUES (001, "Ankit", "Mittal", "Pune", 78),
 
 <br>
 
+**Syntax:** ***UPDATE***
+
+```sql
+UPDATE TABLE_NAME
+SET column1 = value1, column2 = value2
+WHERE condition;
+```
+
+**Example:** Update the Marks of Abhishek Jain to 63
+
+```sql
+UPDATE Student
+SET Mark = 63
+WHERE FirstName='Abhishek';
+```
+
+<br>
+
+**Syntax:** ***DELETE***
+
+```sql
+DELETE FROM TABLE_NAME
+WHERE condition;
+```
+
+**Example:** Delete the data for Deepak Singh
+
+```sql
+DELETE FROM Student
+WHERE FirstName='Deepak' AND LastName='Singh';
+```
+
+<br>
+
 ### DQL - Data Query Language:
 
 DQL statement is used to fetch the data from the database.  With the help of DQL query we can get the data from the database to perform actions or operations like analysing the data. 
