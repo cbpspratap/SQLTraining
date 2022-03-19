@@ -20,6 +20,23 @@ DDL statements are used to build and modify the structure of your tables and oth
 | DROP     | Deletes an entire table, a view of a table or other object in the database.|
 | TRUNCATE | Deletes the data inside a table, but not the table itself.                 |
  
+ 
+ <br>
+
+**Syntax:** ***CREATE DATABASE***
+
+```sql
+CREATE DATABASE database_name; 
+```
+
+**Example:** Create dpu database
+
+```sql
+CREATE DATABASE dpu
+);
+```
+ 
+ 
 <br>
 
 **Syntax:** ***CREATE TABLE***
@@ -28,7 +45,7 @@ DDL statements are used to build and modify the structure of your tables and oth
 CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]); 
 ```
 
-**Example:** Create a Student table with following columns
+**Example:** Create a Student table with following columns in dpu database
 - StudentID
 - LastName
 - FirstName
@@ -36,7 +53,7 @@ CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]);
 - Mark
 
 ```sql
-CREATE TABLE Student (
+CREATE TABLE dpu.Student (
     StudendId int,
     LastName varchar(255),
     FirstName varchar(255),
@@ -74,7 +91,7 @@ MODIFY column_name datatype;
 **Example:** Add Department column to the existing Student table you just created.
 
 ```sql
-ALTER TABLE Student
+ALTER TABLE dpu.Student
 ADD Department varchar(25);
 ```
 
@@ -89,7 +106,7 @@ DROP TABLE table_name;
 **Example:** Drop the Student table you just created.
 
 ```sql
-DROP TABLE Student;
+DROP TABLE dpu.Student;
 ```
 
 *Note- Please Create the Student table again to make sure next examples work correctly*
@@ -127,7 +144,7 @@ VALUES (value1, value2, value3, .... valueN);
 **Example:** Insert data into students table
 
 ```sql
-INSERT INTO Student (StudendId, FirstName, LastName, Address, Mark)
+INSERT INTO dpu.Student (StudendId, FirstName, LastName, Address, Mark)
 VALUES (001, "Ankit", "Mittal", "Pune", 78),
        (002, "Hitesh", "Mishra", "Bangalore", 83),
        (003, "Deepak", "Singh", "Mumbai", 84),
@@ -148,7 +165,7 @@ WHERE condition;
 **Example:** Update the Marks of Abhishek Jain to 63
 
 ```sql
-UPDATE Student
+UPDATE dpu.Student
 SET Mark = 63
 WHERE FirstName='Abhishek';
 ```
@@ -165,7 +182,7 @@ WHERE condition;
 **Example:** Delete the data for Deepak Singh
 
 ```sql
-DELETE FROM Student
+DELETE FROM dpu.Student
 WHERE FirstName='Deepak' AND LastName='Singh';
 ```
 
@@ -193,7 +210,7 @@ FROM table_name;
 
 ```sql
 SELECT FirstName, LastName, Address
-FROM Student;
+FROM dpu.Student;
 ```
 
 <br>
