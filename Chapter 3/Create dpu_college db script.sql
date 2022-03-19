@@ -59,7 +59,14 @@ VALUES(1,'Hitesh Mishra','F',68),
 (20,'Anakhdeep Kaur','B',89),
 (21,'Geeta Kumari','B',null),
 (22,'Anupma Sinha','H',null),
-(23,'Anjali Singh',null,null)
+(23,'Anjali Singh',null,null),
+(24,'Anakhdeep Kaur','H',74),
+(25,'Priti Singh','F',68),
+(26,'Deepak Singh','I',96),
+(27,'Ankit Gupta','M',39),
+(28,'Priti Singh','F',75),
+(29,'Preeti Kumari','B',57),
+(30,'Ankur Kumar','M',83)
 ;
 
 ##Insert data into 'dept' table under dpu_college database
