@@ -43,11 +43,11 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - Clause in SQL 
   - Where Clause
   - Like Clause
-  - Group By Clause
-  - Having Clause
-  - Order By Clause
   - Distinct Clause
   - Limit Clause
+  - Order By Clause
+  - Group By Clause
+  - Having Clause
 - Operators in SQL
   - Arithmetic Operators
   - Comparison Operators
