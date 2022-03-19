@@ -114,5 +114,52 @@ WHERE NAME LIKE '%Singh';
 
 <br>
 
+### Distinct Clause
+
+The DISTINCT caluse is get only distinct(unique/different) values from the columns of a table. Many  time you will see that some of the columns in the table can contain duplicate values but you would only like to see the unique ones or those which are different from each other, to get such values you will need to use Select Distinct .
+
+**Syntax**
+
+```sql
+SELECT DISTINCT column1
+FROM table_name;
+```
+
+**Example**
+
+> Show the name, department id and marks of all the students who scored more than 80 from student table
+
+```sql
+SELECT DISTINCT NAME
+FROM dpu_college.student;
+```
+<br>
+
+**Question 4:** Show all the unique student names and their department from student table where DEPT_ID is 'F'.
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT DISTINCT NAME, DEPT_ID 
+FROM dpu_college.student
+WHERE DEPT_ID='F';
+```
+</details>
+
+<br>
+
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/67796162/159111966-dad2c265-099c-47df-b016-552bb5572d4b.png)
 
 
