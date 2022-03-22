@@ -265,7 +265,47 @@ GROUP BY DEPT_ID;
 
 <br>
 
+### HAVING Clause
 
+Just Like WHERE clause HAVING caluse is also used to filter the data based on condition, but WHERE condition cannot filter data from aggregate columns. So to filter data from aggregate columns we need to use HAVING clause. Since HAVING clause always comes in picture where we have some kind of aggregation it is always specified after GROUP BY.
+
+**Syntax**
+
+```sql
+SELECT column_names
+FROM table_name
+WHERE condition
+GROUP BY column_names
+HAVING condition;
+```
+
+**Example**
+
+> Show all the departments with count of faculties where count of faculties is 2 or more from faculty table.
+
+```sql
+SELECT DEPT_ID, count(NAME)
+FROM dpu_college.faculty
+GROUP BY DEPT_ID
+HAVING count(NAME) >= 2;
+```
+<br>
+
+**Question 8:** Show all the department where number of student who scored 50 marks or higher is more than 5 from student table.
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT DEPT_ID, count(NAME) 
+FROM dpu_college.student
+WHERE MARKS >= 50
+GROUP BY DEPT_ID
+HAVING count(NAME) > 5;
+```
+</details>
+
+<br>
 
 
 
