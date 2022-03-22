@@ -267,7 +267,7 @@ GROUP BY DEPT_ID;
 
 ### HAVING Clause
 
-Just Like WHERE clause HAVING caluse is also used to filter the data based on condition, but WHERE condition cannot filter data from aggregate columns. So to filter data from aggregate columns we need to use HAVING clause. Since HAVING clause always comes in picture where we have some kind of aggregation it is always specified after GROUP BY.
+Just Like WHERE clause HAVING caluse is also used to filter the data based on condition, but WHERE condition cannot filter data from aggregate columns. So to filter data from aggregate columns we need to use HAVING clause. Since HAVING clause always comes in picture where we have some kind of aggregation, it is always specified after GROUP BY clause.
 
 **Syntax**
 
