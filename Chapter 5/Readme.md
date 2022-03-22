@@ -11,15 +11,16 @@ Clauses are in-built functions available in SQL, with the help of clauses we can
 Below are some of the SQL Clauses:
 - Where Clause
 - Like Clause
-- Group By Clause
-- Having Clause
-- Order By Clause
 - Distinct Clause
 - Limit Clause
+- Order By Clause
+- Group By Clause
+- Having Clause
+
 
 <br>
 
-### Where Clause
+### WHERE Clause
 
 The SQL WHERE clause is used to specify a condition while fetching the data from a single table or by joining multiple tables. Based on the given condition it returns a specific value from the table. WHERE clause should be used to filter the records and fetching only the necessary records.
 
@@ -59,7 +60,7 @@ ORDER BY NAME ASC;
 
 <br>
 
-### Like Clause
+### LIKE Clause
 
 The SQL LIKE clause is used to compare a value to similar values using wildcard operators. There are two wildcards used in conjunction with the LIKE operator in Where Clause.
 
@@ -114,9 +115,9 @@ WHERE NAME LIKE '%Singh';
 
 <br>
 
-### Distinct Clause
+### DISTINCT Clause
 
-The DISTINCT caluse is get only distinct(unique/different) values from the columns of a table. Many  time you will see that some of the columns in the table can contain duplicate values but you would only like to see the unique ones or those which are different from each other, to get such values you will need to use Select Distinct .
+The DISTINCT caluse is get only distinct(unique/different) values from the columns of a table. Many  time you will see that some of the columns in the table can contain duplicate values but you would only like to see the unique ones or those which are different from each other, to get such values you will need to use Select Distinct.
 
 **Syntax**
 
@@ -149,7 +150,120 @@ WHERE DEPT_ID='F';
 
 <br>
 
+### LIMIT Clause
 
+The LIMIT clause is used to specify the number of records to return. It is is useful when you want to see the data from a large table with more than thousands of records. Returning a large number of records may not be useful every time and can impact performance and operating cost, so its useful to limit the number of records you query from a table.
+
+**Syntax**
+
+```sql
+SELECT column_names
+FROM table_name
+WHERE condition
+LIMIT number;
+```
+
+**Example**
+
+> Show two records from faculty table
+
+```sql
+SELECT * 
+FROM dpu_college.faculty
+LIMIT 2;
+```
+<br>
+
+**Question 5:** Show top 5 records from student table where marks is greater than or equal to 70
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT * 
+FROM dpu_college.student
+WHERE MARKS >= 70
+LIMIT 5;
+```
+</details>
+
+<br>
+
+### ORDER BY Clause
+
+The ORDER BY Clause is used to sort the records in ascending or descending order. When you use the SELECT statement to query data from a table, the order of rows in the result set is unspecified. To sort the rows in the result set, you add the ORDER BY clause to the SELECT statement.
+
+**Syntax**
+
+```sql
+SELECT column_names
+FROM table_name
+ORDER BY column_name [ASC|DESC];
+```
+
+**Example**
+
+> Query faculty table and order the data by the name in ascending order.
+
+```sql
+SELECT * 
+FROM dpu_college.faculty
+ORDER BY NAME ASC;
+```
+<br>
+
+**Question 6:** Query student table to show top 10 records ordered by their marks in descending order.
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT * 
+FROM dpu_college.student
+ORDER BY MARKS DESC
+LIMIT 10;
+```
+</details>
+
+<br>
+
+### GROUP BY Clause
+
+The GROUP BY clause groups a set of rows into a set of summary rows by values of columns or expressions. The GROUP BY clause returns one row for each group. The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+**Syntax**
+
+```sql
+SELECT column_names
+FROM table_name
+GROUP BY column_names;
+```
+
+**Example**
+
+> Show number of faculties in each department from faculty table
+
+```sql
+SELECT DEPT_ID, count(NAME)
+FROM dpu_college.faculty
+GROUP BY DEPT_ID;
+```
+<br>
+
+**Question 7:** Show the number of students in each department who scored more than 60 marks from student table.
+
+<details>
+  <summary>Click here to reveal the solution!</summary>
+
+```sql
+SELECT DEPT_ID, count(NAME) 
+FROM dpu_college.student
+WHERE MARKS > 60
+GROUP BY DEPT_ID;
+```
+</details>
+
+<br>
 
 
 
