@@ -26,11 +26,11 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Transaction Control Language (TCL)
 
 ## [Chapter 3: Understand Data Types, Create Table & Load Data](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%203)
+- Data Types in SQL
 - Create a Databse
 - Create Tables
 - Insert Data into the Tables
 - Check the Data
-- Data Types
 
 ## [Chapter 4: Querying Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%204)
 - Querying table 
