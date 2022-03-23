@@ -16,22 +16,25 @@ CREATE DATABASE dpu_college;
 ##Creates 'student' table under dpu_college database
 CREATE TABLE dpu_college.student(
   ID int,
-  NAME varchar(50),
+  NAME varchar(50) NOT NULL,
   DEPT_ID char(1),
-  MARKS int
+  MARKS int,
+  PRIMARY KEY(ID)
   );
   
 ##Creates 'dept' table under dpu_college database
 CREATE TABLE dpu_college.dept(
   ID char(1),
-  NAME varchar(50)
+  NAME varchar(50) NOT NULL,
+  PRIMARY KEY(ID)
   );
   
 ##Creates 'faculty' table under dpu_college database
 CREATE TABLE dpu_college.faculty(
   ID char(2),
-  NAME varchar(50),
-  DEPT_ID char(1)
+  NAME varchar(50) NOT NULL,
+  DEPT_ID char(1),
+  PRIMARY KEY(ID)
   );
   
  
