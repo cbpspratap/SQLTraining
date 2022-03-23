@@ -143,9 +143,10 @@ CREATE TABLE database_name.table_name;
 ```sql
 CREATE TABLE dpu_college.student(
   ID int,
-  NAME varchar(50),
+  NAME varchar(50) NOT NULL,
   DEPT_ID char(1),
-  MARKS int
+  MARKS int,
+  PRIMARY KEY(ID)
   );
 ```
 
