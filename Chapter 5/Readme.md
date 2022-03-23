@@ -36,16 +36,16 @@ SQL operators are primarily used within the WHERE clause of an SQL statement. Th
 
 There are mainly 4 types of SQL operators as below:
 - Arithmetic operators
-- Bitwise operators
 - Comparison operators
 - Logical operators
+- Bitwise operator
 
 
 ### Arithmetic Operators 
 
 Arithmetic operators are used for mathematical operations on numerical data, such as adding or subtracting.
 
-> For Example consider a = 10 and b = 20
+> For Example, consider a = 10 and b = 20
 
 | Operator | Description | Example |
 |----------|-------------|---------|
@@ -55,7 +55,27 @@ Arithmetic operators are used for mathematical operations on numerical data, suc
 | / |	Divide- Divides left hand operand by right hand operand | b / a will give 2 |
 | % |	Modulo- Divides left hand operand by right hand operand and returns remainder | b % a will give 0 |
 
+<br>
 
+### Comparison Operators 
+
+A comparison operator is used to compare two values and test whether they are the same.
+
+> For Example, consider a = 10 and b = 20
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+| = |	Checks if the values of two operands are equal or not, if yes then condition becomes true. | (a = b) is not true |
+| != | Checks if the values of two operands are equal or not, if values are not equal then condition becomes true. | (a != b) is true |
+| <> |	Checks if the values of two operands are equal or not, if values are not equal then condition becomes true. | (a <> b) is true |
+| > |	Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true. | (a > b) is not true |
+| < |	Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true. | (a < b) is true |
+| >= | Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true. | (a >= b) is not true |
+| <= | Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true. | (a <= b) is true |
+| !< | Checks if the value of left operand is not less than the value of right operand, if yes then condition becomes true. | (a !< b) is false |
+| !> | Checks if the value of left operand is not greater than the value of right operand, if yes then condition becomes true. | (a !> b) is true |
+
+<br>
 
 
 
