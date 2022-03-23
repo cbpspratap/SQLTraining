@@ -16,7 +16,6 @@ As you have already practiced in previous chapters how to query a table, here is
 
 <br>
 
-
 ### SQL Execution Order
 
 Now when you know the order in which SQL keywords are written, lets see the order in which the SQL keywords are exectued when you ran a select query.
@@ -77,9 +76,42 @@ A comparison operator is used to compare two values and test whether they are th
 
 <br>
 
+### Logical Operators 
+
+Logical operators are those that return true or false, such as the AND operator, which returns true when both expressions are met.
+
+| Operator | Description |
+|----------|-------------|
+| BETWEEN | It is used to search within a set of values, by the minimum value and maximum value provided. |
+| EXISTS | It is used to search for the presence of a row in a table which satisfies a certain condition specified in the query. |
+| OR | It is used to combine multiple conditions in a statement by using the WHERE clause. |
+| AND | It allows the existence of multiple conditions in an SQL statement’s WHERE clause. |
+| NOT | It reverses the meaning of the logical operator with which it is used. (Examples: NOT EXISTS, NOT BETWEEN, NOT IN, etc.) |
+| IN | It is used to compare a value in a list of literal values. |
+| ALL | It compares a value to all values in another set of values. |
+| ANY | It compares a value to any value in the list according to the condition specified. |
+| LIKE | It uses wildcard operators to compare a value to similar values. |
+| IS NULL | It compares a value with a NULL value. |
+| UNIQUE | It searches for every row of a specified table for uniqueness (no duplicates). |
+
+<br>
+
+### Bitwise Operators
+
+A bitwise operator performs bit manipulation between two expressions of the integer data type. Bitwise operators convert the integers into binary bits and then perform the AND (& symbol), OR (|, ^) or NOT (~) operation on each individual bit, before finally converting the binary result back into an integer.
+
+| Operator | Description | Example |
+|----------|-------------|---------|
+| & | Bitwise AND | (1 & 0) is 0 |
+| \| | Bitwise OR | (1 \| 0) is 1 |
+| ^ | Bitwise exclusive OR | (1 ^ 0) is 1 |
+
+
+<br>
 
 
 
 
 
 <br>
+
