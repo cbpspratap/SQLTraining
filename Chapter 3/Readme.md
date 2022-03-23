@@ -155,7 +155,8 @@ CREATE TABLE dpu_college.student(
 ```sql
 CREATE TABLE dpu_college.dept(
   ID char(1),
-  NAME varchar(50)
+  NAME varchar(50) NOT NULL,
+  PRIMARY KEY(ID)
   );
 ```
 
@@ -164,8 +165,9 @@ CREATE TABLE dpu_college.dept(
 ```sql
 CREATE TABLE dpu_college.faculty(
   ID char(2),
-  NAME varchar(50),
-  DEPT_ID char(1)
+  NAME varchar(50) NOT NULL,
+  DEPT_ID char(1),
+  PRIMARY KEY(ID)
   );
 ```
 
