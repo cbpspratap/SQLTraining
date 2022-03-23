@@ -34,12 +34,6 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 
 ## [Chapter 4: Querying Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%204)
 - Querying table 
-  - Selecting Data
-  - Limiting the number of Records
-  - Filtering Data using a condition
-  - Sorting Data
-
-## [Chapter 5: SQL Clauses & Operators](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%205)
 - Clause in SQL 
   - Where Clause
   - Like Clause
@@ -48,6 +42,8 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Order By Clause
   - Group By Clause
   - Having Clause
+
+## [Chapter 5: SQL Clauses & Operators](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%205)
 - Operators in SQL
   - Arithmetic Operators
   - Comparison Operators
