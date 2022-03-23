@@ -1,6 +1,6 @@
 # Data Type & Querying Table
 
-In this part of SQL training we will learn about the major Data Types and querying tables.
+In this part of SQL training we will learn about querying tables.
 
 ## Data Types in SQL
 
