@@ -110,6 +110,39 @@ A bitwise operator performs bit manipulation between two expressions of the inte
 <br>
 
 
+## SQL Joins
+
+Joins are used in SELECT statement to retrieve data from multiple tables. It is performed whenever you need to fetch records from two or more tables based on a key matching column in both the tables.
+
+There are 4 types of Join in MySQL
+- Inner Join
+- Left Outer Join
+- Right Outer Join
+- Cross Join
+
+
+Let's try to understand SQL joins using below two tables
+
+![image](https://user-images.githubusercontent.com/67796162/159783021-f5ba57f8-a8f0-405e-b113-1b58b2f3029c.png)
+
+### Inner Join
+
+INNER JOIN is used to return all records from both the tables where the join condition is satisfied or key column exactly matches in both the tables. It is the most common type of join and used to query only matching records from multiple tables.
+
+**Visual Representation**
+
+![inner-join](https://user-images.githubusercontent.com/67796162/159785588-4e556ad6-cc20-46fe-9b3e-a2fe80cb9c30.png)
+
+
+**Syntax**
+
+```sql
+SELECT columns
+FROM table1 
+INNER JOIN table2
+ON table1.column = table2.column;
+```
+**Example**
 
 
 
