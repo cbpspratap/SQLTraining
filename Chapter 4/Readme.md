@@ -387,4 +387,6 @@ HAVING count(NAME) > 5;
 ```
 </details>
 
+<br>
+
 **Awesome!** now you are a pro, but wait you still need to practice to become a real master.
