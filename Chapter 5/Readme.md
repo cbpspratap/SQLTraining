@@ -292,7 +292,7 @@ Let's say we have below tables which contains employee details and you need to f
  
 ![image](https://user-images.githubusercontent.com/67796162/159992131-1cb4f2ca-b9fd-4116-a0e1-6d524ecc1860.png)
 
-We need to do a self join using either LEFT or INNER JOIN on the two aliases of this table with join condition as EMP_ID from first alias to MGR_ID from second alias of this table.
+We need to do a self join using LEFT JOIN on the two aliases of this table with join condition as MGR_ID from first alias equals to EMP_ID from second alias of this table.
 
 ![image](https://user-images.githubusercontent.com/67796162/159994019-b3f241e8-9e29-41c5-81b0-0f3769191a19.png)
 
@@ -302,35 +302,49 @@ We need to do a self join using either LEFT or INNER JOIN on the two aliases of 
  <Summary>To create the employee table in SQL emvironment copy the below code and run it.</Summary>
  
  ```sql
-SELECT
-s.NAME, s.DEPT_ID, s.marks, f.NAME, f.DEPT_ID
-FROM dpu_college.student s
-CROSS JOIN dpu_college.faculty f;
+##Creates 'company' database in your sql instance
+CREATE DATABASE company;
+
+##Creates 'emp' table under 'company' database
+CREATE TABLE company.emp(
+  EMP_ID int,
+  NAME varchar(50) NOT NULL,
+  MGR_ID int,
+  PRIMARY KEY(EMP_ID)
+  );
+
+##Insert data into 'emp' table under 'company' database
+INSERT INTO company.emp (EMP_ID, NAME, MGR_ID)
+VALUES(101, 'Amit', 102),
+(102, 'David', 103),
+(103,'Shital', null),
+(104,'Neeraja', 102),
+(105,'Eric', 106),
+(106,'Gaurav', 103),
+(107,'Nitesh',106);
+ 
  ```
  </details>
+ 
 
-
-
-<details>
- <Summary>Click here to reveal the solution!</Summary>
+**Solution:**
  
  ```sql
-SELECT
-s.NAME, s.DEPT_ID, s.marks, f.NAME, f.DEPT_ID
-FROM dpu_college.student s
-CROSS JOIN dpu_college.faculty f;
+SELECT A.EMP_ID, A.NAME, B.NAME 
+FROM company.emp A
+LEFT JOIN company.emp B
+ON A.MGR_ID=B.EMP_ID;
  ```
- </details>
 
 <br>
 
 
+**WooHooo!** In this chapter you learned SQL operators and Joins. Keep practicing to make sure you are able to grasp the concept.
 
+You can go to below sites to practice SQL scenario based questions.
+- [Hackerrank](https://www.hackerrank.com/domains/sql)
+- [Sqlzoo](https://sqlzoo.net/wiki/SQL_Tutorial)
+- [leetcode](https://leetcode.com/problemset/database/?sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D&difficulty=EASY&page=1)
 
-
-
-
-
-
-<br>
+### Happy Learning!!
 
