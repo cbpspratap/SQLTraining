@@ -31,7 +31,7 @@ CREATE TABLE dpu_college.dept(
   
 ##Creates 'faculty' table under dpu_college database
 CREATE TABLE dpu_college.faculty(
-  ID char(2),
+  ID varchar(3),
   NAME varchar(50) NOT NULL,
   DEPT_ID char(1),
   PRIMARY KEY(ID)
@@ -69,8 +69,9 @@ VALUES(1,'Hitesh Mishra','F',68),
 (27,'Ankit Gupta','M',39),
 (28,'Priti Singh','F',75),
 (29,'Preeti Kumari','B',57),
-(30,'Ankur Kumar','M',83)
-;
+(30,'Ankur Kumar','M',83),
+(31,'Gaurav Gera','D',81),
+(32,'Nitesh Sinha','P',38);
 
 ##Insert data into 'dept' table under dpu_college database
 INSERT INTO dpu_college.dept (ID, NAME)
@@ -78,7 +79,8 @@ VALUES('F','Finance'),
 ('H','HR'),
 ('M','Marketing'),
 ('I','IB'),
-('B','BA');
+('B','BA'),
+('A','Analytics');
 
 ##Insert data into 'faculty' table under dpu_college database
 INSERT INTO dpu_college.faculty (ID, NAME, DEPT_ID)
@@ -90,5 +92,6 @@ VALUES('f1','Vishnu Kissara','M'),
 ('f6','John Jacobs','M'),
 ('f7','Peter Macclister','F'),
 ('f8','Vibhu Tandon','B'),
-('f8','Manish Ratna',null)
-;
+('f8','Manish Ratna',null),
+('f9','Akhil Sharma','A'),
+('f10','Mushkan Pandit','D');
