@@ -98,10 +98,6 @@ There are 4 types of Join in MySQL
 - Cross Join
 
 
-Let's try to understand SQL joins using below two tables
-
-![image](https://user-images.githubusercontent.com/67796162/159783021-f5ba57f8-a8f0-405e-b113-1b58b2f3029c.png)
-
 ### Inner Join
 
 INNER JOIN is used to return all records from both the tables where the join condition is satisfied or key column exactly matches in both the tables. It is the most common type of join and used to query only matching records from multiple tables.
@@ -120,6 +116,14 @@ INNER JOIN table2
 ON table1.column = table2.column;
 ```
 **Example**
+ 
+Let's say we have below two tables:
+ 
+![image](https://user-images.githubusercontent.com/67796162/159975883-77445be4-7b40-48dd-a1a7-f8f0dbadc831.png)
+
+The Inner join of above two tables on Dept_ID column will show only matching records from both the tables as below.
+
+![image](https://user-images.githubusercontent.com/67796162/159975553-c9556a1a-7618-4a8e-a8df-a1dd300f7957.png)
 
 
 
