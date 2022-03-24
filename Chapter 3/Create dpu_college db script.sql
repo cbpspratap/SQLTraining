@@ -92,6 +92,6 @@ VALUES('f1','Vishnu Kissara','M'),
 ('f6','John Jacobs','M'),
 ('f7','Peter Macclister','F'),
 ('f8','Vibhu Tandon','B'),
-('f8','Manish Ratna',null),
-('f9','Akhil Sharma','A'),
-('f10','Mushkan Pandit','D');
+('f9','Manish Ratna',null),
+('f10','Akhil Sharma','A'),
+('f11','Mushkan Pandit','D');
