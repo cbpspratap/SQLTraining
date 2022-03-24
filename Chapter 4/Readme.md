@@ -389,4 +389,27 @@ HAVING count(NAME) > 5;
 
 <br>
 
+## SQL Syntax Order
+
+
+### SQL Syntax Orders
+
+As you have already practiced in previous chapters how to query a table, here is something which will help you clear your confusion on the order in which SQL keyword are written in SQL syntax.
+
+![image](https://user-images.githubusercontent.com/67796162/159441947-0f7b3a12-2b19-4751-9fd9-5680ba7563db.png)
+
+<br>
+
+### SQL Execution Order
+
+Now when you know the order in which SQL keywords are written, lets see the order in which the SQL keywords are exectued when you ran a select query.
+
+
+<img src="https://user-images.githubusercontent.com/67796162/159443940-a61b9ba5-c905-4eb4-8b22-1e091b8578b5.png" width="1000" height="756" />
+
+
+<br>
+
+
+
 **Awesome!** now you are a pro, but wait you still need to practice to become a real master.
