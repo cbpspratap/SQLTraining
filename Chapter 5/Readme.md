@@ -96,7 +96,13 @@ There are 4 types of Join in MySQL
 - Left Outer Join
 - Right Outer Join
 - Cross Join
+- Self Join
 
+<br>
+
+> For practice purpose we will use dpu_college database created in previous chapter, if you don't have the database available in your environment then [click here](https://github.com/cbpspratap/SQLTraining/blob/main/Chapter%205/Create%20dpu_college%20db%20script.sql) to access the sql script and run the complete code in your sql environemnt to create the required database and tables.
+
+<br>
 
 ### Inner Join
 
@@ -125,6 +131,19 @@ The Inner join of above two tables on Dept_ID column will show only matching rec
 
 ![image](https://user-images.githubusercontent.com/67796162/159975553-c9556a1a-7618-4a8e-a8df-a1dd300f7957.png)
 
+**Question 1:** Query the name of all the faculties who belong to a department along with full name of department they are in(_To achieve this, inner join the faculty table with dept table_)
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+ 
+ ```sql
+SELECT
+f.NAME, f.DEPT_ID, d.NAME
+FROM dpu_college.faculty f
+INNER JOIN dpu_college.dept d ON f.DEPT_ID=d.ID
+ ```
+  
+ </details>
 
 
 <br>
