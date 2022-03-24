@@ -171,7 +171,7 @@ Let's say we have below two tables:
  
 ![image](https://user-images.githubusercontent.com/67796162/159982466-8809321e-fc41-4520-9b07-af390cedd873.png)
 
-The Inner join of above two tables on Dept_ID column will show only matching records from both the tables as below.
+The Left join of above two tables on Dept_ID column will show all the records from student table and matching data from department table as below.
 
 ![image](https://user-images.githubusercontent.com/67796162/159985163-67a3bf5d-2dae-4579-a184-88fa4aa6641e.png)
 
@@ -214,7 +214,7 @@ Let's say we have below two tables:
  
 ![image](https://user-images.githubusercontent.com/67796162/159982466-8809321e-fc41-4520-9b07-af390cedd873.png)
 
-The Inner join of above two tables on Dept_ID column will show only matching records from both the tables as below.
+The Right join of above two tables on Dept_ID column will show all the records from department table and matching data from student table as below.
 
 ![image](https://user-images.githubusercontent.com/67796162/159985445-bb921e03-0fab-4438-8767-021bf20f0d57.png)
 
@@ -234,6 +234,43 @@ ON f.DEPT_ID=d.ID;
 
 <br>
 
+### Cross Join
+
+CROSS JOIN combines every row of the first table with every row of the second table, it returns a result set that includes the combination of every row in both tables. In simple words it is cartesian product of both the tables.
+
+Notice in the below syntax, that unlike other join types like INNER JOIN, LEFT JOIN or RIGHT JOIN the CROSS JOIN does not have a join condition.
+
+**Syntax**
+
+```sql
+SELECT columns
+FROM table1 
+CROSS JOIN table2;
+```
+**Example**
+ 
+Let's say we have below two tables:
+ 
+![image](https://user-images.githubusercontent.com/67796162/159987610-6507c770-86d7-4344-8523-cb8b020de586.png)
+
+The Cross join of above two tables will create a cartesian product of both the tables and will show every combination of records from both the tables as below.
+
+![image](https://user-images.githubusercontent.com/67796162/159987670-f3d5df1c-baf1-488c-b550-f2038927e42e.png)
+
+**Question 4:** For a survey, every student need to meet with each of the faculty, to assist this create a list of all student and faculty combination(_To achieve this, cross join the student table with faculty table_)
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+ 
+ ```sql
+SELECT
+s.NAME, s.DEPT_ID, s.marks, f.NAME, f.DEPT_ID
+FROM dpu_college.student s
+CROSS JOIN dpu_college.faculty f;
+ ```
+ </details>
+
+<br>
 
 
 
