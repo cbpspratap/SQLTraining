@@ -272,6 +272,59 @@ CROSS JOIN dpu_college.faculty f;
 
 <br>
 
+### Self Join
+
+A self-join is a join type in which a table is joined to itself using either INNER JOIN or LEFT JOIN clause. When you reference a table twice in a query, you have to use the table aliases.
+
+The self-join is mostly useful when you need to query hierarchical data or compare rows within the same table.
+
+**Syntax**
+
+```sql
+SELECT columns
+FROM table1 A
+LEFT/INNER JOIN table1 B
+ON A.column1 = B.column2;;
+```
+**Example**
+ 
+Let's say we have below tables which contains employee details and you need to find the manager name of each employee(_for reference you can see the hierarchy map of the employees_):
+ 
+![image](https://user-images.githubusercontent.com/67796162/159992131-1cb4f2ca-b9fd-4116-a0e1-6d524ecc1860.png)
+
+We need to do a self join using either LEFT or INNER JOIN on the two aliases of this table with join condition as EMP_ID from first alias to MGR_ID from second alias of this table.
+
+![image](https://user-images.githubusercontent.com/67796162/159994019-b3f241e8-9e29-41c5-81b0-0f3769191a19.png)
+
+**Question 5:** Based on the data in above picture write a query to bring EMP_ID, NAME and MGR_NAME of each employee.
+
+<details>
+ <Summary>To create the employee table in SQL emvironment copy the below code and run it.</Summary>
+ 
+ ```sql
+SELECT
+s.NAME, s.DEPT_ID, s.marks, f.NAME, f.DEPT_ID
+FROM dpu_college.student s
+CROSS JOIN dpu_college.faculty f;
+ ```
+ </details>
+
+
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+ 
+ ```sql
+SELECT
+s.NAME, s.DEPT_ID, s.marks, f.NAME, f.DEPT_ID
+FROM dpu_college.student s
+CROSS JOIN dpu_college.faculty f;
+ ```
+ </details>
+
+<br>
+
+
 
 
 
