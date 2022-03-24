@@ -130,7 +130,7 @@ Let's say we have below two tables:
 
 The Inner join of above two tables on Dept_ID column will show only matching records from both the tables as below.
 
-![image](https://user-images.githubusercontent.com/67796162/159975553-c9556a1a-7618-4a8e-a8df-a1dd300f7957.png)
+![image](https://user-images.githubusercontent.com/67796162/159985969-eea1bf45-8f6f-4b44-b89f-1b335a7688f5.png)
 
 **Question 1:** Query the name of all the faculties who belong to a department along with full name of department they are in(_To achieve this, inner join the faculty table with dept table_)
 
@@ -139,7 +139,7 @@ The Inner join of above two tables on Dept_ID column will show only matching rec
  
  ```sql
 SELECT
-f.NAME, f.DEPT_ID, d.NAME
+f.NAME, f.DEPT_ID, d.ID, d.NAME
 FROM dpu_college.faculty f
 INNER JOIN dpu_college.dept d 
 ON f.DEPT_ID=d.ID;
@@ -173,7 +173,7 @@ Let's say we have below two tables:
 
 The Inner join of above two tables on Dept_ID column will show only matching records from both the tables as below.
 
-![image](https://user-images.githubusercontent.com/67796162/159982838-53d3f465-0e4d-4474-b0ab-841da4993db9.png)
+![image](https://user-images.githubusercontent.com/67796162/159985163-67a3bf5d-2dae-4579-a184-88fa4aa6641e.png)
 
 **Question 2:** Query the name of all the faculties along with full name of department they are in(_To achieve this, left join the faculty table with dept table_)
 
@@ -182,7 +182,7 @@ The Inner join of above two tables on Dept_ID column will show only matching rec
  
  ```sql
 SELECT
-f.NAME, f.DEPT_ID, d.NAME
+f.NAME, f.DEPT_ID, d.ID, d.NAME
 FROM dpu_college.faculty f
 LEFT JOIN dpu_college.dept d 
 ON f.DEPT_ID=d.ID;
@@ -191,7 +191,48 @@ ON f.DEPT_ID=d.ID;
 
 <br>
 
+### Right Join
 
+Similar to LEFT JOIN, RIGHT JOIN clause returns all rows from the right table and matching rows from the left table if there is no matching row in the left table then it will return NULL.
+
+**Visual Representation**
+
+![right-join](https://user-images.githubusercontent.com/67796162/159983812-7c4d2fb2-9f18-4cf3-b69e-4b791d267681.png)
+
+
+**Syntax**
+
+```sql
+SELECT columns
+FROM table1 
+RIGHT JOIN table2
+ON table1.column = table2.column;
+```
+**Example**
+ 
+Let's say we have below two tables:
+ 
+![image](https://user-images.githubusercontent.com/67796162/159982466-8809321e-fc41-4520-9b07-af390cedd873.png)
+
+The Inner join of above two tables on Dept_ID column will show only matching records from both the tables as below.
+
+![image](https://user-images.githubusercontent.com/67796162/159985445-bb921e03-0fab-4438-8767-021bf20f0d57.png)
+
+**Question 3:** Query the ID, name of all the departments along with faculties related to those department(_To achieve this, right join the faculty table with dept table_)
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+ 
+ ```sql
+SELECT
+f.NAME, f.DEPT_ID, d.ID, d.NAME
+FROM dpu_college.faculty f
+RIGHT JOIN dpu_college.dept d 
+ON f.DEPT_ID=d.ID;
+ ```
+ </details>
+
+<br>
 
 
 
