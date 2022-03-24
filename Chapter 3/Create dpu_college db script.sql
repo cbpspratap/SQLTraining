@@ -80,7 +80,8 @@ VALUES('F','Finance'),
 ('M','Marketing'),
 ('I','IB'),
 ('B','BA'),
-('A','Analytics');
+('A','Analytics'),
+('E','Entrepreneurship');
 
 ##Insert data into 'faculty' table under dpu_college database
 INSERT INTO dpu_college.faculty (ID, NAME, DEPT_ID)
