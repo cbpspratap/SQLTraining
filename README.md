@@ -48,6 +48,13 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Arithmetic Operators
   - Comparison Operators
   - Logical Operators
+  - Bitwise Operators
+- SQL Joins
+  - Inner Join
+  - Left Join
+  - Right Join
+  - Cross Join
+  - Self Join
 
 
 
