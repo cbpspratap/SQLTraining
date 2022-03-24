@@ -106,7 +106,8 @@ There are 4 types of Join in MySQL
 
 ### Inner Join
 
-INNER JOIN is used to return all records from both the tables where the join condition is satisfied or key column exactly matches in both the tables. It is the most common type of join and used to query only matching records from multiple tables.
+INNER JOIN clause combines each row from the first table with every row from the second table, keeping only the rows in which the join condition evaluates to true.
+In simple terms it brings only the matching records from both the table based on the join condition.
 
 **Visual Representation**
 
@@ -125,7 +126,7 @@ ON table1.column = table2.column;
  
 Let's say we have below two tables:
  
-![image](https://user-images.githubusercontent.com/67796162/159975883-77445be4-7b40-48dd-a1a7-f8f0dbadc831.png)
+![image](https://user-images.githubusercontent.com/67796162/159982496-241af8c0-20a7-4405-aac8-3c692b5d4395.png)
 
 The Inner join of above two tables on Dept_ID column will show only matching records from both the tables as below.
 
@@ -140,10 +141,64 @@ The Inner join of above two tables on Dept_ID column will show only matching rec
 SELECT
 f.NAME, f.DEPT_ID, d.NAME
 FROM dpu_college.faculty f
-INNER JOIN dpu_college.dept d ON f.DEPT_ID=d.ID
+INNER JOIN dpu_college.dept d 
+ON f.DEPT_ID=d.ID;
  ```
-  
  </details>
+
+<br>
+
+### Left Join
+
+LEFT JOIN clause returns all rows from the left table and matching rows from the right table if there is no matching row in the right table then it will return NULL.
+
+**Visual Representation**
+
+![left-join](https://user-images.githubusercontent.com/67796162/159981994-ce125ecc-711d-4555-b20d-370d72e91774.png)
+
+
+**Syntax**
+
+```sql
+SELECT columns
+FROM table1 
+LEFT JOIN table2
+ON table1.column = table2.column;
+```
+**Example**
+ 
+Let's say we have below two tables:
+ 
+![image](https://user-images.githubusercontent.com/67796162/159982466-8809321e-fc41-4520-9b07-af390cedd873.png)
+
+The Inner join of above two tables on Dept_ID column will show only matching records from both the tables as below.
+
+![image](https://user-images.githubusercontent.com/67796162/159982838-53d3f465-0e4d-4474-b0ab-841da4993db9.png)
+
+**Question 2:** Query the name of all the faculties along with full name of department they are in(_To achieve this, left join the faculty table with dept table_)
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+ 
+ ```sql
+SELECT
+f.NAME, f.DEPT_ID, d.NAME
+FROM dpu_college.faculty f
+LEFT JOIN dpu_college.dept d 
+ON f.DEPT_ID=d.ID;
+ ```
+ </details>
+
+<br>
+
+
+
+
+
+
+
+
+
 
 
 <br>
