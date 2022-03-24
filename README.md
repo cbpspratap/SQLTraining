@@ -42,6 +42,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Order By Clause
   - Group By Clause
   - Having Clause
+- SQL Syntax Order
 
 ## [Chapter 5: SQL Operators & Joins](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%205)
 - Operators in SQL
