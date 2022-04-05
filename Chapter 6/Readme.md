@@ -1,6 +1,6 @@
 # SQL Operators & Functions
 
-In this chapter we will learn about SQL Operators & Functions.
+In this chapter we will learn about SQL Operators and Functions which can be used to query the table along with calculations and manipulation in the data while querying it using Select Statement. These are very useful for our day to day operations in SQL.
 
 <br>
 
