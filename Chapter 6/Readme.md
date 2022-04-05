@@ -97,7 +97,7 @@ The built-in SQL functions are divided in below major categories, we will go thr
 - Control Flow Functions and Expressions
 - String Functions
 - Aggregate Functions
-- Math/Numeric Functions
+- Mathematical Functions
 - Date Functions
 - Window Functions
 
