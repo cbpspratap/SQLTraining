@@ -52,7 +52,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Cross Join
   - Self Join
 
-## [Chapter 6: SQL Operators & Functions](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%205)
+## [Chapter 6: SQL Operators & Functions](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%206)
 - Operators in SQL
   - Arithmetic Operators
   - Comparison Operators
