@@ -3,7 +3,7 @@
 - String Functions
 - Aggregate Functions
 - Mathematical Functions
-- Date Functions
+- Date & Time Functions
 - Window Functions
 
 
@@ -78,12 +78,27 @@ Aggregate functions allow you to perform a calculation on a set of records and r
 <br>
 
 
+### Date & Time Functions
+
+[Click here](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html) to get the list of all MySQL date and time functions.
+
+| Name			| Description |
+|-----------|-------------|
+| CURDATE		| Returns the current date. |
+| SYSDATE		| Returns the current date. |
+| NOW			| Returns the current date and time at which the statement executed. |
+| YEAR		| Return the year for a specified date |
+| MONTH		| Returns an integer that represents a month of a specified date. |
+| WEEK		| Returns a week number of a date. |
+| DAY			| Gets the day of the month of a specified date. |
+| DAYNAME		| Gets the name of a weekday for a specified date. |
+| EXTRACT		| Extracts a part of a date. |
+| DATEDIFF	| Calculates the number of days between two DATE values. |
+| DATE_ADD	| Adds a time value to date value. |
+| DATE_SUB	| Subtracts a time value from a date value. |
 
 
-
-
-
-
+<br>
 
 
 
