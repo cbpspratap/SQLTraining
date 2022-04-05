@@ -110,15 +110,17 @@ The built-in SQL functions are divided in below major categories, we will go thr
 | COALESCE | Returns the first non-NULL arguments, which is very handy for substitution ofNULL. |
 | ISNULL | Returns 1(TRUE) if the argument is NULL, otherwise, return zero(FALSE). |
 
+<br>
 
-#### CASE
+#### CASE Function/Statement
 
 The CASE function/statement has the functionality of an IF-THEN-ELSE statement by allowing you to evaluate conditions and return a value when the first condition is met.
+
 
 **Syntax**
 
 ```sql
-CASE [ expression ]
+CASE
    WHEN condition_1 THEN result_1
    WHEN condition_2 THEN result_2
    ...
@@ -126,3 +128,40 @@ CASE [ expression ]
    ELSE result
 END
 ```
+<br>
+
+**Example:** Query Name, Marks and Marks Category from student table, with Marks Category defined as marks greater then 80 as 'High Marks', between 60 to 80 as 'Average Marks' and below 60 as 'Low Marks'.
+
+
+```sql
+SELECT NAME, MARKS,
+CASE 
+	WHEN MARKS >= 80 THEN 'High Marks'
+	WHEN MARKS >= 60 AND MARKS < 80 THEN 'Average Marks'
+	WHEN MARKS < 60 THEN 'Low Marks'
+	ELSE 'No Data'
+END AS Marks_Category
+FROM dpu_college.student;
+```
+<br>
+
+**Question 1**: Query Name, Dept_ID, and Dept_Group of students where Dept_ID F & B are 'Group 1', Dept_ID H & I are 'Group 2', Dept_ID M, P & D are 'Group 3' anything else is 'No Group and order the data by Dept_group.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT Name, DEPT_ID,
+CASE 
+	 WHEN DEPT_ID IN( 'F', 'B') THEN 'Group 1'
+    WHEN DEPT_ID IN( 'H', 'I') THEN 'Group 2'
+    WHEN DEPT_ID IN( 'M', 'P', 'D') THEN 'Group 3'
+    ELSE 'No Group'
+END AS Dept_Group
+FROM dpu_college.student
+ORDER BY Dept_Group;
+```
+</details>
+
+<br>
+
