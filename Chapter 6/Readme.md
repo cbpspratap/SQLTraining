@@ -99,4 +99,30 @@ The built-in SQL functions are divided in below major categories, we will go thr
 - Window Functions
 
 
+### Control Flow Functions and Expressions
 
+| Name | Description |
+|------|-------------|
+| CASE | Returns the corresponding result in THEN branch if the condition in the WHEN branch is satisfied, otherwise, return the result in the ELSE branch. |
+| IF | Returns a value based on a given condition. |
+| IFNULL | Returns the first argument if it is not NULL , otherwise returns the second argument. |
+| NULLIF | Returns NULL if the first argument is equal to the second argument, otherwise, returns the first argument. |
+| COALESCE | Returns the first non-NULL arguments, which is very handy for substitution ofNULL. |
+| ISNULL | Returns 1(TRUE) if the argument is NULL, otherwise, return zero(FALSE). |
+
+
+#### CASE
+
+The CASE function/statement has the functionality of an IF-THEN-ELSE statement by allowing you to evaluate conditions and return a value when the first condition is met.
+
+**Syntax**
+
+```sql
+CASE [ expression ]
+   WHEN condition_1 THEN result_1
+   WHEN condition_2 THEN result_2
+   ...
+   WHEN condition_n THEN result_n
+   ELSE result
+END
+```
