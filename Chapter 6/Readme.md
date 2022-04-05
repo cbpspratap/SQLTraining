@@ -2,6 +2,8 @@
 
 In this chapter we will learn about SQL Operators and Functions which can be used to query the table along with calculations and manipulation in the data while querying it using Select Statement. These are very useful for our day to day operations in SQL.
 
+[Click here](https://dev.mysql.com/doc/refman/8.0/en/built-in-function-reference.html) to get the list of all Built-In Operators and Functions from MySQL Reference Manual.
+
 <br>
 
 ## SQL Operators
@@ -89,6 +91,7 @@ A bitwise operator performs bit manipulation between two expressions of the inte
 ## SQL Functions
 
 SQL can do much more than just store and retrieve data can, it can also perform manipulations on the data before retrieving it. That’s where SQL Functions come in. Functions are built-in pieces of code that perform some operations and then return a result. Some of the functions accept parameters toperform required operations while others may not.
+
 
 The built-in SQL functions are divided in below major categories, we will go through the some of the important ones from each categories.
 - Control Flow Functions and Expressions
