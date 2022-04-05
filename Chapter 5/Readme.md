@@ -213,7 +213,7 @@ We need to do a self join using LEFT JOIN on the two aliases of this table with 
 **Question 5:** Based on the data in above picture write a query to bring EMP_ID, NAME and MGR_NAME of each employee.
 
 <details>
- <Summary>To create the employee table in SQL emvironment copy the below code or go to chapter 5 folder to access the script and run it.</Summary>
+ <Summary>To create the employee table in SQL environment copy the below code or go to chapter 5 folder to access the script and run it.</Summary>
  
  ```sql
 ##Creates 'company' database in your sql instance
