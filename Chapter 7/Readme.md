@@ -101,6 +101,23 @@ Aggregate functions allow you to perform a calculation on a set of records and r
 <br>
 
 
+### Window Functions
+
+[Click here](https://dev.mysql.com/doc/refman/8.0/en/window-function-descriptions.html) to get the list of all MySQL window functions.
+| Name			| Description |
+|-----------|-------------|
+| ROW_NUMBER()	| Number of current row within its partition |
+| RANK()			| Rank of current row within its partition, with gaps |
+| DENSE_RANK()	| Rank of current row within its partition, without gaps |
+| FIRST_VALUE()	| Value of argument from first row of window frame |
+| LAST_VALUE()	| Value of argument from last row of window frame |
+| LEAD()			| Value of argument from row leading current row within partition |
+| LAG()			| Value of argument from row lagging current row within partition |
+
+
+<br>
+
+
 
 
 
