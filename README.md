@@ -67,5 +67,36 @@ This course is divided into 10 chapters, each chapter will cover a major subject
     - COALESCE
     - ISNULL
 
-
-
+## [Chapter 7: SQL Functions](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%207)
+- SQL Functions
+  - String Functions
+    - CONCAT	
+    - LENGTH	
+    - LEFT		
+    - RIGHT		
+    - LOWER		
+    - UPPER		
+    - TRIM		
+    - LTRIM		
+    - RTRIM		
+    - SUBSTRING	
+    - REPLACE	
+  - Aggregate Functions
+    - COUNT()	
+    - COUNT(DISTINCT)
+    - SUM()		
+    - AVG()		
+    - MAX()		
+    - MIN()		
+    - STDDEV()	
+    - VARIANCE()
+  - Mathematical Functions
+    - ABS()		
+    - TRUNCATE()
+    - CEIL()	
+    - CEILING()	
+    - FLOOR()	
+    - POW()		
+    - POWER()	
+    - SQRT()	
+    - RAND()
