@@ -85,3 +85,18 @@ A bitwise operator performs bit manipulation between two expressions of the inte
 
 
 <br>
+
+## SQL Functions
+
+SQL can do much more than just store and retrieve data can, it can also perform manipulations on the data before retrieving it. That’s where SQL Functions come in. Functions are built-in pieces of code that perform some operations and then return a result. Some of the functions accept parameters toperform required operations while others may not.
+
+The built-in SQL functions are divided in below major categories, we will go through the some of the important ones from each categories.
+- Control Flow Functions and Expressions
+- Aggregate Functions
+- Date Functions
+- String Functions
+- Window Functions
+- Math/Numeric Functions
+
+
+
