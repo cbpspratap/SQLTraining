@@ -1,6 +1,6 @@
-# SQL Operators & Joins
+# SQL Operators & Functions
 
-In this chapter we will deep dive further into querying data and will learn about SQL Operators & Joins. We have already used few SQL clauses in our previous chapter like WHERE, ORDER BY and LIMIT, etc here we will use it in conjuction with SQL operators and joins to answer more specific questions.
+In this chapter we will learn about SQL Operators & Functions.
 
 <br>
 
