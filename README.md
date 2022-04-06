@@ -59,7 +59,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Logical Operators
   - Bitwise Operators
 - SQL Functions
-  - Control Flow Functions and Expressions
+  - Flow Control Functions and Expressions
     - CASE
     - IF
     - IFNULL
