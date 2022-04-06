@@ -94,7 +94,7 @@ SQL can do much more than just store and retrieve data can, it can also perform 
 
 
 The built-in SQL functions are divided in below major categories, we will go through the some of the important ones from each categories.
-- Control Flow Functions and Expressions
+- Flow Control Functions and Expressions
 - String Functions
 - Aggregate Functions
 - Mathematical Functions
@@ -102,7 +102,9 @@ The built-in SQL functions are divided in below major categories, we will go thr
 - Window Functions
 
 
-### Control Flow Functions and Expressions
+### Flow Control Functions and Expressions
+
+[Click here](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html) to get the list of all MySQL flow control functions.
 
 | Name | Description |
 |------|-------------|
