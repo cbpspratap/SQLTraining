@@ -297,20 +297,16 @@ COALESCE( expression1, expression2, ... expression_n )
 **Example:** In below example you can see it will evaluate to Apple, because its the first non-null value in the COALESCE function.
 
 ```sql
-SELECT COALESCE(NULL, 'Apple', 'Orange', NULL);   
+SELECT COALESCE(NULL, NULL, 'Apple', 'Orange', NULL);   
 ```
 
-> Apple
+> **Output:** Apple
 
-
-```sql
-SELECT Emp_id, Name, Designation, 
-COALESCE(mobile, Office, Phone, 'Not Available') as Number
-FROM employee; 
-```
 <br>
 
-**Question 3**: Query Name, Dept from Faculty table with Dept_ID Null called as 'Admin'.
+**Question 3**: We have a Employee table below, you need to query Emp_id, Name, Designation and Contact Number. Contact Number should be Mobile, in case Mobile is not avaiable then office, if office is also not available then Phone otherwise print Not Available.
+
+Click [here](https://www.db-fiddle.com/f/cMYx31HPaxu2iWVjznAcSd/0) to run the query in db-fiddle
 
 | Emp_id | Name    | Designation | Phone       | Mobile      | Office      |
 | ------ | ------- | ----------- | ----------- | ----------- | ----------- |
@@ -327,7 +323,7 @@ FROM employee;
 
 ```sql
 SELECT Emp_id, Name, Designation, 
-COALESCE(mobile, Office, Phone, 'Not Available') as Number
+COALESCE(mobile, Office, Phone, 'Not Available') as Contact_Number
 FROM employee; 
 ```
 </details>
