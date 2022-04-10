@@ -99,3 +99,30 @@ This course is divided into 10 chapters, each chapter will cover a major subject
     - POWER()	
     - SQRT()	
     - RAND()
+
+## [Chapter 8: SQL Functions](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%207)
+- SQL Functions
+  - Date & Time Functions
+    - CURDATE	
+    - SYSDATE	
+    - NOW		
+    - YEAR	
+    - MONTH	
+    - WEEK	
+    - DAY		
+    - DAYNAME	
+    - EXTRACT	
+    - DATEDIFF
+    - DATE_ADD
+    - DATE_SUB
+  - Window Functions
+    - ROW_NUMBER
+    - RANK
+    - DENSE_RANK
+    - FIRST_VALUE
+    - LAST_VALUE
+    - LEAD		
+    - LAG
+
+
+
