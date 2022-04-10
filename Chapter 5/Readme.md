@@ -5,7 +5,7 @@ This chapter brings you one of the most important topic in SQL called Join. When
 
 Joins are used in SELECT statement to retrieve data from multiple tables. It is performed whenever you need to fetch records from two or more tables based on a key matching column in both the tables.
 
-There are 4 types of Join in MySQL
+Below are the types of Joins available in MySQL
 - Inner Join
 - Left Outer Join
 - Right Outer Join
