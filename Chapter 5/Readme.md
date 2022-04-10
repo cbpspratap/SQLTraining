@@ -1,7 +1,10 @@
-# SQL Joins
+# SQL Joins & Unions
 
-This chapter brings you one of the most important topic in SQL called Join. Whenever you need some data which is spread among multiple tables we need to join the tables in SQL and then query to get our required data. Let's go ahead and learn how do we do this.
+This chapter brings you one of the most important topic in SQL called Join and we will also look at UNION to merge multiple datasets. 
 
+## SQL Joins
+
+Whenever you need some data which is spread among multiple tables we need to join the tables in SQL and then query to get our required data. Let's go ahead and learn how do we do this.
 
 Joins are used in SELECT statement to retrieve data from multiple tables. It is performed whenever you need to fetch records from two or more tables based on a key matching column in both the tables.
 
@@ -253,7 +256,65 @@ ON A.MGR_ID=B.EMP_ID;
 <br>
 
 
-**WooHooo!** In this chapter you learned SQL operators and Joins. Keep practicing to make sure you are able to grasp the concept.
+## SQL Unions
+
+
+There are two Union operators in MySQL, UNION and UNION ALL. These operators allow us to use multiple SELECT queries, retrieve the desired results, and then combine them into a final output.
+
+### UNION
+
+Union is an operator that allows us to combine two or more results from multiple SELECT queries into a single result set. It comes with a default feature that removes the duplicate rows from the result set. MySQL always uses the name of the column in the first SELECT statement will be the column names of the result set(output).
+
+MySQL Union must follow these basic rules:
+- The number and order of the columns should be the same in all tables that you are going to use.
+- The data type must be compatible with the corresponding positions of each select query.
+- The column name selected in the different SELECT queries must be in the same order.
+
+**Syntax**
+
+```sql
+SELECT column_list FROM table1  
+UNION  
+SELECT column_list FROM table2;  
+```
+
+**Example:** Query all the NAME from student table from Dept F and Dept M separately and UNION them.
+
+```sql
+SELECT NAME FROM dpu_college.student WHERE DEPT_ID='F'
+UNION
+SELECT NAME  FROM dpu_college.student WHERE DEPT_ID='M';
+```
+
+
+
+### UNION ALL
+
+
+The MySQL UNION ALL operator is used to combine the result sets of 2 or more SELECT statements. It returns all rows from the query and it does not remove duplicate rows between the various SELECT statements.
+
+Each SELECT statement within the MySQL UNION ALL operator must have the same number of fields in the result sets with similar data types.
+
+
+**Syntax**
+
+```sql
+SELECT column_list FROM table1  
+UNION ALL  
+SELECT column_list FROM table2;  
+```
+
+**Example:** Query all the NAME from student table from Dept F and Dept M separately and UNION ALL them.
+
+```sql
+SELECT NAME FROM dpu_college.student WHERE DEPT_ID='F'
+UNION ALL
+SELECT NAME  FROM dpu_college.student WHERE DEPT_ID='M';
+```
+
+
+
+**WooHooo!** In this chapter you learned SQL Joins and UNION Keep practicing to make sure you are able to grasp the concept.
 
 You can go to below sites to practice SQL scenario based questions.
 - [Hackerrank](https://www.hackerrank.com/domains/sql)
