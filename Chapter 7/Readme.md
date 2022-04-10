@@ -1,13 +1,21 @@
 # SQL Functions
 
-In this chapter we will continue on the SQL functions from last chapter onwards. In previous chapter we have already discussed Flow Control Functions, nowlet's continue with the remaining functions.
+In this chapter we will continue on the SQL functions from last chapter onwards. 
+
+We will use Sakila database in todays class, if you dont have sakila db available in your db then click [here](https://downloads.mysql.com/docs/sakila-db.zip) to download and follow the below steps to setup the dbin your Mysql Server. [Link](https://downloads.mysql.com/docs/sakila-db.zip)
+1. Open ***sakila-schema.sql*** file and copy the entire content of the file to MySQL workbench and run it.(_this step is to create required schema_)
+2. Open ***sakila-data.sql*** file and copy the entire content of the file to MySQL workbench and run it.(_this step is to insert data into the tables_)
+
+<br>
+
+In previous chapter we have already discussed Flow Control Functions, now let's continue with the remaining functions.
+
 
 - String Functions
 - Aggregate Functions
 - Mathematical Functions
 - Date & Time Functions
 - Window Functions
-
 
 
 ### String Functions
