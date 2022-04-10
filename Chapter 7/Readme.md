@@ -38,6 +38,170 @@ In previous chapter we have already discussed Flow Control Functions, now let's 
 
 <br>
 
+#### CONCAT
+
+The CONCAT() function joins or adds two or more expressions together. If a numeric argument is given then it is converted to its equivalent string form.
+
+**Syntax**
+
+```sql
+CONCAT(expression1, expression2, expression3,...)
+```
+<br>
+
+**Example:** The Actor table in Sakila DB contains actor_id, first_name and last_name of the actor. Write a query to return actor_id and full name of the actor by joining the first_name and last_name.
+
+
+```sql
+SELECT actor_id, 
+CONCAT(first_name,' ', last_name) as Full_Name
+FROM sakila.actor;
+```
+<br>
+
+**Question 1**: From Address table in Sakila DB query address_id, Full address and phone. Full address is the concatenation of address, address2, district,and postal_code fields.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT address_id, 
+CONCAT(address, ' ', address2, ' ', district, ' ',postal_code) as Full_Address,
+phone
+FROM sakila.address;
+```
+</details>
+
+
+<br>
+
+
+#### LENGTH
+
+The LENGTH() function returns the length of a string (in bytes).
+
+**Syntax**
+
+```sql
+LENGTH(string)
+```
+<br>
+
+**Example:** Below query returns the length of the string "An Example", which is 10 characters.
+
+
+```sql
+SELECT LENGTH("An Example") AS LengthOfString;
+```
+<br>
+
+> **Output:** 10
+
+
+**Question 2**: From Category table in Sakila DB query the name of each categories along with the length of each names.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT name, LENGTH(name)
+FROM sakila.category;
+```
+</details>
+
+
+<br>
+
+
+#### LEFT/RIGHT Function
+
+The LEFT() function extracts a number of characters from a string (starting from left). Similarly The RIGHT() function extracts a number of characters from a string (starting from right).
+
+**Syntax**
+
+> LEFT
+```sql
+LEFT(string, number_of_chars)
+```
+
+>RIGHT
+```sql
+RIGHT(string, number_of_chars)
+```
+
+<br>
+
+
+**Example:** Below query returns the first 3 characters of the string "SQLTraining" as from_left and last 8 characters of the string as from_right.
+
+
+```sql
+SELECT LEFT("SQLTraining",3) AS from_left,
+RIGHT("SQLTraining",8) AS from_right;
+```
+<br>
+
+> **Output:** 
+
+|from_left|from_right|
+|---------|----------|
+|SQL|Training|
+
+
+
+**Question 3**: From Actor table in Sakila DB query the first_name, last_name and first 4 character of the last_update column as YearofUpdate.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT first_name, last_name,
+LEFT(last_update,4) AS YEARofUpdate
+FROM sakila.actor;
+```
+</details>
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Aggregate Functions
 
 Aggregate functions allow you to perform a calculation on a set of records and return a single value or summarized result set.
