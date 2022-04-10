@@ -65,7 +65,6 @@ This course is divided into 10 chapters, each chapter will cover a major subject
     - IFNULL
     - NULLIF
     - COALESCE
-    - ISNULL
 
 ## [Chapter 7: SQL Functions](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%207)
 - SQL Functions
