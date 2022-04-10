@@ -1,5 +1,7 @@
 # SQL Functions
 
+In this chapter we will continue on the SQL functions from last chapter onwards. In previous chapter we have already discussed Flow Control Functions, nowlet's continue with the remaining functions.
+
 - String Functions
 - Aggregate Functions
 - Mathematical Functions
