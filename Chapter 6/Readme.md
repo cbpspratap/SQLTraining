@@ -174,7 +174,7 @@ ORDER BY Dept_Group;
 
 #### IF Function
 
-The MySQL IF() function is used for validating a condition. The IF() function returns a value if the condition is TRUE and another value if the condition is FALSE.
+The IF() function is used for validating a condition. The IF() function returns a value if the condition is TRUE and another value if the condition is FALSE.
 
 
 **Syntax**
@@ -191,7 +191,7 @@ IF(condition, true_value, false_value)
 SELECT NAME, 
 MARKS, 
 IF(MARKS>50, 'Pass', 'Fail') AS Result
-FROM dpu_college.student ;
+FROM dpu_college.student;
 ```
 <br>
 
@@ -210,11 +210,45 @@ ORDER BY Dept_Group;
 ```
 </details>
 
+
 <br>
 
 
+#### IFNULL Function
+
+The IFNULL function returns an alternate value if an expression or the value in the field is NULL.
+
+**Syntax**
+
+```sql
+IFNULL( expression, value_if_null )
+```
+<br>
+
+**Example:** Query Name, Marks from student table and return any Marks with Null value as 0.
 
 
+```sql
+SELECT NAME, 
+IFNULL(MARKS, 0) AS MARKS
+FROM dpu_college.student;
+```
+<br>
+
+**Question 3**: Query Name, Dept from Faculty table with Dept_ID Null called as 'Admin'.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT NAME, 
+IFNULL(DEPT_ID, 'Admin') as Dept
+FROM dpu_college.faculty;
+```
+</details>
+
+
+<br>
 
 
 
