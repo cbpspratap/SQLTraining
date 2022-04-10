@@ -113,7 +113,6 @@ The built-in SQL functions are divided in below major categories, we will go thr
 | IFNULL | Returns the first argument if it is not NULL , otherwise returns the second argument. |
 | NULLIF | Returns NULL if the first argument is equal to the second argument, otherwise, returns the first argument. |
 | COALESCE | Returns the first non-NULL arguments, which is very handy for substitution ofNULL. |
-| ISNULL | Returns 1(TRUE) if the argument is NULL, otherwise, return zero(FALSE). |
 
 <br>
 
