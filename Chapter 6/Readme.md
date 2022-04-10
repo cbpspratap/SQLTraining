@@ -275,7 +275,7 @@ NULLIF( expression1, expression2 )
 
 ```sql
 SELECT ID, NAME, DEPT, 
-NULLIF( Updated_Marks, Org_Marks) Update_Marks
+NULLIF( Updated_Marks, Org_Marks) AS Update_Marks
 FROM student;
 ```
 
@@ -283,6 +283,57 @@ FROM student;
 <br>
 
 
+#### COALESCE Function
+
+The COALESCE() function is used to return the first non-null value in a specified series of expressions. If this function evaluates all values of the list are null, or it does not find any non-null value, then it returns NULL.
+
+**Syntax**
+
+```sql
+COALESCE( expression1, expression2, ... expression_n )
+```
+<br>
+
+**Example:** In below example you can see it will evaluate to Apple, because its the first non-null value in the COALESCE function.
+
+```sql
+SELECT COALESCE(NULL, 'Apple', 'Orange', NULL);   
+```
+
+> Apple
+
+
+```sql
+SELECT Emp_id, Name, Designation, 
+COALESCE(mobile, Office, Phone, 'Not Available') as Number
+FROM employee; 
+```
+<br>
+
+**Question 3**: Query Name, Dept from Faculty table with Dept_ID Null called as 'Admin'.
+
+| Emp_id | Name    | Designation | Phone       | Mobile      | Office      |
+| ------ | ------- | ----------- | ----------- | ----------- | ----------- |
+| 1      | Peter   | Engineer    | 101-101-101 | 111-111-111 | 100-100-100 |
+| 2      | Joseph  | Developer   | 201-201-201 | 222-222-222 |             |
+| 3      | John    | Leader      | 301-301-301 |             | 300-300-300 |
+| 4      | Stephen | Scientist   | 401-401-401 | 444-444-444 | 400-400-400 |
+| 5      | Suzi    | Carpenter   |             | 555-555-555 | 500-500-500 |
+| 6      | Bob     | Actor       | 601-601-601 | 666-666-666 | 600-600-600 |
+| 7      | Donald  | Engineer    |             |             |             |
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT Emp_id, Name, Designation, 
+COALESCE(mobile, Office, Phone, 'Not Available') as Number
+FROM employee; 
+```
+</details>
+
+
+<br>
 
 
 
