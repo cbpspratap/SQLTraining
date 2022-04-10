@@ -168,5 +168,55 @@ ORDER BY Dept_Group;
 ```
 </details>
 
+
 <br>
+
+
+#### IF Function
+
+The MySQL IF() function is used for validating a condition. The IF() function returns a value if the condition is TRUE and another value if the condition is FALSE.
+
+
+**Syntax**
+
+```sql
+IF(condition, true_value, false_value)
+```
+<br>
+
+**Example:** Query Name, Marks and Result from student table, with Result defined as marks greater then 50 as 'Pass' othewise 'Fail'.
+
+
+```sql
+SELECT NAME, 
+MARKS, 
+IF(MARKS>50, 'Pass', 'Fail') AS Result
+FROM dpu_college.student ;
+```
+<br>
+
+**Question 2**: Query Name, Dept_ID, and Dept_Group of students where Dept_ID F, B & H are 'Group 1', Dept_ID M, P, D & I are 'Group 2' anything else is 'No Group and order the data by Dept_group.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT Name, DEPT_ID,
+IF(DEPT_ID IN( 'F', 'B', 'H'), 'Group 1', 
+		IF(DEPT_ID IN( 'M', 'P', 'D', 'I'), 'Group 2', 
+				'No Group')) AS Dept_Group
+FROM dpu_college.student
+ORDER BY Dept_Group;
+```
+</details>
+
+<br>
+
+
+
+
+
+
+
+
 
