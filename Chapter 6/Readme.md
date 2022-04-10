@@ -251,6 +251,38 @@ FROM dpu_college.faculty;
 <br>
 
 
+#### NULLIF Function
+
+The NULLIF function returns NULL if the first argument is equal to the second argument, otherwise it returns the first argument.
+
+**Syntax**
+
+```sql
+NULLIF( expression1, expression2 )
+```
+<br>
+
+**Example:** Consider below example of student table, in which after exam paper recheck some of the students marks got updated and now we need to show only the updated marks in the result sheet. Write a query to find the ID, NAME, DEPT and Updated marks of those students whose marks got updated. 
+
+| ID | NAME | DEPT |	Org_Marks | Updated_Marks |
+|----|------|---------|-----------|---------------|
+| 1	| Hitesh Mishra	| F	| 68	| 72 |
+| 2	| Pari Sharma	| H	| 96	| 96 |
+| 3	| Ankit Gupta	| M	| 74	| 74 |
+| 4	| Sanket Kumar	| I	| 54	| 64 |
+| 5	| Priti Singh	| B	| 93	| 93 |
+
+
+```sql
+SELECT ID, NAME, DEPT, 
+NULLIF( Updated_Marks, Org_Marks) Update_Marks
+FROM student;
+```
+
+
+<br>
+
+
 
 
 
