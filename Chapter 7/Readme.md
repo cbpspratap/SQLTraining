@@ -165,11 +165,80 @@ FROM sakila.actor;
 <br>
 
 
+#### LOWER/UPPER Function
+
+The LOWER() function accepts a string argument and returns the lowercase version of that string. UPPER() functions also accepts a string argument although it returns the uppercase version of that string.
 
 
+**Syntax**
+
+> LOWER
+```sql
+LOWER(string)
+```
+
+>Upper
+```sql
+UPPER(string)
+```
+**Example:** In below example you can see email is converted to Upper and Lower case.
+
+```sql
+SELECT email, UPPER(email), LOWER(email)
+FROM sakila.customer;
+```
+
+<br>
 
 
+#### LTRIM/RTRIM Function
 
+LTRIM() function is used to remove the leading spaces from a string similarly RTRIM() function is used to remove trailing spaces from a string.
+
+
+**Syntax**
+
+> LTRIM
+```sql
+LTRIM(string)
+```
+
+>RTRIM
+```sql
+RTRIM(string)
+```
+**Example 1:** In below example you can see the leading spaces are removed after using LTRIM.
+
+```sql
+SELECT LTRIM('               Learn SQL the easy way!              ') AS TrimmedString;
+```
+
+**Example 2:** In below example you can see the trailing spaces are removed after using RTRIM.
+
+```sql
+SELECT RTRIM('               Learn SQL the easy way!              ') AS TrimmedString;
+```
+
+<br>
+
+
+#### TRIM Function
+
+TRIM() function is used for data clean up purpose. It is used to remove the leading and trailing spaces from a string.
+
+**Syntax**
+
+```sql
+TRIM(string)
+```
+
+**Example:** In below example you can see extra spaces before and after the string is removed.
+
+```sql
+SELECT TRIM('  Learn SQL the easy way!    ') AS TrimmedString;
+```
+
+<br>
 
 
 
