@@ -299,7 +299,7 @@ FROM sakila.film_text;
 
 ### Aggregate Functions
 
-Aggregate functions allow you to perform a calculation on a set of records and return a single value or summarized result set.
+Aggregate functions allow you to perform a calculation on a set of records and return a single value or summarized result set. When using Aggregate function in select statement along with other non-aggregated fields we need to use GROUP BY on the remaining non-aggregated fields
 
 [Click here](https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html) to get the list of all MySQL aggregate functions.
 
@@ -347,12 +347,99 @@ FROM sakila.actor;
 <br>
 
 
+#### SUM/AVG Function
+
+The SUM() function returns the total sum of a numeric column, while AVG() function returns the average of the numeric column.
+
+**Syntax**
+
+```sql
+SELECT SUM/AVG(column_name)
+FROM table_name
+WHERE condition;
+```
+
+**Example 1:** Below example sums the amount of each payment to return total payments from payment table within sakila db.
+
+```sql
+SELECT SUM(amount) Total_amount
+FROM sakila.payment;
+```
+
+**Example 2:** Below example returns the average payment amount handeled by each staff_id from payment table within sakila db.
+
+```sql
+SELECT staff_id, AVG(amount) Avg_Amount
+FROM sakila.payment
+GROUP BY staff_id;
+```
+
+<br>
 
 
+#### MAX/MIN Function
+
+The MAX() function returns the largest value from the specified column while the MIN() function returns the smallest value from the specified column. 
+
+**Syntax**
+
+```sql
+SELECT MAX/MIN(column_name)
+FROM table_name
+WHERE condition;
+```
+
+**Example:** Below example finds the maximum and minimum payment amount from payment table within sakila db.
+
+```sql
+SELECT MAX(amount) MAX_Amount, MIN(amount) MIN_Amount
+FROM sakila.payment;
+```
 
 
+<br>
 
 
+#### STDDEV Function
+
+MySQL STDDEV() function returns the population standard deviation of expression. The STDDEV() function is used to calculate statistical information for a specified numeric field in a query. It returns NULL if no matching rows found.
+
+**Syntax**
+
+```sql
+STDDEV(expression)
+```
+
+**Example:** Click [here](https://www.db-fiddle.com/f/8sw46GWkSgmzGtyZAXQR1/0) to open the example in db-fiddle and find the standard deviation of total_cost.
+
+```sql
+SELECT STDDEV(total_cost)             
+FROM purchase;
+```
+
+
+<br>
+
+
+#### VARIANCE Function
+
+VARIANCE() function returns the population standard variance of an expression.
+
+**Syntax**
+
+```sql
+VARIANCE(expression)
+```
+
+**Example:** Click [here](https://www.db-fiddle.com/f/8sw46GWkSgmzGtyZAXQR1/0) to open the example in db-fiddle and find the variance of total_cost.
+
+```sql
+SELECT VARIANCE(total_cost)             
+FROM purchase;
+```
+
+
+<br>
 
 
 
