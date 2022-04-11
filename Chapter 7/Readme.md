@@ -241,9 +241,58 @@ SELECT TRIM('  Learn SQL the easy way!    ') AS TrimmedString;
 <br>
 
 
+#### SUBSTRING/SUBSTR Function
+
+The SUBSTRING() or SUBSTR() functions are same and it is used to extracts a substring from a string (starting at any position).
+
+**Syntax**
+
+```sql
+SUBSTRING(string, start, length)
+```
+
+**Example 1:** Using below example you can extract 5 characters of the string starting from position 1.
+
+```sql
+SELECT SUBSTRING('Learn SQL the easy way!',1,5) AS SubString;
+```
+
+**Example 2:** Using below example you can extract 10 characters starting from position 3 of description column in sakila.film_text table 
+
+```sql
+SELECT description, SUBSTR(description, 3, 10) Example
+FROM sakila.film_text;
+```
+
+<br>
 
 
 
+#### REPLACE Function
+
+The REPLACE() function replaces all occurrences of a substring within a string, with a new substring.
+***Note:*** This function performs a case-sensitive replacement.
+
+**Syntax**
+
+```sql
+REPLACE(string, from_string, new_string)
+```
+
+**Example 1:** Using below example you can all 'e' with 'p' in the string.
+
+```sql
+SELECT REPLACE('Learn SQL the easy way!', 'e','p') example;
+```
+
+**Example 2:** Using the below example you can all the occurances of 'A' with 'The' in the string. You can also notice that it is case sensitive and replacing only the capital 'A'. 
+
+```sql
+SELECT description, Replace(description, 'A', 'The') Example
+FROM sakila.film_text;
+```
+
+<br>
 
 
 
