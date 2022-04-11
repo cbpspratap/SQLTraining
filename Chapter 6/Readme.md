@@ -62,14 +62,12 @@ Logical operators are those that return true or false, such as the AND operator,
 | Operator | Description |
 |----------|-------------|
 | BETWEEN | It is used to search within a set of values, by the minimum value and maximum value provided. |
-| EXISTS | It is used to search for the presence of a row in a table which satisfies a certain condition specified in the query. |
 | OR | It is used to combine multiple conditions in a statement by using the WHERE clause. |
 | AND | It allows the existence of multiple conditions in an SQL statement’s WHERE clause. |
-| NOT | It reverses the meaning of the logical operator with which it is used. (Examples: NOT EXISTS, NOT BETWEEN, NOT IN, etc.) |
 | IN | It is used to compare a value in a list of literal values. |
+| NOT | It reverses the meaning of the logical operator with which it is used. (Examples: NOT EXISTS, NOT BETWEEN, NOT IN, etc.) |
 | LIKE | It uses wildcard operators to compare a value to similar values. |
 | IS NULL | It compares a value with a NULL value. |
-| UNIQUE | It searches for every row of a specified table for uniqueness (no duplicates). |
 
 <br>
 
