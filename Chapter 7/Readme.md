@@ -294,30 +294,7 @@ FROM sakila.film_text;
 
 <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
 
 
 ### Aggregate Functions
@@ -339,6 +316,71 @@ Aggregate functions allow you to perform a calculation on a set of records and r
 
 
 <br>
+
+#### COUNT/COUNT(DISTINCT) Function
+
+The COUNT() function returns the number of rows that matches a specified criterion. Similarly COUNT(DISTINCT) also returns the number of rows but only the unique/distinct rows.
+
+
+**Syntax**
+
+```sql
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+```
+
+**Example 1:** Below example counts the numer of records in actor table within sakila db.
+
+```sql
+SELECT COUNT(*) 
+FROM sakila.actor;
+```
+
+**Example 2:** Below example counts the unique last_name in actor table within sakila db. 
+
+```sql
+SELECT count(distinct last_name)
+FROM sakila.actor;
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Mathematical Functions
