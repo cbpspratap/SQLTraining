@@ -443,33 +443,6 @@ FROM purchase;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Mathematical Functions
 
 [Click here](https://dev.mysql.com/doc/refman/8.0/en/mathematical-functions.html) to get the list of all MySQL mathematical functions.
@@ -497,4 +470,45 @@ FROM purchase;
 
 
 <br>
+
+
+#### ABS Function
+
+The ABS() function returns the absolute (positive) value of a number.
+
+**Syntax**
+
+```sql
+ABS(number)
+```
+
+**Example:** Below example returns the absolute value 273.15
+
+```sql
+SELECT ABS(−273.15);
+```
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
