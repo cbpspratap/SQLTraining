@@ -493,22 +493,161 @@ SELECT ABS(−273.15);
 
 
 
+#### TRUNCATE Function
+
+The TRUNCATE() function truncates a number to the specified number of decimal places.
+
+**Syntax**
+
+```sql
+TRUNCATE(number, decimals)
+```
+
+**Example:** Below example truncates the value of pi to 2 decimal places and return.
+
+```sql
+SELECT TRUNCATE(3.1415929, 2);
+```
+
+
+<br>
 
 
 
+#### CEIL/CEILING Function
+
+The CEIL() and CEILING() functions are same, both function returns the smallest integer value that is bigger than or equal to a number.
+
+
+**Syntax**
+
+> CEIL()
+```sql
+CEIL(number)
+```
+
+>CEILING()
+```sql
+CEILING(number)
+```
+
+**Example:** Below example returns the smallest integer larger than the pi value which is 4.
+
+```sql
+SELECT CEIL(3.1415929);
+```
+
+
+<br>
 
 
 
+#### FLOOR Function
+
+The FLOOR() function returns the largest integer value that is smaller than or equal to a number.
+
+**Syntax**
+
+```sql
+FLOOR(number)
+```
+
+**Example:** Below example returns the largest integer smaller than the pi value which is 3.
+
+```sql
+SELECT CEIL(3.1415929);
+```
+
+
+<br>
+
+
+#### POW/POWER Function
+
+The POW() and POWER() function are same both the function returns the value of a number raised to the power of another number.
+
+**Syntax**
+
+>POW()
+```sql
+POW(x, y)
+```
+
+>POWER()
+```sql
+POWER(x, y)
+```
+
+**Example:** Below example returns the cube of 3 which is 27.
+
+```sql
+SELECT POW(3,3);
+```
+
+
+<br>
 
 
 
+#### SQRT Function
+
+The SQRT() function returns the square root of a number.
+
+**Syntax**
+
+```sql
+SQRT(number)
+```
 
 
+**Example:** Below example returns the square root of 64 which is 8.
+
+```sql
+SELECT SQRT(64);
+```
 
 
+<br>
 
 
+#### RAND Function
 
+The RAND() function returns a random number between 0 (inclusive) and 1 (exclusive). Seed is optional in below syntax, if seed is specified, it returns a repeatable sequence of random numbers. If no seed is specified, it returns a completely random number
+
+**Syntax**
+
+```sql
+RAND(seed)
+```
+
+To create a random decimal number between two values (range), you can use the following formula:
+
+```sql
+SELECT RAND()*(b-a)+a;
+```
+
+Where a is the smallest number and b is the largest number that you want to generate a random number for.
+
+
+**Example 1:** In below example we are querying payment table from sakila db to return payment_id, amount and a random number.
+
+```sql
+SELECT payment_id, amount, rand(5)
+FROM sakila.payment;
+```
+
+
+**Example 2:** Lets use student table from dpu_college db and create a column 'rating' with random number between 5 and 10 with 1 decimal places. Multiply rating column with marks and call it as overall_marks. Return Name, Dept_id, marks, rating, Overall_marks
+
+```sql
+SELECT Name, Dept_id, Marks, 
+TRUNCATE(rand()*(10-5)+5,1) as Rating, 
+marks*TRUNCATE(rand()*(10-5)+5,1) as Overall_marks
+FROM dpu_college.student;
+```
+
+
+<br>
 
 
 
