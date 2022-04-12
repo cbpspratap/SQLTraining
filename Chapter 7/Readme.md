@@ -646,8 +646,6 @@ marks*TRUNCATE(rand()*(10-5)+5,1) as Overall_marks
 FROM dpu_college.student;
 ```
 
-
 <br>
-
 
 
