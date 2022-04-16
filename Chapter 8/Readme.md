@@ -366,31 +366,12 @@ FROM sakila.rental;
 
 <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
 
 
 ### Window Functions
+
+A window function in MySQL used to do a calculation across a set of rows that are related to the current row. The current row is that row for which function evaluation occurs.
 
 [Click here](https://dev.mysql.com/doc/refman/8.0/en/window-function-descriptions.html) to get the list of all MySQL window functions.
 | Name			| Description |
@@ -404,53 +385,87 @@ FROM sakila.rental;
 | LAG()			| Value of argument from row lagging current row within partition |
 
 
+**Syntax:**
+
+```
+window_function_name(expression)   
+OVER (  
+    [partition_defintion]  
+    [order_definition]  
+)  
+```
+
+In this syntax:
+- First, specify the window function name followed by an expression.
+- Second, specify the OVER clause which has three possible elements: partition definition and order definition. 
+- The opening and closing parentheses after the OVER clause are mandatory, even with no expression
+
 <br>
 
+***PARTITION Clause:*** The partition_clause breaks up the rows into chunks or partitions. Two partitions are separated by a partition boundary. The window function is performed within partitions and re-initialized when crossing the partition boundary. You can specify one or more expressions in the PARTITION BY clause. Multiple expressions are separated by commas.
+
+The partition_clause syntax looks like the following:
+```
+PARTITION BY <expression>[{,<expression>...}]
+```
+
+<br>
+
+***ORDER BY Clause:*** The ORDER BY clause specifies how the rows are ordered within a partition. It is possible to order data within a partition on multiple keys, each key is specified by an expression. Multiple expressions are also separated by commas.
+
+The ORDER BY clause syntax looks like the following:
+```
+ORDER BY <expression> [ASC|DESC], [{,<expression>...}]
+```
+
+<br>
+
+<br>
+
+**Let's Understand Window function by below example using our student table in dpu_college db.**
+
+1. Let's find out the ```avg``` marks of students in student table
+
+Below SQL will return ```avg``` marks of all the students:
+
+```sql
+SELECT AVG(marks) FROM dpu_college.student;
+```
+![image](https://user-images.githubusercontent.com/67796162/163669349-e148b8e7-791f-4523-8ecf-2c62c25dd935.png)
+
+2. Here you can see the GROUP BY clause allows you to apply aggregate functions to a subset of rows. 
+
+For example, you may want to calculate the average marks of each department.
+
+```sql
+SELECT dept_id, AVG(marks)
+FROM dpu_college.student
+GROUP BY dept_id;
+```
+![image](https://user-images.githubusercontent.com/67796162/163669734-47dc5a95-fa3d-4f26-9cd3-90e6adcc5edb.png)
 
 
+3. In both examples, the aggregate functions reduce the number of rows returned by the query. Like the aggregate functions with the GROUP BY clause, window functions also operate on a subset of rows but they do not reduce the number of rows returned by the query.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Question 4**: Use Sakila DB to query rental_id, inventory_id, film_name, customer name, staff name, rental_date, return_date and rental_duration. 
-
-**_Hint:_** You need to join multiple tables to get the film name, customer name and staff name.
-
-<details>
- <Summary>Click here to reveal the solution!</Summary>
+For example, the following query returns the marks for each student, along with average marks of the department
 
 ```sql
 SELECT 
-r.rental_id, 
-r.inventory_id, 
-f.title as film_name,
-r.customer_id, 
-CONCAT(c.first_name, ' ', c.last_name) as customer_name,
-CONCAT(s.first_name, ' ', s.last_name) as staff_name,
-r.rental_date, 
-r.return_date, 
-DATEDIFF(r.return_date,r.rental_date) days_rented
-FROM sakila.rental r
-LEFT JOIN sakila.inventory i ON r.inventory_id=i.inventory_id
-LEFT JOIN sakila.film_text f ON i.film_id=f.film_id
-LEFT JOIN sakila.customer c ON r.customer_id=c.customer_id
-LEFT JOIN sakila.staff s ON r.staff_id=s.staff_id;
+  name, 
+  dept_id, 
+  marks, 
+  AVG(marks) OVER(PARTITION BY dept_id) as Avg_Dept_Marks
+FROM dpu_college.student;
 ```
-</details>
+![image](https://user-images.githubusercontent.com/67796162/163669766-6052adff-23c1-45ec-ab48-264bbea5a69f.png)
+
+
+4. In this example, the AVG() function works as a window function that operates on a set of rows defined by the contents of the OVER clause. A set of rows to which the AVG() function applies is referred to as a window.
+
+The AVG() window function reports not only the average marks of each department as it does in the query with the GROUP BY clause, but also the result in each row.
+
+
+
+
 
 
