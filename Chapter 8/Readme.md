@@ -495,7 +495,23 @@ DENSE_RANK() OVER (<partition_definition> <order_definition>)
 ```
 <br>
 
-**Example:** Query the student table from dpu_college db and bring in the row_number, Rank and Dense Rank  by Marks in Desc order partitioned by each department.
+**Example 1:** Below table contains salary sorted low to high, you can see what each of the row_number, rank and dense_rank function will return in this case.
+
+Click [here](https://www.db-fiddle.com/f/aWzyzgAYe4MTZ7ZA5mZRmc/0) to try this problem in db-fiddle.
+
+| salary | row_number | rank | dense_rank |
+| ------ | ---------- | ---- | ---------- |
+| 200    | 1          | 1    | 1          |
+| 150    | 2          | 2    | 2          |
+| 150    | 3          | 2    | 2          |
+| 150    | 4          | 2    | 2          |
+| 120    | 5          | 5    | 3          |
+| 110    | 6          | 6    | 4          |
+| 100    | 7          | 7    | 5          |
+
+
+
+**Example 2:** Query the student table from dpu_college db and bring in the row_number, Rank and Dense Rank  by Marks in Desc order partitioned by each department.
 
 ```sql
 SELECT 
