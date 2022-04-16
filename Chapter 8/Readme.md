@@ -170,22 +170,22 @@ WEEK() returns the week number for a given date. The argument allows the user to
 
 > YEAR
 ```sql
-YEAR(Expression)
+YEAR(DateExpression)
 ```
 
 > MONTH
 ```sql
-MONTH(Expression)
+MONTH(DateExpression)
 ```
 
 > DAY
 ```sql
-DAY(Expression)
+DAY(DateExpression)
 ```
 
 > WEEK
 ```sql
-WEEK(date, Mode);
+WEEK(DateExpression, Mode);
 ```
 <br>
 
@@ -214,17 +214,17 @@ MONTHNAME() returns the full name of the month for a given date. The return valu
 
 > DAYNAME
 ```sql
-DAYNAME(Expression)
+DAYNAME(DateExpression)
 ```
 
 > MONTHNAME
 ```sql
-MONTHNAME(Expression)
+MONTHNAME(DateExpression)
 ```
-```
+
 <br>
 
-**Example:** Show payment_id, amount, payment_date and extract Year,Month Name, day and Weekday Name from the payment_date field from payment table in Sakila DB.
+**Example:** Show payment_id, amount, payment_date and show Year,Month Name, day and Weekday Name from the payment_date field from payment table in Sakila DB.
 
 ```sql
 SELECT payment_id, 
@@ -236,10 +236,62 @@ DAY(payment_date) as Payment_Day,
 DAYNAME(payment_date) as Payment_Weekday
 FROM sakila.payment;
 ```
+
 <br>
 
 
+#### EXTRACT
 
+EXTRACT() function in MySQL is related to a DATE and DATETIME function. It is used to extract a portion of the DATE and DATETIME values.
+
+The EXTRACT() function requires two arguments unit and date. The unit is the interval that you want to extract from the date. 
+
+The following are the valid intervals for the unit argument.
+- DAY
+- DAY_HOUR
+- DAY_MICROSECOND
+- DAY_MINUTE
+- DAY_SECOND
+- HOUR
+- HOUR_MICROSECOND
+- HOUR_MINUTE
+- HOUR_SECOND
+- MICROSECOND
+- MINUTE
+- MINUTE_MICROSECOND
+- MINUTE_SECOND
+- MONTH
+- QUARTER
+- SECOND
+- SECOND_MICROSECOND
+- WEEK
+- YEAR
+- YEAR_MONTH
+
+
+**Syntax**
+
+```sql
+EXTRACT(unit FROM DateExpression)
+```
+
+<br>
+
+**Example:** Show payment_id, amount, payment_date and extract Year, Quarter, Month, Week, day and Weekday Name from the payment_date field from payment table in Sakila DB.
+
+```sql
+SELECT payment_id, 
+amount, 
+payment_date, 
+EXTRACT(YEAR FROM payment_date) as Payment_Year,
+EXTRACT(QUARTER FROM payment_date) as Payment_Quarter, 
+EXTRACT(MONTH FROM payment_date) as Payment_Month,
+EXTRACT(WEEK FROM payment_date) as Payment_Week,
+EXTRACT(DAY FROM payment_date) as Payment_Day,
+DAYNAME(payment_date) as Payment_Weekday
+FROM sakila.payment;
+```
+<br>
 
 
 
