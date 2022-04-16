@@ -464,6 +464,53 @@ FROM dpu_college.student;
 
 The AVG() window function reports not only the average marks of each department as it does in the query with the GROUP BY clause, but also the result in each row.
 
+<br>
+
+<br>
+
+#### ROW_NUMBER/RANK/DENSE_RANK 
+
+The ROW_NUMBER() function is used to returns the sequential number for each row within its partition. The row number starts from 1 to the number of rows present in the partition.
+
+The RANK function is used to retrieve ranked rows based on the condition of the ORDER BY clause. An interesting thing about the RANK function is that if there is a tie between N previous records for the value in the ORDER BY column, the RANK functions skips the next N-1 positions before incrementing the counter.
+
+The DENSE_RANK function is similar to RANK function however the DENSE_RANK function does not skip any ranks if there is a tie between the ranks of the preceding records. 
+
+
+**Syntax**
+
+>ROW_NUMBER
+```
+ROW_NUMBER() OVER (<partition_definition> <order_definition>)  
+```
+
+>RANK
+```
+RANK() OVER (<partition_definition> <order_definition>)  
+```
+
+>DENSE_RANK
+```
+DENSE_RANK() OVER (<partition_definition> <order_definition>)  
+```
+<br>
+
+**Example:** Query the student table from dpu_college db and bring in the row_number, Rank and Dense Rank  by Marks in Desc order partitioned by each department.
+
+```sql
+SELECT 
+	NAME, 
+	DEPT_ID, 
+	MARKS, 
+	row_number() over(partition by DEPT_ID Order BY MARKS desc) as "ROW_NUMBER",
+	rank() over(partition by DEPT_ID Order BY MARKS desc) as "RANK",
+	dense_rank() over(partition by DEPT_ID Order BY MARKS desc) as "DENSE_RANK"
+FROM DPU_COLLEGE.STUDENT;
+```
+
+<br>
+
+
 
 
 
