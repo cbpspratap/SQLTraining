@@ -1,4 +1,4 @@
-# SQL Functions
+# SQL Functions Continued..
 
 In this chapter we will continue on the SQL functions from last chapter onwards. 
 
