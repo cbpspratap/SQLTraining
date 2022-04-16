@@ -573,31 +573,48 @@ WHERE NOT isnull(MARKS);
 
 
 
+#### LEAD/LAG
 
+The LEAD() and LAG() function in MySQL are used to get preceding and succeeding value of any row within its partition. 
 
+The LAG() function is used to get value from row that precedes the current row. While 
 
+The LEAD() function is used to get value from row that succeeds the current row.
 
+**Syntax**
 
+>LAG
+```
+LAG(<expression>[,offset[, default_value]]) OVER (
+    PARTITION BY expr,...
+    ORDER BY expr [ASC|DESC],...
+)
+```
 
+>LEAD
+```
+LEAD(<expression>[,offset[, default_value]]) OVER (
+    PARTITION BY (expr)
+    ORDER BY (expr)
+)
+```
 
+Offset- The offset is the number of rows forward/backword from the current row from which to obtain the value. If offset is zero, then the function evaluates the expression for the current row. If you don’t specify the offset, then the function uses one by default.
 
+<br>
 
+**Example :** Query the student table from dpu_college db and bring the details of each student with their marks, Next highest marks, previous highest marks within each department.
 
+```sql
+SELECT 
+	NAME, 
+	DEPT_ID, 
+	MARKS, 
+	lag(marks, 1) over(partition by DEPT_ID Order BY MARKS desc) as "Previous Marks",
+    lead(marks, 1) over(partition by DEPT_ID Order BY MARKS desc) as "Next Marks"
+FROM DPU_COLLEGE.STUDENT
+WHERE NOT isnull(MARKS);
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
 
