@@ -509,7 +509,7 @@ Click [here](https://www.db-fiddle.com/f/aWzyzgAYe4MTZ7ZA5mZRmc/0) to try this p
 | 110    | 6          | 6    | 4          |
 | 100    | 7          | 7    | 5          |
 
-
+<br>
 
 **Example 2:** Query the student table from dpu_college db and bring in the row_number, Rank and Dense Rank  by Marks in Desc order partitioned by each department.
 
@@ -525,6 +525,75 @@ FROM DPU_COLLEGE.STUDENT;
 ```
 
 <br>
+
+
+
+#### FIRST_VALUE/LAST_VALUE
+
+The FIRST_VALUE() is a window function that allows you to select the first row of a window frame, partition, or result set.
+
+The LAST_VALUE() function is a window function that allows you to select the last row in an ordered set of rows.
+
+**Syntax**
+
+>FIRST_VALUE
+```
+FIRST_VALUE (expression) OVER (
+   [partition_clause]
+   [order_clause]
+   [frame_clause])
+```
+
+>LAST_VALUE
+```
+LAST_VALUE (expression) OVER (
+   [partition_clause]
+   [order_clause]
+   [frame_clause])
+```
+<br>
+
+**Example :** Query the student table from dpu_college db and bring in the highest and lowest marks within each department and show it agains the marks of each student.
+
+```sql
+SELECT 
+	NAME, 
+	DEPT_ID, 
+	MARKS, 
+    first_value(marks) over(partition by DEPT_ID Order BY MARKS desc) as "Highest Marks",
+    last_value(marks) over(partition by DEPT_ID Order BY MARKS desc 
+							RANGE BETWEEN 
+                            UNBOUNDED PRECEDING AND 
+                            UNBOUNDED FOLLOWING) as "Lowest Marks"
+FROM DPU_COLLEGE.STUDENT
+WHERE NOT isnull(MARKS);
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
