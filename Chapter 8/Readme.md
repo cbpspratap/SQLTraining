@@ -292,7 +292,79 @@ FROM sakila.payment;
 <br>
 
 
+#### DATE_ADD/DATE_SUB
 
+The DATE_ADD() function adds a time/date interval to a date and then returns the date. The ADDDATE() is the synonym of DATE_ADD().
+
+The DATE_SUB() function subtracts a time/date interval from a date and then returns the date. The SUBDATE() is the synonym of DATE_SUB().
+
+The unit here in the argument is same as the unit used in EXTRACT function.
+
+**Syntax**
+
+> DATE_ADD
+```sql
+DATE_ADD(DateExpression, INTERVAL value unit)
+```
+
+> DATE_SUB
+```sql
+DATE_SUB(DateExpression, INTERVAL value unit)
+```
+
+<br>
+
+**Example:** Add 2 months to today's date and return as Postdate and subtract 4 days from today's date and return as Predate:
+
+```sql
+SELECT 
+DATE_ADD(CURDATE(), INTERVAL 2 MONTH) as Postdate,
+DATE_SUB(CURDATE(), INTERVAL 4 DAY) as Predate;
+```
+<br>
+
+
+#### DATEDIFF
+
+DATEDIFF() returns the number of days between two dates or datetimes. This function only calculates the date portion from each expression.
+
+**Syntax**
+
+```sql
+DATEDIFF(DateExpression1,DateExpression2);
+```
+<br>
+
+**Example:** Query the number of days since payment_date till now for each payment_id  and amount from payment table in Sakila DB.
+
+```sql
+SELECT payment_id, 
+amount, 
+payment_date, 
+DATEDIFF(NOW(),payment_date) No_of_Days_Since_Payment
+FROM sakila.payment;
+```
+
+<br>
+
+**Question 3**: From rental table in Sakila DB query rental_id, inventory_id, customer_id, rental_date, return_date, and rental_duration. Where rental duration is the difference between return_date and rental_date.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT rental_id, 
+inventory_id, 
+customer_id, 
+rental_date, 
+return_date, 
+datediff(return_date,rental_date) Rental_duration
+FROM sakila.rental;
+```
+</details>
+
+
+<br>
 
 
 
@@ -336,5 +408,49 @@ FROM sakila.payment;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Question 4**: Use Sakila DB to query rental_id, inventory_id, film_name, customer name, staff name, rental_date, return_date and rental_duration. 
+
+**_Hint:_** You need to join multiple tables to get the film name, customer name and staff name.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT 
+r.rental_id, 
+r.inventory_id, 
+f.title as film_name,
+r.customer_id, 
+CONCAT(c.first_name, ' ', c.last_name) as customer_name,
+CONCAT(s.first_name, ' ', s.last_name) as staff_name,
+r.rental_date, 
+r.return_date, 
+DATEDIFF(r.return_date,r.rental_date) days_rented
+FROM sakila.rental r
+LEFT JOIN sakila.inventory i ON r.inventory_id=i.inventory_id
+LEFT JOIN sakila.film_text f ON i.film_id=f.film_id
+LEFT JOIN sakila.customer c ON r.customer_id=c.customer_id
+LEFT JOIN sakila.staff s ON r.staff_id=s.staff_id;
+```
+</details>
 
 
