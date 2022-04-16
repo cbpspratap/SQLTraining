@@ -103,7 +103,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
     - SQRT()	
     - RAND()
 
-## [Chapter 8: SQL Functions](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%207)
+## [Chapter 8: SQL Functions](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%208)
 - SQL Functions
   - Date & Time Functions
     - CURDATE	
