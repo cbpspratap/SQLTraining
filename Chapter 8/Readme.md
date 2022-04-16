@@ -244,9 +244,7 @@ FROM sakila.payment;
 
 EXTRACT() function in MySQL is related to a DATE and DATETIME function. It is used to extract a portion of the DATE and DATETIME values.
 
-The EXTRACT() function requires two arguments unit and date. The unit is the interval that you want to extract from the date. 
-
-The following are the valid intervals for the unit argument.
+The EXTRACT() function requires two arguments unit and date. The unit is the interval that you want to extract from the date. The following are the valid intervals for the unit argument.
 - DAY
 - DAY_HOUR
 - DAY_MICROSECOND
