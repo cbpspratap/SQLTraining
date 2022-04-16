@@ -1,3 +1,13 @@
+# SQL Functions Continued..
+
+In this chapter we will continue on the SQL functions from last chapter onwards. 
+
+
+In previous chapters we have already discussed Flow Control, String, Agreegate and Mathematical functins. now let's continue with the below remaining functions.
+
+- Date & Time Functions
+- Window Functions
+
 
 ### Date & Time Functions
 
