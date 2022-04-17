@@ -105,6 +105,18 @@ FROM (SELECT d.department_name,
     	GROUP BY d.department_name) emp;
 ```
 
+**Example 4:** Using the student table in dpu_college db, find the maximum average marks of departments and Maximum marks of all the students.
+
+```sql
+SELECT MAX(max_marks), MAX(Avg_Dept_Marks)
+FROM(SELECT 
+		DEPT_ID, 
+		MAX(MARKS) max_marks, 
+		AVG(MARKS) Avg_Dept_Marks
+	FROM DPU_COLLEGE.STUDENT
+    GROUP BY DEPT_ID) stdnt;
+```
+
 <br>
 
 
@@ -112,7 +124,7 @@ FROM (SELECT d.department_name,
 
 When you want to create a column in your query but the column has to be queried saperately either from same table or anothet table. 
 
-**Example 3:** Using the above employee table, find the first_name, last_name, salary, average salary and maximum salary of all the employees.
+**Example 5:** Using the above employee table, find the first_name, last_name, salary, average salary and maximum salary of all the employees.
 
 Click [here](https://www.db-fiddle.com/f/jd9fQokX2RcnLwJeGvYoQQ/1) to go to db-fiddle to access this dataset.
 
@@ -133,7 +145,7 @@ FROM employee;
 
 A correlated subquery in MySQL is a subquery that depends on the outer query. It uses the data from the outer query or contains a reference to a parent query that also appears in the outer query. MySQL evaluates it once from each row in the outer query.
 
-**Example 3:** Using the above employee table, find the first_name, last_name, department_id and salary of all the employees whose salary is greater than the average salary of company.
+**Example 6:** Using the above employee table, find the first_name, last_name, department_id and salary of all the employees whose salary is greater than the average salary of company.
 
 Click [here](https://www.db-fiddle.com/f/jd9fQokX2RcnLwJeGvYoQQ/1) to go to db-fiddle to access this dataset.
 
@@ -158,12 +170,35 @@ A common table expression (called CTE for short) is a query which we create befo
 
 This is similar to ***Subquery in From Clause***, where the main query runs of top of the result of subquery. In CTE instead of inner subquery you can use the temporary table expression which is created using WITH expression.
 
+We can define CTEs by adding a ***WITH*** clause directly before SELECT, INSERT, UPDATE, DELETE, or MERGE statement. The WITH clause can include one or more CTEs separated by commas.
 
+**Syntax:**
 
+```sql
+WITH
+expression_name AS
+(CTE query definition)
 
+SELECT expression_A, expression_B, ...
+FROM expression_name;
+```
 
+Let's write a query for the same question in Example 4 using CTE.
 
+**Example 7:** Using the student table in dpu_college db, find the maximum average marks of departments and Maximum marks of all the students. 
 
+```sql
+WITH STDNT AS(
+		SELECT 
+		DEPT_ID, 
+		MAX(MARKS) max_marks, 
+		AVG(MARKS) Avg_Dept_Marks
+		FROM DPU_COLLEGE.STUDENT
+        GROUP BY DEPT_ID)
+
+SELECT MAX(max_marks), MAX(Avg_Dept_Marks)
+FROM STDNT;
+```
 
 
 
