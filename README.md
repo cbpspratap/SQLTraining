@@ -127,7 +127,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
     - LEAD		
     - LAG
 
-## [Chapter 9: Subqueries, CTE & Temp Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%209)
+## [Chapter 9: Subquery, CTE & Temporary Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%209)
 - Subquery
 - CTE
 - Temp Table
