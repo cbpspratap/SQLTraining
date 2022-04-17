@@ -108,7 +108,6 @@ FROM (SELECT d.department_name,
 <br>
 
 
-
 ### Subquery in SELECT Clause
 
 When you want to create a column in your query but the column has to be queried saperately either from same table or anothet table. 
@@ -127,12 +126,28 @@ FROM employee;
 ```
 
 
+<br>
 
 
+### Correlated Subqueries
 
+A correlated subquery in MySQL is a subquery that depends on the outer query. It uses the data from the outer query or contains a reference to a parent query that also appears in the outer query. MySQL evaluates it once from each row in the outer query.
 
+**Example 3:** Using the above employee table, find the first_name, last_name, department_id and salary of all the employees whose salary is greater than the average salary of company.
 
+Click [here](https://www.db-fiddle.com/f/jd9fQokX2RcnLwJeGvYoQQ/1) to go to db-fiddle to access this dataset.
 
+```sql
+SELECT 
+    first_name, 
+    last_name, 
+    department_id,
+    salary
+FROM employee e
+WHERE salary >= (SELECT AVG(salary) 
+                  FROM employee 
+                  WHERE department_id = e.department_id);  
+```
 
 
 
