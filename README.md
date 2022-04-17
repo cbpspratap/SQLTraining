@@ -132,6 +132,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - In Where Clause
   - In From Clause
   - In Select Clause
+  - Correlated Subqueries
 - CTE
 - Temp Table
 
