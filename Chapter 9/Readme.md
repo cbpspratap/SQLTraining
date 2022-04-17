@@ -49,6 +49,7 @@ Let's use below two tables(**employee and department**) to understand subquery.
 
 <br>
 
+
 ### Subquery in WHERE Clause
 
 Whenever you need to filter data which is not available directly in the tables in those cases you may use Subquery to identify the data point you want to filter and use in where clause.
@@ -82,6 +83,8 @@ WHERE salary> (SELECT AVG(salary)
 AND d.department_name='IT';
 ```
 
+<br>
+
 
 ### Subquery in FROM Clause
 
@@ -101,6 +104,50 @@ FROM (SELECT d.department_name,
     	INNER JOIN department d ON e.department_id=d.department_id
     	GROUP BY d.department_name) emp;
 ```
+
+<br>
+
+
+
+### Subquery in SELECT Clause
+
+When you want to create a column in your query but the column has to be queried saperately either from same table or anothet table. 
+
+**Example 3:** Using the above employee table, find the first_name, last_name, salary, average salary and maximum salary of all the employees.
+
+Click [here](https://www.db-fiddle.com/f/jd9fQokX2RcnLwJeGvYoQQ/1) to go to db-fiddle to access this dataset.
+
+```sql
+SELECT first_name, 
+last_name, 
+salary, 
+(SELECT MAX(salary) FROM employee) as Max_salary,
+(SELECT AVG(salary) FROM employee) as Avg_salary
+FROM employee;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
