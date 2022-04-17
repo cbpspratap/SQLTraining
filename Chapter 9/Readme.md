@@ -22,10 +22,6 @@ A subquery may occur in:
 
 <br>
 
-### Subquery in WHERE Clause
-
-Whenever you need to filter data which is not available directly in the tables in those cases you may use Subquery to identify the data point you want to filter and use in where clause.
-
 Let's use below two tables(**employee and department**) to understand subquery.
 
 **EMPLOYEE:** _sample data_
@@ -51,6 +47,11 @@ Let's use below two tables(**employee and department**) to understand subquery.
 |            60 | IT                   |        103 |        1400 |
 |            70 | Public Relations     |        204 |        2700 |
 
+<br>
+
+### Subquery in WHERE Clause
+
+Whenever you need to filter data which is not available directly in the tables in those cases you may use Subquery to identify the data point you want to filter and use in where clause.
 
 **Example 1:** Using the above employee table, you need to find those employees who get higher salary than the employee whose ID is 102.
 
@@ -80,6 +81,28 @@ WHERE salary> (SELECT AVG(salary)
                FROM employee)
 AND d.department_name='IT';
 ```
+
+
+### Subquery in FROM Clause
+
+When you want to query the output of another query, in that case you can use the first query in from clause as subquery/inner query which basically will work like source table for outer query.
+
+**Example 3:** Using the above employee and department table, find the maximum average salary of departments and Maximum salary of all the employees.
+
+Click [here](https://www.db-fiddle.com/f/jd9fQokX2RcnLwJeGvYoQQ/1) to go to db-fiddle to access this dataset.
+
+```sql
+SELECT MAX(Avg_salary), 
+MAX(max_salary)
+FROM (SELECT d.department_name, 
+     	AVG(e.salary) Avg_salary, 
+     	MAX(e.salary) Max_salary
+    	FROM employee e
+    	INNER JOIN department d ON e.department_id=d.department_id
+    	GROUP BY d.department_name) emp;
+```
+
+
 
 
 **Question 4**: Use Sakila DB to query rental_id, inventory_id, film_name, customer name, staff name, rental_date, return_date and rental_duration. 
