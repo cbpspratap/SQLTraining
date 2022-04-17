@@ -183,6 +183,8 @@ SELECT expression_A, expression_B, ...
 FROM expression_name;
 ```
 
+<br>
+
 Let's write a query for the same question in Example 4 using CTE.
 
 **Example 7:** Using the student table in dpu_college db, find the maximum average marks of departments and Maximum marks of all the students. 
@@ -216,14 +218,14 @@ INNER JOIN CTE c ON s.dept_id=c.dept_id AND s.marks=c.max_marks;
 ```
 
 
+## Temporary Table
 
 
 
 
 
 
-
-**Question 4**: Use Sakila DB to query rental_id, inventory_id, film_name, customer name, staff name, rental_date, return_date and rental_duration. 
+**Bonus Question**: Use Sakila DB to query rental_id, inventory_id, film_name, customer name, staff name, rental_date, return_date and rental_duration. 
 
 **_Hint:_** You need to join multiple tables to get the film name, customer name and staff name.
 
