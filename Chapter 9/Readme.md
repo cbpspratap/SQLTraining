@@ -202,6 +202,19 @@ FROM STDNT;
 
 
 
+**Example 7:** Using the student table in dpu_college db, write a query to find the name and marks of highest scorer from each department. 
+
+```sql
+WITH CTE AS(
+SELECT dept_id, MAX(marks) max_marks
+from dpu_college.student
+group by dept_id
+)
+select s.name, c.dept_id, max_marks as marks
+from dpu_college.student s
+INNER JOIN CTE c ON s.dept_id=c.dept_id AND s.marks=c.max_marks;
+```
+
 
 
 
