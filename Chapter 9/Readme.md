@@ -149,6 +149,14 @@ WHERE salary >= (SELECT AVG(salary)
                   WHERE department_id = e.department_id);  
 ```
 
+<br>
+<br>
+
+## CTE(Common Table Expression)
+
+A common table expression (called CTE for short) is a query which we create before writing the main query. Then, we can simply use it as a regular table inside our code. 
+
+This is similar to ***Subquery in From Clause***, where the main query runs of top of the result of subquery. In CTE instead of inner subquery you can use the temporary table expression which is created using WITH expression.
 
 
 
