@@ -11,16 +11,18 @@ There are many a times when we want to use the output of current query to use ag
 
 A subquery is a query nested within another query and embedded with SELECT, INSERT, UPDATE or DELETE statement. Also, a subquery can be nested within another subquery.
 
-A subquery can be used anywhere that expression like in "A SELECT clause" or "A FROM clause" or "A WHERE clause", and it must be closed in parentheses.
-
-A MySQL subquery is called an inner query while the query that contains the subquery is called an outer query.
+A MySQL subquery is called an inner query while the query that contains the subquery is called an outer query and the subquery must be closed in parentheses.
 
 <img src="https://user-images.githubusercontent.com/67796162/163706376-25254fc6-e262-4cb3-87e7-cfc023b8b253.png" width="800" height="371" />
 
+A subquery may occur in:
+- A WHERE clause
+- A FROM clause
+- A SELECT clause
 
+<br>
 
-
-
+### Subquery in WHERE Clause
 
 
 
