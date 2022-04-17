@@ -15,7 +15,8 @@ A subquery can be used anywhere that expression like in "A SELECT clause" or "A 
 
 A MySQL subquery is called an inner query while the query that contains the subquery is called an outer query.
 
-<img src="https://user-images.githubusercontent.com/67796162/163706175-42b6f489-0a5c-4f04-888f-b4983bf4f7fe.png" width="800" height="371" />
+<img src="https://user-images.githubusercontent.com/67796162/163706376-25254fc6-e262-4cb3-87e7-cfc023b8b253.png" width="800" height="371" />
+
 
 
 
