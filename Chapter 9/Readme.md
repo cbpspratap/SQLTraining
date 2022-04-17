@@ -209,21 +209,67 @@ FROM STDNT;
 ```sql
 WITH CTE AS(
 SELECT dept_id, MAX(marks) max_marks
-from dpu_college.student
-group by dept_id
+FROM dpu_college.student
+GROUP BY dept_id
 )
-select s.name, c.dept_id, max_marks as marks
-from dpu_college.student s
+SELECT s.name, c.dept_id, max_marks as marks
+FROM dpu_college.student s
 INNER JOIN CTE c ON s.dept_id=c.dept_id AND s.marks=c.max_marks;
 ```
 
 
 ## Temporary Table
 
+A temporary table is a special type of table that allows you to store a temporary result set, which you can reuse several times in a single session. The most important thing that should be known for temporary tables is that they will be deleted when the current client session terminates.
+
+You can use Temporary tables in multiple use cases, it can be used similar to normal table or it can be used the way we use CTE. The major difference between CTE and Temporary table is that the scope of CTE is limited to the query in which CTE is used, while Temporary table can be reused in multiple tables till the time session is not closed.
+
+**Syntax:**
+
+> Option 1: to Create new table
+```sql
+CREATE TEMPORARY TABLE table_name (  
+   column_1, column_2, ..., table_constraints  
+);  
+```
+
+> Option 2: To copy the structure of exisitng table
+```sql
+CREATE TEMPORARY TABLE temp_table_name as (  
+   SELECT columns_1, Column_2,.
+   FROM original_table_name
+   LIMIT 0);  
+```
+
+> Option 3: To create a table with data using another query
+```sql
+CREATE TEMPORARY TABLE temp_table_name as (  
+   SELECT columns_1, Column_2,.
+   FROM original_table_name
+   );  
+```
+
+Let's use the question in example 7 and rewrite the query using Temporary table instead of CTE
+
+**Example 7:** Using the student table in dpu_college db, write a query to find the name and marks of highest scorer from each department. 
+
+```sql
+CREATE TEMPORARY TABLE dept_marks AS(
+SELECT dept_id, MAX(marks) max_marks
+FROM dpu_college.student
+GROUP BY dept_id);
+
+SELECT s.name, d.dept_id, max_marks as marks
+FROM dpu_college.student s
+INNER JOIN dept_marks d ON s.dept_id=d.dept_id AND s.marks=d.max_marks;
+```
 
 
 
 
+
+
+<br>
 
 **Bonus Question**: Use Sakila DB to query rental_id, inventory_id, film_name, customer name, staff name, rental_date, return_date and rental_duration. 
 
