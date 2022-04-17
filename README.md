@@ -129,6 +129,9 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 
 ## [Chapter 9: Subquery, CTE & Temporary Table](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%209)
 - Subquery
+  - In Where Clause
+  - In From Clause
+  - In Select Clause
 - CTE
 - Temp Table
 
