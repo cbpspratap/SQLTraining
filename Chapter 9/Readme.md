@@ -1,4 +1,31 @@
-# Subqueries, CTE & Temp Table
+# Subquery, CTE & Temporary Table
+
+In previous chapters we learnt how to join multiple tables, use functions to perform specific task and agregate data. Today we will dive deep into understanding and querying tables by nesting them. 
+
+There are many a times when we want to use the output of current query to use again to further write query on top of it. That's when Subquery, CTE or Temporary Table comes in picture, these functions keep the output of current query in memory temporarly to be used in another query. Let's go and learn each of these and use it in our examples.
+
+<br>
+
+
+## Subquery
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
