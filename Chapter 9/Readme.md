@@ -271,7 +271,7 @@ INNER JOIN dept_marks d ON s.dept_id=d.dept_id AND s.marks=d.max_marks;
 
 <br>
 
-**Bonus Question**: Use Sakila DB to query rental_id, inventory_id, film_name, customer name, staff name, rental_date, return_date and rental_duration. 
+**Bonus Question 1**: Use Sakila DB to query rental_id, inventory_id, film_name, customer name, staff name, rental_date, return_date and rental_duration. 
 
 **_Hint:_** You need to join multiple tables to get the film name, customer name and staff name.
 
@@ -296,5 +296,53 @@ LEFT JOIN sakila.customer c ON r.customer_id=c.customer_id
 LEFT JOIN sakila.staff s ON r.staff_id=s.staff_id;
 ```
 </details>
+
+<br>
+
+**Bonus Question 2**: Use Sakila DB to find the name of movie for which the rental cost was highest and show the full name of all the customers who rented it.
+
+**_Hint:_** 
+1. In a subquery first find out the rental cost(_Rental Cost= Amount/No of times rented_) along with the movie name of each movies and rank by rental cost
+2. Find the movie name which has highest rental cost
+3. Find the name of customers and rental details by applying filter on movie name.
+
+<details>
+ <Summary>Click here to reveal the solution!</Summary>
+
+```sql
+SELECT f.title, 
+	c.first_name, 
+	c.last_name, 
+	r.rental_date, 
+	r.return_date
+FROM sakila.rental r
+LEFT JOIN sakila.customer c ON c.customer_id=r.customer_id
+LEFT JOIN sakila.inventory i ON r.inventory_id=i.inventory_id
+LEFT JOIN sakila.film_text f ON i.film_id=f.film_id
+WHERE f.title IN( 
+	SELECT Film FROM(
+		SELECT 
+		f.title Film, 
+		COUNT(r.rental_id) No_of_Times_Rented,
+		SUM(p.amount) Amount,
+		SUM(p.amount)/COUNT(r.rental_id) Rental_cost,
+		DENSE_RANK() OVER(ORDER BY sum(p.amount)/count(r.rental_id) DESC) RNK
+		FROM sakila.payment p
+		LEFT JOIN sakila.rental r ON P.rental_id=r.rental_id
+		LEFT JOIN sakila.inventory i ON r.inventory_id=i.inventory_id
+		LEFT JOIN sakila.film_text f ON i.film_id=f.film_id
+		GROUP BY f.title ) a
+		WHERE RNK=1);
+```
+</details>
+
+
+
+
+
+
+
+
+
 
 
