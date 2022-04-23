@@ -26,7 +26,7 @@ FROM tables
 
 **Example:** Let's create a view which contains customers complete details using the data we have in Sakila DB(i.e. customer_id, name, address, zip code, city, country, phone, email and status whether active or not).
 
-To achieve this we will need to use below tables to get corresponding fields:
+To achieve this we will need to use below tables from sakila db to get corresponding fields:
 
 - customer: customer_id, first_name, last_name, email, active
 - address: address, postal_code, phone
