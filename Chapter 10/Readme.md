@@ -3,7 +3,8 @@
 This is the last chapter of this SQL tutorial series, in this chapter we will see some miscelaneous topics and best practices.
 
 Topics:
-1. SQL View
+- SQL View
+- USE command
 
 
 
