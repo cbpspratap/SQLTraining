@@ -136,3 +136,5 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - CTE
 - Temp Table
 
+## [Chapter 10: The Conclusion](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%2010)
+- Subquery
