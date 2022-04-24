@@ -189,7 +189,7 @@ Below are some benefits of Stored Procedure:
 
 There are two options to choose the default database before performing any SQL operation:
 1. Right click on database and click on "Set as Default Schema"
-2. ***USE*** along with database name can be used to set the default database before any SQL statements run. Below is the syntax to use it:
+2. ***USE***: USE keyword along with database name can be used to set the default database before any SQL statements run. Below is the syntax to use it:
 
 **Syntax:**
 
@@ -204,6 +204,29 @@ USE sakila;
 
 SELECT * FROM film_text;
 ```
+
+### Changing Delimiter
+
+The default delimiter in almost all of the SQL flavours including MySQL is semicolon(;). Although this can be changed to another character e.g., // or $$.
+
+There are few cases where changing delimeter is required specially in Stored Procedures which consists of multiple statements separated by a semicolon (;). If you use a MySQL client program(MySQL Workbench) to define a stored procedure that contains semicolon characters, MySQL Workbench will not treat the whole stored procedure as a single statement, but many statements.
+
+Therefore, you must redefine the delimiter temporarily so that you can pass the whole stored procedure to the server as a single statement.
+
+The delimiter_character may consist of a single character or multiple characters e.g., // or $$. However, you should avoid using the backslash (\) because it’s the escape character in MySQL.
+
+**Syntax:**
+```sql
+DELIMITER delimiter_character
+```
+
+**Example:**
+```sql
+DELIMITER //
+```
+
+
+
 
 
 
