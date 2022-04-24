@@ -1,6 +1,6 @@
 # The Conclusion
 
-This is the last chapter of this SQL tutorial series, in this chapter we will see some miscellaneous topics and best practices.
+This is the last chapter of this SQL tutorial series, in this chapter we will discuss about SQL Views and Stored Procedure and see some miscellaneous topics and best practices.
 
 Topics:
 - SQL View
@@ -8,6 +8,7 @@ Topics:
 - Miscellaneous
 	- Choosing Default Database
 	- Changing Delimiter
+	- Resources to Practice SQL
 
 
 
