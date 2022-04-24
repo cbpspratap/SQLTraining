@@ -235,7 +235,7 @@ DELIMITER //
 
 Since you will be using SQL for you data analysis purposes and will write lot many queries, which will be acessible to many people around your organization, So its better to follow some SQL best practices. Following best practices will help manage the code efficiently and share it among other team members.
 
-Below are some of the SQL best pracices I have listed down:
+Below are top 10 SQL best practices you should follow:
 1. **Comment The Code:** Use proper commenting within code to make sure someone else can easily understand it, although don't overdo it.
 2. **Format The Code:** Format your code so that its is redable. Use proper Indentation & White spaces to seperate subqueries from outerquery.
 3. **Uppercase for SQL Keywords:** Use uppercase for the SQL keywords and Functions, and lowercase for your tables and columns.
