@@ -79,8 +79,8 @@ Please refer to the below link which will download a PPT with detailed instructi
 - Allow the windows permission to continue installation
 - Select "Full" when asked for Choosing a Setup Type
 
-    ![image](https://user-images.githubusercontent.com/67796162/155340949-950a25af-d8a3-4907-80d9-387834171783.png)
-    
+    ![155340949-950a25af-d8a3-4907-80d9-387834171783](https://user-images.githubusercontent.com/67796162/164966796-c4cf0759-a0f3-46cc-9093-84f20dddf2ef.png)
+
 - Continue installation by pressing Execute or Next whenever prompted
 - When you reach to below screen, leave everything to default and click next
 
