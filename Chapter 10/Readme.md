@@ -170,4 +170,11 @@ CALL sp_ActorCount(9, @sp_count);
 
 ![image](https://user-images.githubusercontent.com/67796162/164969700-93f2a336-8b67-4ea0-9e12-5300dd51afdf.png)
 
+<br>
+
+Below are some benefits of Stored Procedure:
+- **Reduce the Network Traffic:** Multiple SQL Statements are encapsulated in a stored procedure. When you execute it, instead of sending multiple queries, we are sending only the name and the parameters of the stored procedure
+- **Easy to maintain:** The stored procedure are reusable. We can implement the business logic within an SP, and it can be used by applications multiple times, or different modules of an application can use the same procedure. This way, a stored procedure makes the database more consistent. If any change is required, you need to make a change in the stored procedure only
+- **Secure:** The stored procedures are more secure than the AdHoc queries. The permission can be granted to the user to execute the stored procedure without giving permission to the tables used in the stored procedure. The stored procedure helps to prevent the database from SQL Injection
+
 
