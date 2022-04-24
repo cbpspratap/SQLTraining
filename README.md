@@ -137,4 +137,13 @@ This course is divided into 10 chapters, each chapter will cover a major subject
 - Temp Table
 
 ## [Chapter 10: The Conclusion](https://github.com/cbpspratap/SQLTraining/tree/main/Chapter%2010)
-- Subquery
+- SQL Views
+- Stored Procedure
+- Miscellaneous
+  - Choosing Default Database
+  - Changing Delimiter
+  - Resources to Practice SQL
+
+
+
+
