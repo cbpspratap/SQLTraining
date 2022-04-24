@@ -253,3 +253,16 @@ Below are top 10 SQL best practices you should follow:
 
 For practice purpose you can you the dpu_college db in your MySQL workbench or in db-fiddle. To use dpu_college db in db-fiddle [click here](https://www.db-fiddle.com/f/csrkHPhLwogwh1exEg8tXc/0).
 
+Below are some online resources you can use to practice question using sql:
+1. [HackerRank](https://www.hackerrank.com/)
+2. [LeetCode](https://leetcode.com/problemset/database/)
+3. [Codewars](https://www.codewars.com/)
+4. [SQLZoo](https://sqlzoo.net/)
+5. [SQLBolt}(https://sqlbolt.com/)
+
+
+#### Hope this training was able to help you understand SQL and will enable you to start doing data Analysis and get a new role or apportunity to work in this field.
+
+### Thank You!
+
+
