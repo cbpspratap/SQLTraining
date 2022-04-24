@@ -8,6 +8,7 @@ Topics:
 - Miscellaneous
 	- Choosing Default Database
 	- Changing Delimiter
+	- SQL Best Practices
 	- Resources to Practice SQL
 
 
@@ -206,6 +207,8 @@ USE sakila;
 SELECT * FROM film_text;
 ```
 
+<br>
+
 ### Changing Delimiter
 
 The default delimiter in almost all of the SQL flavours including MySQL is semicolon(;). Although this can be changed to another character e.g., // or $$.
@@ -226,9 +229,23 @@ DELIMITER delimiter_character
 DELIMITER //
 ```
 
+<br>
 
+### SQL Best Practices
 
+Since you will be using SQL for you data analysis purposes and will write lot many queries, which will be acessible to many people around your organization, So its better to follow some SQL best practices. Following best practices will help manage the code efficiently and share it among other team members.
 
+Below are some of the SQL best pracices I have listed down:
+1. **Comment The Code:** Use proper commenting within yor code to make sure someone else can easily understand it, although don't overdo it.
+2. **Format The Code:** Format your code so that its is redable. Use proper Indentation & White spaces to seperate subqueries from outerquery.
+3. **Uppercase for SQL Keywords:** Use uppercase for the SQL keywords and Functions, and lowercase for your tables and columns.
+4. **Snake Case for Naming:** Snake Case also referred to as underscore case should be used whenever naming any object like Database, Schema, Table or Column.
+5. **Alias The Tables:** Use aliases to rename tables or columns which doesn’t make sense specially when joining multiple tables, it's good practice to give an alias to each of the tables.
+6. **Meaningful Naming:** Use a meaningful naming convention and follow same throughout your code. If required you should define your own convention and have it adopted by your team.
+7. **Order of Execution:** Before you start writing your query, frame the question to understand which is the primary table and hence start joining other table to it and always filterout unnecessary data using where condition.
+8. **Avoid SELECT*:** Whenever possible avoid using select '\*', instead use specific column name for which the data is required.
+9. **Order of Operation
+10. **Split into Multiple Queries:** Sometimes the SQL statement can be really long and it becomes complicated to read or relate each part of the query. So whenever possible split the code into multiple queries using Temporary Table or CTEs. A CTE or Temporary table not only improves redability but also improves usability, so strat using CTEs.
 
 
 
