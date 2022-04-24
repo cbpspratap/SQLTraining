@@ -51,7 +51,13 @@ CREATE OR REPLACE VIEW customer_details_vw AS
 	JOIN country co ON ci.country_id = co.country_id;
 ```
 
+<br>
 
+**Benefits of using Views**
+- Simplify complex business logics: view helps to simplify the complex business logic written in the SQL queries. Instead of executing the same complex query multiple times, you can create a view from it. This View can be referenced by using a simple SELECT query.
+- Improves data security: We can use views to display user-specific contents, this improves the security as user can be restricted from using source table with lot many information which may not be relevant.
+- Reduce data distraction: Views do not show the irrelevant column hence they reduce data distraction.
+- Preserves the appearance of original table structure: A view can preserve the appearance of the original table structure to minimize disruption to other applications.
 
 
 
