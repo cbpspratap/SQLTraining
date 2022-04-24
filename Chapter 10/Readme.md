@@ -108,11 +108,13 @@ In the syntax above:
 1. Specify the type of the parameter. It can be IN, OUT or INOUT
 2. Specify the name and data type of the parameter
 
+<br>
+
 **Example 1:**
 
 Let's create a stored procedure, which will take film_id as input and will return all the details related to the film. In this example let's try to get the details of film with film_id '9'.
 
-**1.** ***Create Procedure:***
+_1. Create Procedure:_
 
 ```sql
 DELIMITER //
@@ -128,17 +130,22 @@ DELIMITER ;
 ```
 
 
-**2.** ***Call Procedure:***
+_2. Call Procedure:_
 
 ```sql
 CALL sp_GetMovies(9);
 ```
 
+**Output:**
+
+![image](https://user-images.githubusercontent.com/67796162/164969629-8aa99af0-17ac-455a-8f98-2dd963be5cb3.png)
+
+<br>
 
 **Example 2:**
  Create a stored procedure which returns the name of the film along with no of actors in it when film_id is passed on to it.
  
- **1.** ***Create Procedure:***
+_1. Create Procedure:_
  
  ```sql
  CREATE PROCEDURE sp_ActorCount(IN sp_film_id int, OUT sp_count int)
@@ -153,12 +160,14 @@ END //
 DELIMITER ;
  ```
 
-**2.** ***Call Procedure:***
+_2. Call Procedure:_
 
 ```sql
 CALL sp_ActorCount(9, @sp_count);
 ```
 
+**Output:**
 
+![image](https://user-images.githubusercontent.com/67796162/164969700-93f2a336-8b67-4ea0-9e12-5300dd51afdf.png)
 
 
