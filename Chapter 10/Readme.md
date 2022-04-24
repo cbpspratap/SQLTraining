@@ -251,4 +251,5 @@ Below are top 10 SQL best practices you should follow:
 
 ### SQL Resources
 
+For practice purpose you can you the dpu_college db in your MySQL workbench or in db-fiddle. To use dpu_college db in db-fiddle [click here](https://www.db-fiddle.com/f/csrkHPhLwogwh1exEg8tXc/0).
 
