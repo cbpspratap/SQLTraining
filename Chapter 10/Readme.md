@@ -242,9 +242,9 @@ Below are some of the SQL best pracices I have listed down:
 4. **Snake Case for Naming:** Snake Case also referred to as underscore case should be used whenever naming any object like Database, Schema, Table or Column.
 5. **Alias The Tables:** Use aliases to rename tables or columns which doesn’t make sense specially when joining multiple tables, it's good practice to give an alias to each of the tables.
 6. **Meaningful Naming:** Use a meaningful naming convention and follow same throughout your code. If required you should define your own convention and have it adopted by your team.
-7. **Order of Execution:** Before you start writing your query, frame the question to understand which is the primary table and hence start joining other table to it and always filterout unnecessary data using where condition.
-8. **Avoid SELECT*:** Whenever possible avoid using select '\*', instead use specific column name for which the data is required.
-9. **Order of Operation
+7. **Order of Execution:** Before you start writing your query, frame the question to understand which one is the primary table and hence start joining other tables to it and always filter out unnecessary data by using where condition.
+8. **Follow ANSI-92 JOIN Syntax:** Instead of using SQL WHERE Clause for Joining Tables start using proper Join Syntax with ON condition to join tables.
+9. **Avoid SELECT \*:** Whenever possible avoid using select '\*', instead use specific column name for which the data is required.
 10. **Split into Multiple Queries:** Sometimes the SQL statement can be really long and it becomes complicated to read or relate each part of the query. So whenever possible split the code into multiple queries using Temporary Table or CTEs. A CTE or Temporary table not only improves redability but also improves usability, so strat using CTEs.
 
 
