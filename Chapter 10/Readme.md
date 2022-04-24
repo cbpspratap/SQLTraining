@@ -177,4 +177,16 @@ Below are some benefits of Stored Procedure:
 - **Easy to maintain:** The stored procedure are reusable. We can implement the business logic within an SP, and it can be used by applications multiple times, or different modules of an application can use the same procedure. This way, a stored procedure makes the database more consistent. If any change is required, you need to make a change in the stored procedure only
 - **Secure:** The stored procedures are more secure than the AdHoc queries. The permission can be granted to the user to execute the stored procedure without giving permission to the tables used in the stored procedure. The stored procedure helps to prevent the database from SQL Injection
 
+<br>
+
+<br>
+
+
+
+
+
+
+
+
+
 
