@@ -9,7 +9,7 @@ Topics:
 	- Choosing Default Database
 	- Changing Delimiter
 	- SQL Best Practices
-	- Resources to Practice SQL
+	- SQL Resources
 
 
 
@@ -247,6 +247,8 @@ Below are top 10 SQL best practices you should follow:
 9. **Avoid SELECT \*:** Whenever possible avoid using select '\*', instead use specific column name for which the data is required.
 10. **Split into Multiple Queries:** Sometimes the SQL statement can be really long and it becomes complicated to read or relate each part of the query. So whenever possible split the code into multiple queries using Temporary Table or CTEs. A CTE or Temporary table not only improves redability but also improves usability, so strat using CTEs.
 
+<br>
 
+### SQL Resources
 
 
