@@ -1,10 +1,12 @@
 # The Conclusion
 
-This is the last chapter of this SQL tutorial series, in this chapter we will see some miscelaneous topics and best practices.
+This is the last chapter of this SQL tutorial series, in this chapter we will see some miscellaneous topics and best practices.
 
 Topics:
 - SQL View
-- USE command
+- Stored Procedure
+- Miscellaneous
+	- USE command
 
 
 
