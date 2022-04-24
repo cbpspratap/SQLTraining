@@ -68,8 +68,9 @@ A Stored Procedure is a collection of pre-compiled SQL statements stored inside 
 
 The stored procedure is defined by wraping a SQL statements within the CREATE PROCEDURE statement. The stored procedure may contain a conditional statement like IF or CASE or the Loops. The stored procedure can also execute another stored procedure or a function that modularizes the code.
 
+In MySQL, stored procedure execution is called "calling", and so the statement to execute a stored procedure is simply ***CALL***. CALL takes the name of the stored procedure and any parameters that need to be passed on to it. 
 
-**Syntax:**
+**Syntax:** ***CREATE PROCEDURE***
 ```
 CREATE PROCEDURE procedure_name ([parameter_1], [parameter_2], [parameter_3],.. )
 BEGIN
@@ -77,9 +78,38 @@ SQL Queries..
 END
 ```
 
-In the syntax:
+In the syntax above:
 1. The name of the procedure must be specified after the CREATE PROCEDURE keyword
 2. After the name of the procedure, the list of parameters should be specified in the parenthesis. The parameter list must be comma-separated
 3. The SQL Queries and code must be written between BEGIN and END keywords
 
+**Syntax:** ***CALL PROCEDURE***
+```
+CALL procedure_name(@parameter1, @parameter2);
+```
 
+In the syntax above:
+1. The name of the procedure must be specified after the CALL keyword
+2. After the name of the procedure, the list of parameters should be specified in the parenthesis. The parameter list must be prefixed with @ and should be comma-separated.
+
+**Example:**
+
+Let's create a stored procedure, which will take film_id as input and will return all the details related to the film.
+
+***1. Create Procedure:***
+
+```sql
+DELIMITER //
+
+CREATE PROCEDURE sp_GetMovies(sp_film_id int)
+BEGIN
+    SELECT *
+    FROM sakila.film
+    WHERE film_id=sp_film_id;
+END //
+
+DELIMITER ;
+```
+
+
+***1. Call Procedure:***
