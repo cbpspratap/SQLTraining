@@ -258,7 +258,7 @@ Below are some online resources you can use to practice question using sql:
 2. [LeetCode](https://leetcode.com/problemset/database/)
 3. [Codewars](https://www.codewars.com/)
 4. [SQLZoo](https://sqlzoo.net/)
-5. [SQLBolt}(https://sqlbolt.com/)
+5. [SQLBolt](https://sqlbolt.com/)
 
 
 #### Hope this training was able to help you understand SQL and will enable you to start doing data Analysis and get a new role or apportunity to work in this field.
