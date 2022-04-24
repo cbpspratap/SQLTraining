@@ -143,7 +143,7 @@ This course is divided into 10 chapters, each chapter will cover a major subject
   - Choosing Default Database
   - Changing Delimiter
   - SQL Best Practices
-  - Resources to Practice SQL
+  - SQL Resources
 
 
 
