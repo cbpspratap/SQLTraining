@@ -70,7 +70,7 @@ The stored procedure is defined by wraping a SQL statements within the CREATE PR
 
 In MySQL, stored procedure execution is called "calling", and so the statement to execute a stored procedure is simply ***CALL***. CALL takes the name of the stored procedure and any parameters that need to be passed on to it. 
 
-**Syntax:** ***CREATE PROCEDURE***
+**Syntax:** _CREATE PROCEDURE_
 ```
 CREATE PROCEDURE procedure_name ([parameter_1], [parameter_2], [parameter_3],.. )
 BEGIN
@@ -83,7 +83,7 @@ In the syntax above:
 2. After the name of the procedure, the list of parameters should be specified in the parenthesis. The parameter list must be comma-separated
 3. The SQL Queries and code must be written between BEGIN and END keywords
 
-**Syntax:** ***CALL PROCEDURE***
+**Syntax:** _CALL PROCEDURE_
 ```
 CALL procedure_name(@parameter1, @parameter2);
 ```
@@ -94,9 +94,9 @@ In the syntax above:
 
 **Example:**
 
-Let's create a stored procedure, which will take film_id as input and will return all the details related to the film.
+Let's create a stored procedure, which will take film_id as input and will return all the details related to the film. In this example let's try to get the details of film with film_id '9'.
 
-***1. Create Procedure:***
+**1.** ***Create Procedure:***
 
 ```sql
 DELIMITER //
@@ -112,4 +112,18 @@ DELIMITER ;
 ```
 
 
-***1. Call Procedure:***
+**1.** ***Call Procedure:***
+
+```sql
+CALL sp_GetMovies(9);
+```
+
+
+
+
+
+
+
+
+
+
