@@ -52,7 +52,6 @@ CREATE OR REPLACE VIEW customer_details_vw AS
 	JOIN city ci ON a.city_id = ci.city_id
 	JOIN country co ON ci.country_id = co.country_id;
 ```
-
 <br>
 
 **Benefits of using Views**
@@ -61,12 +60,26 @@ CREATE OR REPLACE VIEW customer_details_vw AS
 - Reduce data distraction: Views do not show the irrelevant column hence they reduce data distraction.
 - Preserves the appearance of original table structure: A view can preserve the appearance of the original table structure to minimize disruption to other applications.
 
+<br>
+
+## Stored Procedure
+
+A Stored Procedure is a collection of pre-compiled SQL statements stored inside the database. It is a subroutine or a subprogram in the regular computing language. A stored procedure has a name, a parameter list, and SQL statement(s).
+
+The stored procedure is defined by wraping a SQL statements within the CREATE PROCEDURE statement. The stored procedure may contain a conditional statement like IF or CASE or the Loops. The stored procedure can also execute another stored procedure or a function that modularizes the code.
 
 
+**Syntax:**
+```
+CREATE PROCEDURE procedure_name ([parameter_1], [parameter_2], [parameter_3],.. )
+BEGIN
+SQL Queries..
+END
+```
 
-
-
-
-
+In the syntax:
+1. The name of the procedure must be specified after the CREATE PROCEDURE keyword
+2. After the name of the procedure, the list of parameters should be specified in the parenthesis. The parameter list must be comma-separated
+3. The SQL Queries and code must be written between BEGIN and END keywords
 
 
