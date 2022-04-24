@@ -6,7 +6,8 @@ Topics:
 - SQL View
 - Stored Procedure
 - Miscellaneous
-	- USE command
+	- Choosing Default Database
+	- Changing Delimiter
 
 
 
@@ -182,9 +183,27 @@ Below are some benefits of Stored Procedure:
 <br>
 
 
+## Miscellaneous
 
+### Choosing Default Database
 
+There are two options to choose the default database before performing any SQL operation:
+1. Right click on database and click on "Set as Default Schema"
+2. ***USE*** along with database name can be used to set the default database before any SQL statements run. Below is the syntax to use it:
 
+**Syntax:**
+
+```sql
+USE database_name;
+```
+
+**Example:**
+
+```sql
+USE sakila;
+
+SELECT * FROM film_text;
+```
 
 
 
