@@ -145,21 +145,6 @@ FROM employee;
 
 A correlated subquery in MySQL is a subquery that depends on the outer query. It uses the data from the outer query or contains a reference to a parent query that also appears in the outer query. MySQL evaluates it once from each row in the outer query.
 
-**Example 6:** Using the above employee table, find the first_name, last_name, department_id and salary of all the employees whose salary is greater than the average salary of company.
-
-Click [here](https://www.db-fiddle.com/f/jd9fQokX2RcnLwJeGvYoQQ/1) to go to db-fiddle to access this dataset.
-
-```sql
-SELECT 
-    first_name, 
-    last_name, 
-    department_id,
-    salary
-FROM employee e
-WHERE salary >= (SELECT AVG(salary) 
-                  FROM employee 
-                  WHERE department_id = e.department_id);  
-```
 
 <br>
 <br>
@@ -187,7 +172,7 @@ FROM expression_name;
 
 Let's write a query for the same question in Example 4 using CTE.
 
-**Example 7:** Using the student table in dpu_college db, find the maximum average marks of departments and Maximum marks of all the students. 
+**Example 6:** Using the student table in dpu_college db, find the maximum average marks of departments and Maximum marks of all the students. 
 
 ```sql
 WITH STDNT AS(
@@ -251,7 +236,7 @@ CREATE TEMPORARY TABLE temp_table_name as (
 
 Let's use the question in example 7 and rewrite the query using Temporary table instead of CTE
 
-**Example 7:** Using the student table in dpu_college db, write a query to find the name and marks of highest scorer from each department. 
+**Example 8:** Using the student table in dpu_college db, write a query to find the name and marks of highest scorer from each department. 
 
 ```sql
 CREATE TEMPORARY TABLE dept_marks AS(
