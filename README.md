@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/67796162/155576166-f986f606-b7aa-4134-bba0-4bb26cbfab23.png)
 
-Helo Learners, Welcome to the SQL training course.
+Hello Learners, Welcome to the SQL training course.
 
 During the training I will follow MySQL syntax and you can follow along by using MySQL flavor DBMS (*on your personal computer or you can use [db-fiddle](https://www.db-fiddle.com/) to practice*).
 
