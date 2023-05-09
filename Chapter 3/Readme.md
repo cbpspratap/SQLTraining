@@ -1,11 +1,11 @@
 # Understand Data Types, Create Table & Load Data
 
-In this chapter we will first undertsand the basic data types in SQL and then get into a bit of hands-on SQL coding, we will write basic SQL statements and will observe the output or the result and then will try to understand the working of a SQL statement.
+In this chapter we will first undertsand the basic data types in SQL and then get into a bit of hands-on SQL coding. We will write basic SQL statements and will observe the output or the result and then will try to understand the working of a SQL statement.
 
 
 ## Data Types in SQL
 
-As seen in the previous when we ceated tables where we defined the data types of each column. While creating a table its important to identify and define the right data type for each of the columns. The data type is a guideline for SQL to understand what type of data is expected inside of each column, and it also identifies how SQL will interact with the stored data.
+As seen in the previous chapter where we ceated tables and defined the data types of each column. While creating a table its important to identify and define the right data type for each of the columns. The data type is a guideline for SQL to understand what type of data is expected inside of each column, and it also identifies how SQL will interact with the stored data.
 
 Here we will see some basic data types which required for our function knowledge of SQL and are widely used.
 
